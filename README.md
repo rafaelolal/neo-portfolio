@@ -9,7 +9,7 @@
 * Another important thing is to include delete and update buttons on all the cards. However these buttons are only going to be visible if `request.user.issuperuser` (a.k.a me). So keep that in mind when designing. These buttons should open a new tab to the correct `/admin` link.
 * Right now, all of bootstrap is being imported. So if you could do some extra research and only import what is needed, is going to help a lot with website speed!
 * Please refer to the `models.png` image to understand what each model can display. I understand that each of the models is likely having more attributes than it should have, so feel free to make tough choices into what your UI can actually accomodate (the more the better) (i.e. maybe certificates shouldn't have images associated with them after all, but I still included it there just in case).
-* Because all of the fields are optional and are likely not always going to be filled in, your UI may (if you decide that) have to accomodate fields when they are and are not filled in.
+* Because all of the fields are optional and are likely not always going to be filled in, your UI may (if you decide that) have to accomodate fields when they are and are not filled in. (But if you choose that it's easier to just force me to have certain fields and not others and whatnot, do whatever you want...)
 
 ## Developer Quick Start
 
