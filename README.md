@@ -18,11 +18,12 @@
 1. Create virtual environment: `python -m venv .venv`
 2. Start env: `source .venv/bin/activate`
 3. Install requirements: `pip install -r requirements.txt`
-4. Create database: `python manage.py migrate`
-5. Populate database: `python del.py`
-6. Create superuser (optional): `python manage.py createsuperuser`
-7. Run local server `python manage.py runserver`
-8. Manage objects at `/admin`
+4. Create `.env` file in root and add `DEBUG=False` and `SECRET=` variable (ask Rafael for secret)
+5. Create database: `python manage.py migrate`
+6. Populate database: `python del.py`
+7. Create superuser (optional): `python manage.py createsuperuser`
+8. Run local server `python manage.py runserver`
+9. Manage objects at `/admin`
 
 ### Contributing
 
