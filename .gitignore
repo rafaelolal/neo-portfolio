@@ -5,6 +5,6 @@ __pycache__
 logs/*
 !logs/.gitkeep
 django_cache
-media/images/*
+# media/images/*
 !media/images/.gitkeep
 staticfiles

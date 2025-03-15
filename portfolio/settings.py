@@ -162,6 +162,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "core",
     "compressor",
+    "django_extensions",
 ]
 
 MIDDLEWARE = [

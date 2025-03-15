@@ -1,0 +1,312 @@
+[{
+  "_id": {
+    "$oid": "633afc76d0e72110531ebc3b"
+  },
+  "name": "Django Full Stack Bootcamp",
+  "link": "http://ude.my/UC-760f76af-0203-4535-9188-88fcd54684cf",
+  "description": "32-hour Django course that I went through in a week to develop \"Minas Gerais Tourism\", my FBLA project that earned 1st place in the state of NJ.",
+  "issuer": "Udemy",
+  "date": {
+    "$date": "2022-07-08T00:00:00.000Z"
+  },
+  "type": "Course"
+},
+{
+  "_id": {
+    "$oid": "634de268ba72c7fd8827f9e6"
+  },
+  "name": "PSAT Score",
+  "description": "1390, (EBRW: 690, Math: 700). Though I di not qualify in NJ for the National Merit Program, I feel accomplished that I was in the 99th percentile without studying for the PSAT, as recommended by our school.",
+  "link": "",
+  "issuer": "CollegeBoard",
+  "date": {
+    "$date": "2021-01-26T00:00:00.000Z"
+  },
+  "type": "Achievement"
+},
+{
+  "_id": {
+    "$oid": "634d9ea4ba72c7fd8827f9d6"
+  },
+  "name": "FutureHacks I Certificate of Appreciation",
+  "link": "https://drive.google.com/file/d/1zFvu7X7gxiC3YFymmTKQe4_TJOaTGM3G/view?usp=sharing",
+  "description": "Volunteered to host a one hour workshop of Python at AiGoLearning's Hackathon",
+  "issuer": "AiGoLearning",
+  "date": {
+    "$date": "2021-03-28T00:00:00.000Z"
+  },
+  "type": "Certificate"
+},
+{
+  "_id": {
+    "$oid": "634d9f0eba72c7fd8827f9d7"
+  },
+  "name": "National Hispanic Recognition Program",
+  "link": "https://drive.google.com/file/d/1YkGOLh4LMeILAhe2RE8969UAAcuP1uly/view?usp=sharing",
+  "description": "",
+  "issuer": "CollegeBoard",
+  "date": {
+    "$date": "2022-08-31T00:00:00.000Z"
+  },
+  "type": "Award"
+},
+{
+  "_id": {
+    "$oid": "634de1bbba72c7fd8827f9e5"
+  },
+  "name": "InnerView Volunteering Recognition",
+  "description": "My school counselor recommended I logged my teaching hours on InnerView. There, I had the opportunity to be recognized for teaching coding for over 50 hours between June 1st, 2020 and April 15, 2021. Since then I have more than doubled that time.",
+  "link": "https://www.linkedin.com/posts/rafael-almeida-386bb0202_computerscience-stem-codingforkids-activity-6775880270274011136-CVP1?utm_source=share&utm_medium=member_desktop",
+  "issuer": "AiGoLearning",
+  "date": {
+    "$date": "2021-04-15T00:00:00.000Z"
+  },
+  "type": "Award"
+},
+{
+  "_id": {
+    "$oid": "634dd50eba72c7fd8827f9df"
+  },
+  "name": "IC3 Digital Literacy Certification",
+  "link": "https://drive.google.com/drive/folders/1tD91kCjoFAOd6Z7VXI7obkSqXGoU2Y1p?usp=sharing",
+  "description": "",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2019-12-13T00:00:00.000Z"
+  },
+  "type": "Certificate"
+},
+{
+  "_id": {
+    "$oid": "634da125ba72c7fd8827f9db"
+  },
+  "name": "Victory Lane Certificate of Achievement",
+  "link": "https://drive.google.com/file/d/1FQ5Yb8nkCGtH_NeUszPuxP_D71MpIU6p/view?usp=sharing",
+  "description": "I demonstrated mastery of financial skills in the road test for personal finance. I did so by creating a program that told me exactly what to do on the challenge every day. I nearly achieved a perfect score.",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2021-05-13T00:00:00.000Z"
+  },
+  "type": "Award"
+},
+{
+  "_id": {
+    "$oid": "634de404ba72c7fd8827f9e8"
+  },
+  "name": "United States of America Computing Olympiad",
+  "description": "Silver division, placing 1837 out of 9484 participants. However, continuously studying hard to decrease my placing and to keep up with the ever more challenging problems. ",
+  "link": "",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2022-02-27T00:00:00.000Z"
+  },
+  "type": "Achievement"
+},
+{
+  "_id": {
+    "$oid": "634da1b8ba72c7fd8827f9dc"
+  },
+  "name": "Certificate of Completion Road Test",
+  "link": "https://drive.google.com/file/d/1LoB_m8KSO7fAYve0n6ni3ls2oyhJ5dw_/view?usp=sharing",
+  "description": "Successfully demonstrated financial skills in road test for personal finance.",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2021-05-13T00:00:00.000Z"
+  },
+  "type": "Certificate"
+},
+{
+  "_id": {
+    "$oid": "634dccccba72c7fd8827f9de"
+  },
+  "name": "AP Scholar Award",
+  "link": "https://drive.google.com/file/d/1oGzfzItUjRbOx7IvVJTluCkMmZC5o68c/view?usp=sharing",
+  "description": "I have earned the AP® Scholar Award which recognizes exemplary college-level achievement, for scoring 3 or higher on three or more AP Exams: Calculus AB, Computer Science A, Capstone Seminar. ",
+  "issuer": "CollegeBoard",
+  "date": {
+    "$date": "2022-07-06T00:00:00.000Z"
+  },
+  "type": "Award"
+},
+{
+  "_id": {
+    "$oid": "634ddfd3ba72c7fd8827f9e1"
+  },
+  "name": "NJSLA Score",
+  "description": "Though not a high-stakes test, I feel accomplished scoring 300/300. With the NJ and my school's average being 166 and 258, respectively. ",
+  "link": "https://drive.google.com/file/d/13tiBArATZV0DvST2pYhwC68UB8eW2br7/view?usp=sharing",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2022-05-01T04:00:00.000Z"
+  },
+  "type": "Achievement"
+},
+{
+  "_id": {
+    "$oid": "634da2cfba72c7fd8827f9dd"
+  },
+  "name": "Crash Course on Python",
+  "link": "http://coursera.org/verify/HQDZ78NMH4Z3",
+  "description": "Successfully completed an online non-credit course authorized by Google and offered through Coursera. I was able to complete all the material during a one week free trial as preparation to begin teaching Python at AiGoLearning.",
+  "issuer": "Google",
+  "date": {
+    "$date": "2020-12-31T00:00:00.000Z"
+  },
+  "type": "Course"
+},
+{
+  "_id": {
+    "$oid": "634de7c0ba72c7fd8827f9e9"
+  },
+  "name": "National Honor Society",
+  "description": "I am proud that my academic achievements and, most importantly, the care I have for my community has been recognized, making me a member of the National Honor Society during high school and middle school in Junior Honor Society.",
+  "link": "https://drive.google.com/file/d/1vD5buGoNunuYmfTEDwsoYqatpCHlB_3X/view?usp=sharing",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2022-03-16T00:00:00.000Z"
+  },
+  "type": "Award"
+},
+{
+  "_id": {
+    "$oid": "633af86fd0e72110531ebc3a"
+  },
+  "name": "SAT Score",
+  "description": "1560, (EBRW: 770, Math: 790). After 3,000 answered questions and over 100 hours of studying, I increase my SAT score by exactly 200 points since my first SAT. I got a 1530, (EBRW: 740, Math 790), on August of 2022, and everyone thought I was crazy when I said I was taking it again. They did not want me to risk getting a lower score. But, I knew I had more to give.",
+  "link": "",
+  "issuer": "CollegeBoard",
+  "date": {
+    "$date": "2022-10-01T00:00:00.000Z"
+  },
+  "type": "Achievement"
+},
+{
+  "_id": {
+    "$oid": "634d9bcaba72c7fd8827f9d5"
+  },
+  "name": "FutureHacks II Certificate of Appreciation",
+  "link": "https://drive.google.com/file/d/110oWOjeuDxyV1MV11DBUFxa9YIJZoFPM/view?usp=sharing",
+  "description": "Volunteered to host a one hour workshop of Python at AiGoLearning's Hackathon",
+  "issuer": "AiGoLearning",
+  "date": {
+    "$date": "2021-09-12T00:00:00.000Z"
+  },
+  "type": "Certificate"
+},
+{
+  "_id": {
+    "$oid": "634de2ffba72c7fd8827f9e7"
+  },
+  "name": "High Honor Roll",
+  "description": "I am proud to say that I have never gotten a final B grade during my high school career, qualifying me for high honor roll every marking period so far.",
+  "link": "",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2022-06-20T00:00:00.000Z"
+  },
+  "type": "Achievement"
+},
+{
+  "_id": {
+    "$oid": "634dd594ba72c7fd8827f9e0"
+  },
+  "name": "Microsoft Office Specialist",
+  "link": "https://drive.google.com/drive/folders/1p-ErEoJ7ngjkP_LHfyF98TGLMTDoZ-bY?usp=sharing",
+  "description": "Certified Office specialist in Word (expert), Excel, Powerpoint, and Access.",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2020-06-17T00:00:00.000Z"
+  },
+  "type": "Certificate"
+},
+{
+  "_id": {
+    "$oid": "634eeaad8ec3f9be4f21ea58"
+  },
+  "name": "Java Foundations",
+  "link": "https://drive.google.com/file/d/1-5-FrX0yvR5wb1En45DhSx8f7ecxiTQe/view?usp=sharing",
+  "description": "This certifies me as recognized by Oracle Corporation as Oracle Certified. In the test, I have the highest score in our grade together with another peer.",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2022-06-16T00:00:00.000Z"
+  },
+  "type": "Certificate"
+},
+{
+  "_id": {
+    "$oid": "634da081ba72c7fd8827f9da"
+  },
+  "name": "Python Certificate of Training",
+  "link": "https://drive.google.com/file/d/1ycE8DwrNKd-eL4C90NyFF6iOK_3HBloX/view?usp=sharing",
+  "description": "Successfully passed the AiGoLearning evaluation to be a Python teacher.",
+  "issuer": "AiGoLearning",
+  "date": {
+    "$date": "2020-12-28T00:00:00.000Z"
+  },
+  "type": "Certificate"
+},
+{
+  "_id": {
+    "$oid": "634f9e87ff0e1bbc4260b995"
+  },
+  "name": "Student of the Month",
+  "description": "I was selected to be the junior student of the month for November.",
+  "link": "https://drive.google.com/file/d/1L9O8iRgyYLuIshnc2_C6RMu_Jn4JpMUX/view?usp=sharing",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2021-11-01T00:00:00.000Z"
+  },
+  "type": "Award"
+},
+{
+  "_id": {
+    "$oid": "634de102ba72c7fd8827f9e3"
+  },
+  "name": "Teacher of the Week for AiGoLearning",
+  "description": "In my first week teaching at AiGoLearning, I am glad to say that my competence has been noticed as I was selected to be teacher of the week and even got interviewed by AiGoLearning's journalist.",
+  "link": "https://www.linkedin.com/posts/rafael-almeida-386bb0202_computerscience-stem-codingforkids-activity-6775880270274011136-CVP1?utm_source=share&utm_medium=member_desktop",
+  "issuer": "AiGoLearning",
+  "date": {
+    "$date": "2021-03-03T00:00:00.000Z"
+  },
+  "type": "Award"
+},
+{
+  "_id": {
+    "$oid": "634de089ba72c7fd8827f9e2"
+  },
+  "name": "State Champion Future Business Leaders of America",
+  "description": "I placed 1st in the Coding and Programming FBLA competition in the state of NJ, qualifying to go to nationals. I was not able to go to nationals, however, due to the high costs and its overlapping dates with Thrive Scholars",
+  "link": "",
+  "issuer": "Academy for Information Technology",
+  "date": {
+    "$date": "2022-03-10T00:00:00.000Z"
+  },
+  "type": "Award"
+},
+{
+  "_id": {
+    "$oid": "634d9f8bba72c7fd8827f9d9"
+  },
+  "name": "AiGoLearning Certificate of Volunteering",
+  "link": "https://drive.google.com/file/d/1hojgui8NLlmuVKRe1HFAwrJHrcBL6EKA/view?usp=sharing",
+  "description": "Volunteered over 240 hours at AiGolearning through countless activities such as teaching, workshops, developing, leading, etc.",
+  "issuer": "AiGoLearning",
+  "date": {
+    "$date": "2022-09-23T00:00:00.000Z"
+  },
+  "type": "Certificate"
+},
+{
+  "_id": {
+    "$oid": "671987da6b8057103f59ceec"
+  },
+  "name": "Computer Science Departmental Award",
+  "type": "Award",
+  "date": {
+    "$date": "2023-06-13T00:00:00.000Z"
+  },
+  "description": "I earned the Academy for Information Technology Computer Science departmental award for my “deep curiosity in class, outstanding excellence, and long-lasting contributions to the department.” I took all Computer Science courses offered, getting all As. Most importantly, I invested over 400 hours in tutoring students, developing software for our school, revitalizing our coding club as President, and working closely with staff to improve CS education. I stood out among 74 other stellar CS students because of my technical prowess and a keen eye for endeavors where my skills would generate the most impact.",
+  "link": "",
+  "issuer": "Academy for Information Technology"
+}]

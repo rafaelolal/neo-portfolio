@@ -5,6 +5,7 @@ cssbeautifier==1.15.4
 django==5.1.7
 django-appconf==1.1.0
 django-compressor==4.5.1
+django-extensions==3.2.3
 django-libsass==0.9
 djangorestframework==3.15.2
 djlint==1.36.4
@@ -14,6 +15,8 @@ json5==0.10.0
 libsass==0.23.0
 pathspec==0.12.1
 pillow==11.1.0
+pydotplus==2.0.2
+pyparsing==3.2.1
 python-dotenv==1.0.1
 pyyaml==6.0.2
 rcssmin==1.1.2

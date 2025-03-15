@@ -7,9 +7,11 @@ requires-python = ">=3.13.2"
 dependencies = [
     "django>=5.1.7",
     "django-compressor>=4.5.1",
+    "django-extensions>=3.2.3",
     "django-libsass>=0.9",
     "djangorestframework>=3.15.2",
     "djlint>=1.36.4",
     "pillow>=11.1.0",
+    "pydotplus>=2.0.2",
     "python-dotenv>=1.0.1",
 ]
