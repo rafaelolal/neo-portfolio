@@ -1,1 +1,10 @@
+.history
 __pycache__
+*.sqlite3
+*.env
+logs/*
+!logs/.gitkeep
+django_cache
+media/images/*
+!media/images/.gitkeep
+staticfiles
