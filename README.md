@@ -46,7 +46,7 @@ Note: this is critical to avoid lost progress!
 * Press `cmd+shift+p` and go to `Open User Settings (JSON)`
 * Add the following config to it `"ruff.lineLength": 79,`  
   
-* Install Django VSCode extensions  
+* Install Django VSCode extensions: Django, Django Template, and djLint (look for most downloaded)
   
 * [Django template language](https://docs.djangoproject.com/en/5.1/ref/templates/language/)
 * [Django filters](https://docs.djangoproject.com/en/5.1/ref/templates/builtins/)
