@@ -8,7 +8,7 @@
         <meta name="description"
               content="{% block meta_description %}Portfolio website showcasing projects and skills{% endblock meta_description %}">
         <meta name="keywords"
-              content="{% block meta_keywords %}portfolio, projects, skills, web development{% endblock meta_keywords %}">
+              content="{% block meta_keywords %}portfolio, projects, skills, education, experiences{% endblock meta_keywords %}">
         <title>
             {% block title %}
                 Portfolio
@@ -24,7 +24,7 @@
         <!-- Navbar -->
         {% include "navbar.html" %}
         <!-- Content -->
-        <div class="container mt-4">
+        <div class="container min-vh-100">
             {% block content %}
             {% endblock content %}
         </div>

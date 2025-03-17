@@ -1,0 +1,21 @@
+<div class="card">
+    {% if card.images.count != 0 %}
+        <img src="{{ card.images.first.image.url }}"
+             class="card-img-top"
+             alt="{{ card.images.first.description }}"
+             height="500"
+             width="auto">
+    {% endif %}
+    <div class="card-header">{{ award.name }}</div>
+    <ul class="list-group list-group-flush">
+        {% if award.link %}
+            <li class="list-group-item">
+                <a href="{{ award.link }}" target="_blank">{{ award.link }}</a>
+            </li>
+        {% endif %}
+        <li class="list-group-item">{{ award.association }}</li>
+        <li class="list-group-item">{{ award.issuer }}</li>
+        <li class="list-group-item">Issued {{ award.start_month }}/{{ award.start_year }}</li>
+        <li class="list-group-item">{{ award.description }}</li>
+    </ul>
+</div>

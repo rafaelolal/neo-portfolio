@@ -1,0 +1,12 @@
+{% load filters %}
+<div class="card">
+    <div class="card-header">{{ skill.name }}</div>
+    <ul class="list-group list-group-flush">
+        {% for size, count in skill|get_project_count %}
+            <li class="list-group-item">{{ size }} projects: {{ count }}</li>
+        {% endfor %}
+        {% for section, count in skill|get_section_count %}
+            <li class="list-group-item">{{ section }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+</div>
