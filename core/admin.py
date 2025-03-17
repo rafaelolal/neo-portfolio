@@ -7,6 +7,8 @@ from .models import (
     Education,
     Experience,
     Image,
+    Page,
+    Profile,
     Project,
     Skill,
 )
@@ -22,6 +24,8 @@ models = [
     Award,
     Image,
     Skill,
+    Page,
+    Profile,
 ]
 
 for model in models:

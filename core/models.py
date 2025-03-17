@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class BaseModel(models.Model):
     MONTHS = (
         (1, "January"),
@@ -39,7 +38,7 @@ class Image(BaseModel):
     image = models.ImageField(upload_to="images/")
 
     def __str__(self):
-        return str(self.description)
+        return f"{self.name} - {self.description}"
 
 
 class Skill(BaseModel):
@@ -49,7 +48,12 @@ class Skill(BaseModel):
         return self.name
 
 
-class WithImageSkills(models.Model):
+class Tag(BaseModel):
+    def __str__(self):
+        return self.name
+
+
+class WithImageSkillTag(models.Model):
     images = models.ManyToManyField(
         Image,
         blank=True,
@@ -60,17 +64,40 @@ class WithImageSkills(models.Model):
         blank=True,
         related_name="%(class)ss",
     )
+    tags = models.ManyToManyField(
+        Tag,
+        blank=True,
+        related_name="%(class)ss",
+    )
 
     class Meta:
         abstract = True
 
 
-class Project(BaseModel, WithImageSkills):
+class Profile(BaseModel, WithImageSkillTag):
+    interests = models.TextField(blank=True, null=True)
+    doing_now = models.TextField(blank=True, null=True)
+    github = models.URLField(blank=True, null=True)
+    linkedin = models.URLField(blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+
     def __str__(self):
         return self.name
 
 
-class Experience(BaseModel, WithImageSkills):
+class Page(BaseModel):
+    keywords = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Project(BaseModel, WithImageSkillTag):
+    def __str__(self):
+        return self.name
+
+
+class Experience(BaseModel, WithImageSkillTag):
     EMPLOYMENT_TYPES = (
         ("full_time", "Full-time"),
         ("part_time", "Part-time"),
@@ -93,15 +120,21 @@ class Experience(BaseModel, WithImageSkills):
     location = models.CharField(max_length=255)
     location_type = models.CharField(max_length=255, choices=LOCATION_TYPES)
 
+    def __str__(self):
+        return f"{self.name} - {self.association} - {self.start_year}/{self.start_month} - {self.end_year}/{self.end_month}"
 
-class Education(BaseModel, WithImageSkills):
+
+class Education(BaseModel, WithImageSkillTag):
     degree = models.CharField(max_length=255)
     field_of_study = models.CharField(max_length=255)
     grade = models.CharField(max_length=255, blank=True, null=True)
     activities = models.TextField(blank=True, null=True)
 
+    def __str__(self):
+        return self.name
 
-class Certificate(BaseModel, WithImageSkills):
+
+class Certificate(BaseModel, WithImageSkillTag):
     credential_id = models.CharField(max_length=255, blank=True, null=True)
     credential_url = models.URLField(blank=True, null=True)
 
@@ -109,11 +142,14 @@ class Certificate(BaseModel, WithImageSkills):
         return self.name
 
 
-class Course(BaseModel, WithImageSkills):
+class Course(BaseModel, WithImageSkillTag):
     number = models.CharField(max_length=255)
 
+    def __str__(self):
+        return f"{self.name} - {self.number}"
 
-class Award(BaseModel, WithImageSkills):
+
+class Award(BaseModel, WithImageSkillTag):
     issuer = models.CharField(max_length=255, blank=True, null=True)
 
     def __str__(self):

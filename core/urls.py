@@ -3,6 +3,7 @@ from django.urls import path
 from .model_views import (
     AwardListView,
     CertificateListView,
+    CourseListView,
     EducationListView,
     ExperienceListView,
     ImageListView,
@@ -21,6 +22,7 @@ urlpatterns = [
     path("awards/", AwardListView.as_view(), name="award_list"),
     path("images/", ImageListView.as_view(), name="image_list"),
     path("skills/", SkillListView.as_view(), name="skill_list"),
+    path("courses/", CourseListView.as_view(), name="course_list"),
     path("about/", AboutView.as_view(), name="about"),
     path("contact/", ContactView.as_view(), name="contact"),
 ]
