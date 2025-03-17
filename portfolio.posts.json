@@ -1,719 +1,407 @@
 [
   {
-    "_id": {
-      "$oid": "63603f59a352db07e887782a"
-    },
-    "description": "Being the first blog ever posted, I wanted to declare my commitment to blogging. I spent countless, stressful hours developing this site with one goal, for it to be a place where I can showcase myself but also reflect upon the events in my life. At first, I want to blog at least once a week, but my hope is to do it daily in the future.",
-    "list": "Achievement",
-    "title": "My Commitment to Blogging",
-    "body": "Body",
-    "images": [],
-    "links": [],
-    "comments": [
-      ""
-    ],
-    "likes": 10,
-    "date": {
-      "$date": "2022-10-31T00:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6360443ea352db07e887782b"
-    },
-    "description": "I am not an ambassador for brain damage, rather CTE stands for career and technical education. As you may know, I go to a vocational technical school where students have the opportunity to learn trade skills but also IT, business, med, and engineering. CTE encompasses all that. Recently, the CTE organization in NJ decided that they needed a new video for their website and came to our school to record it. My principal picked me to be an ambassador given my credentials in software engineering. I was interviewed and had a litle one-liner to add to their video.",
-    "list": "Featured",
-    "title": "CTE Ambassador",
-    "body": "Body",
-    "images": [],
-    "links": [],
-    "comments": [
-      "",
-      "636117644183e75ce4b30be6"
-    ],
-    "likes": 32,
-    "date": {
-      "$date": "2022-10-05T04:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6360453fa352db07e887782c"
-    },
-    "description": "It definitely paid off. I took the August SAT and did better than any of my practice tests, getting a 1530. However, that day I had only slept 5 hours and I knew I had more to give. Peple thought i was crazy when I said I was going to take it again. Some even said to not risk getting a lower score. However, I trusted my abilities and would know rest on the fact that I did everything to prepare. But, studying did not go very well: I never scored higher than a 1530 as I studied. Nonetheless, the day came, I took the test feeling good. Unfortunately I knew I had gotten one question wrong on the math, but was hoping for a good curve to still get an 800. The results came, and I was surprised to see the 1560, and sad to see the 790 for math as I had gotten 2 questions wrong. Either way, I am happy that I trusted and outperformed myself.",
-    "list": "Achievement",
-    "title": "SAT Score",
-    "body": "Body",
-    "images": [
-      "/images/satscore.jpg"
-    ],
-    "links": [],
-    "comments": [
-      "",
-      "6362a9ba19fc5e2f4356bd88",
-      "636ad656632de135c914c80c",
-      "6447cabad7a0118914c42ceb"
-    ],
-    "likes": 22,
-    "date": {
-      "$date": "2022-10-01T04:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "636046c9a352db07e887782d"
-    },
-    "description": "This day was honestly crazy. I do not know what was going through my head, but I decided to run two miles with my gym teacher. It was the first time I ran two miles straight, and I did it in 16:10. I have only been pracitcing speed instead of long distance for the 5k that I want to run on my birthday, but my teacher told me to definitely focus on distance. Moreover, this day was also back day, so right after running the 2 miles I went to hit some reps for my back. I started off with explosive pull-ups, and this day was the first time I ever got the bar to my hip (as you can see in the picture).",
-    "list": "Gym",
-    "title": "Highest Explosive Pull-Up",
-    "body": "Body",
-    "images": [
-      "/images/highpullup.jpg"
-    ],
-    "links": [],
-    "comments": [
-      "",
-      "6361d03e4183e75ce4b30be8",
-      "6362a59f19fc5e2f4356bd86",
-      "636ad630632de135c914c80b"
-    ],
-    "likes": 12,
-    "date": {
-      "$date": "2022-10-25T00:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6366b76d026ce8224d5853d3"
-    },
-    "title": "First Time Biking Since ED",
-    "list": "Gym",
-    "description": "Today was the first day that I biked since the college early decision deadline. Since then, I have been going to the gym with the same frequency as I was before- nearly every day. It definitely feels good to take a break, even if I'll have to start it all over again for regular decision.\nRegardless, the bike ride today was nice. I've yet to figure out the size of this park, but it takes me 10 minutes to go around it at full speed.  My heart rate stayed around 150-180 for those 10 minutes. Today, I went counterclockwise instead of clockwise around the park. I beat my time record and maybe that's because of the direction I was going in, but I don't know.\nWhile biking, I received a message from my cousin saying that I should remove all the animations from the website. Nearly wanted to cry, haha. I worked decently hard to get everything working. However, I do agree with him since it doesn't add much to the user experience. For me to keep them, they have to truly be complex and impressive.",
-    "body": "",
-    "links": [],
-    "images": [
-      "/images/biking1.jpg",
-      "/images/biking2.jpg"
-    ],
-    "likes": 5,
-    "comments": [
-      "6366d4d77413980a6065c3b4",
-      "636918b17413980a6065c3b5",
-      "6369190a7413980a6065c3b7",
-      "636ad5fb632de135c914c80a",
-      "636add1f632de135c914c80f",
-      "636add26632de135c914c810",
-      "636ae3e8632de135c914c811",
-      "636ae43b632de135c914c812",
-      "636ae45c632de135c914c813",
-      "637436f041ec095e6f417fcb"
-    ],
-    "date": {
-      "$date": "2022-11-05T04:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "636b04d1d6e356e6ad24f3b3"
-    },
     "title": "Dice Visualizer",
-    "list": "Project",
-    "description": "Tags: Javascript, HTML, CSS, Small, School\nThis is a little project that I made for my Web Design class. I feel like it took me longer than it had to, but that is definitely due to where I was and how I felt today. Our teacher was absent, so we were in a different class, and I just wasn't concentrating as much as I normally do. I also don't know what was going on with me today, but I was getting extremely frustrated at everything. When trying to figure out how to assign the position to each die on each event call, I was having a much harder time than expected. I had to apologize to some people for my tone, and in noticing how I was off, I just tried to abstain from interacting with others. Maybe I just did not sleep very well today. The phone did give me a sleep score of 50-something out of 100.\nRegardless, when I got home, I took the time to stay outside for a second and just breathe. When I came back inside, I had all the logic fresh in my head. It took me barely any time to finish the code. I'm feeling pretty good about how it came out. There is definitely much more I can do, like I was given the idea to make this into a cookie clicker game. But I believe my efforts will be more worthwhile being applied to other things.\nI have been watching this YouTuber called Hyperplexed. He is a very talented front-end developer and content creator. His videos are succinct, but informative. I look forward to seeing his content all the time as I have noticed that I am becoming more confident at designing in the web.",
-    "body": "",
-    "links": [
-      "https://ralmeida.dev/dice",
-      "https://www.youtube.com/c/Hyperplexed"
+    "start_month": "November",
+    "start_year": 2022,
+    "skills": [
+      "Javascript",
+      "HTML",
+      "CSS"
     ],
+    "description": "The Dice Visualizer is a web-based project that simulates dice rolls.  I developed this project for a Web Design class, handling all of the coding and logic. It was created to fulfill a class assignment and demonstrate web development skills.  Through this project, I improved my front-end development skills and learned to manage frustration and persevere through coding challenges.",
+    "links": "https://ralmeida.dev/dice",
     "images": [],
-    "likes": 12,
-    "comments": [
-      "636bbacffb2b4a37d2659bdd",
-      "637420bd41ec095e6f417fbc",
-      "637423f641ec095e6f417fbd",
-      "6374241141ec095e6f417fbe",
-      "637424e541ec095e6f417fbf",
-      "637424f741ec095e6f417fc0",
-      "63742ff441ec095e6f417fc2",
-      "6374307041ec095e6f417fc3",
-      "637430a441ec095e6f417fc4",
-      "6374314a41ec095e6f417fc6",
-      "637436c341ec095e6f417fc9",
-      "637436e141ec095e6f417fca"
-    ],
-    "date": {
-      "$date": "2022-11-08T05:00:00.000Z"
-    }
+    "tags": [
+      "small"
+    ]
   },
   {
-    "_id": {
-      "$oid": "63746db8632f4d623d72b1fd"
-    },
-    "title": "Spartan Preparation",
-    "list": "Gym",
-    "description": "Today was the second time I ran two miles since hitting my first decent explosive pull-up. It was about 9pm when I headed out, a warm 47 degrees. By the time I came back, probably 30-40 minutes later, it got better- 45 degrees. But, just like last time, I was able to keep the same pace through all half-miles. The park that I run at has these conveniently sized tiles that I use to keep pace. I try to cover the small tiles in one stride, and three large ones in four strides. And no different from last time, I was not feeling any muscle fatigue, something struggled with, especially in my calves, when I first began running. Nonetheless, my heart and lungs burnt. My heartrate was at ~180 immediately after the run.\n\nI think it is probably one of the best runs I have had- I only thought about giving up once! It was on the fourth eighth of my second mile. I got sick on Halloween, and I am still producing a lot more mucus than normal. As I ran, it would get hard to breath air through my mouth because of the amount of mucus in my throat. Every other quarter I was spitting out the biggest loogie ever! Regardless, I did not give up. I thought about how I had already run so much, all I needed was another half mile to finish. I made sure to remember the spot that I thought about giving up, so that I could feel better when I reached it again (I was running around the block).  I was also yelling \"boat crew number six,\" right after passing this tree every half mile. This line comes from one of David Goggins' story while in Navy SEAL training.\n\nToday was another PR! 14:56.99. The splits were: 3:39.41, 7:24.14, 11:10.26, 14:56.99. I measured this using my trust G-Shock, which unfortunately is dying. I will get it recharged, but I am excited that I will hopefully be getting a new watch soon. I have a sports-watch (the one I use when running), a more robust one for daily use, and I am just missing a nice watch for special occasions.\n\nAlso, today was the first day I tried a cold bath. I showered cold consistently while I was at Amherst, for about 5 weeks maybe. I do not know if it benefitted me a lot. But I only had very minor injuries even though I was more active than ever at Amherst- so maybe it did help. Regardless, I had the idea of taking a cold bath when I got home and thought about how i had already accumulated one victory, might as well get another. I began doubting why I made that decision. I started thinking about what benefits would it bring me to take this single cold bath. At the end, I concluded that the fact that I did not want to do it, was good enough for a reason. I stayed in for over 10 minutes but under 15, not exactly sure. My lower back, which I had an injury a while back began hurting. So did my knee. But that is normal when your joints get cold. I honestly felt good after. There are countless studies that show a link between cold baths and pleasure hormones. I slept well that day, and I'll try to keep this up for the upcoming Spartan Race for my birthday!\n\nI am a little upset regarding the race though. I invited countless people, but it seems like only me and two others are going to run, maybe even just me and one more person. I understand that the ticket is expensive, but I know none of the people I asked have money issues. But, just from their reaction when I said I am running a 5k for fun on my birthday, I could tell they would not want to come.",
-    "body": "",
-    "links": [],
-    "images": [
-      "/images/stopwatch.jpg",
-      "/images/heartrate.jpg"
-    ],
-    "likes": 20,
-    "comments": [],
-    "date": {
-      "$date": "2022-11-15T00:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "637bbdfa632f4d623d72b1fe"
-    },
-    "title": "A Gift: Blogfolio Updates",
-    "list": "Project",
-    "description": "Tags: Next.js, MongoDB, Javascript, HTML, CSS, Large, Personal\nWhat better way to celebrate your birthday than pushing updates to your personal website? Well, that is how I spent the day today. I made major changes to the forms and toasts. Toasts are the little messages you see on the bottom right after an action is completed or fails.\nFor some reason I created all the forms in this website without using the form tag. One day that thought just came to my head, and I put it as number one priority in my to-do list to change the forms to actually be in a form tag. This means that the forms are automatically checked before you submit them, decreasing the amount of boilerplate code I need to check users' inputs. Additionally, generally speaking, the experience of leaving a comment and a message have greatly improved for the user. On my side, the experience of making a post has also improved.\nThe toasts were extremely clunky. I had to manually set the message and color for each one in each place of the code. Now, I have it so that it takes in the message and status of the HTTP response that the action a user has taken returns. This heavily decreases the amount of code I need to have a toast in a page, and also makes this property a lot more scalable. I can easily change the colors of all toasts, messages, and how many show up. One thing I still want to do, is make the toasts stack if there are multiple of them at the same time. As of now, they simply sit on top of each other.\nChanging the toasts also made me change the API ends. They were not uniform and had code that did not make sense or was not even used. So, I cleaned those up significantly.",
-    "body": "",
-    "links": [],
-    "images": [],
-    "likes": 36,
-    "comments": [
-      "63979c6df09fe86d2a7daad1"
-    ],
-    "date": {
-      "$date": "2022-11-16T00:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "637bbfc5632f4d623d72b1ff"
-    },
-    "title": "The Big Day: Spartan Race",
-    "list": "Featured",
-    "description": "Check out the links above and the images below as today I ran the 5k-20-obstacles-Stadion Spartan Race and discovered much about myself. The morning could have started better. I should have slept earlier. But the day before, I was about with some friends ice-skating and messing around in the street. Regardless, there was no way I would not wake up energetic, and ready to take on anything. I felt good, strong, and confident; it was indeed a feeling I had not felt in a while. Although it was a hassle to get everyone's tickets, train timings, etc., everyone coming with me successfully met at NY Penn Station to take the train to Citi Field. When we got there, I was super stressed. We arrived at 11:05 and my race would begin at 11:15. There was no way we would even make it to the stadium in time. Now imagine going through the registration line, which was huge. Luckily, as we registered, our run would begin at noon.\nWe got to the start line at like 11:55, so I warmed up and stretched a bit before I began. After warming up, we crossed the start line and got to this point where this lady gave us some basic instructions. At the end of her speech, she said, \"I'm going to yell, 'Spartans! What is your profession?' And you all are going to say, 'Haroo! Haroo! Haroo!\" Just like in the movie. The energy was amazing.\nI was expecting to finish the race in about thirty minutes. I could run two miles in less than fifteen, so I thought I could do three in twenty-five, plus the time I expected to take on the obstacles. However, it took me 68 minutes to finish a 5k, three-mile run! The obstacles were much harder than I expected. As I was getting ready to start, I heard the announcer in the stadium saying that the person who finished in second place did it in ~50 minutes. Below are all the obstacles in no order:\nSmall wall jump, medium wall jump, large wall jump, monkey bars, monkey rings, rope climb, rope ladder climb, javelin throw, atlas carry, water jug carry, sandbag carry, pushups, weighted burpees, hand walk, ladder crawl, box jumps, floor is lava (walking over bars), medicine ball slam, rock climbing, pulley lift.\nIt is a lot, but just a list does not do justice to how hard some of these were. All the exercises were fifteen repetitions. The atlas carry was a 100-pound medicine ball you had to carry for about 50 feet. The weighted burpees were with 55-pounds. The monkey bars were so thick and far apart that my teammate did not have a long enough arm span to reach the following bars. The rope climb was about twenty feet tall. The tall wall jump was at least seven feet tall and much taller than me.\nDuring the race, I only genuinely thought about giving up once. Luckily, I had the idea of video calling my brother, so he, my mom, and my girlfriend could watch as I ran since the spectator area did not allow them to see me throughout the course. My brother noticed I noticeably slowed down and began motivating me. It was really something to have him in my ear. Additionally, I thought about giving up between the first and second water stations. I decided not to drink in the first station but had to in the second. The second station also had these excessively salted nut bars. I have seen before that runners eat salt during long races. I felt new after drinking and eating the bars. I was literally sprinting after that.\nMoreover, right after the race, I had the idea to Livestream instead of video calling. The video quality would have been better, and everyone could see the live stream on their own device. Now, I plan on getting an action camera and a headband to record my POV in future adventures. It will also be fantastic for the blog!\nRight before the race, my brother complained about how cold it was— 32 degrees. He was saying that I better win this damn race! I told him there was no way. I looked to the side and saw this tall, skinny dude. 50% of his weight was all in his calves— he was a runner. He had tights, a long sleeve, an arm phone holder, a smartwatch, headbands, everything! I said, \"look at that guy, no way I can beat him!\" Unexpectedly, I saw him during the race and passed him. I am unsure if I placed better than him because the race lacks structure since everyone starts at different times. All I know is that I passed him.\nWhen I was in line waiting to do the rope climb. People would go up, try it, and fail. People would try again, and I saw a group discussing strategies to rope climb. After this lady failed, she said I could go ahead as she saw I was eager to hop on. I noticed she did not immediately run off to the next obstacle but instead stayed to see me. When I got on the rope, I just immediately when up it and rang the bell at the top. People in line were clapping and cheering. It was an incredible experience.\nAfter doing the atlas carry, I waited for my teammate to finish. As I turned back, I saw this younger kid, probably 13-14. He was about 5 feet from the line, but dropped the ball, tripped over it, fell, and hurt his knee. I picked him up, and he began to run off. I yelled for him to come back and carry the ball, but he did not know how to pick it up. I taught him, and he was able to get the ball back to the starting position.\nI can go on and on about everything that happened today, but I will leave it at this. I have no words to describe this experience. I learned much about myself. I was ready for the hardest physical and mental challenge of my life. However, it was easier than I expected. I was in the 84th percentile overall, ranking 737/4489. I ranked 592/2855 for my gender and 58/268 for my age group. I could have done way, way better. Half the time I recorded the scenery and obstacles and waited for my teammate. Either way, I did not necessarily want to win, just enjoy the experience to the fullest. The main lesson from that day is that my limit is much higher than I thought. It was easy to jump the tall walls, I felt power in my grip as I did the monkey bars, I was blazing fast as I crawled up the stairs, and I was doing explosive clapping pushups to show off to my brother, mom, and girlfriend, even though I had been racing for forty minutes already.",
-    "body": "",
-    "links": [
-      "https://youtu.be/3U260UfyL-A",
-      "https://youtu.be/qfui56KJIQ8"
-    ],
-    "images": [
-      "/images/spartanMonkeyBars1.jpg",
-      "/images/spartanRunning.jpg",
-      "/images/spartanMonkeyBars2.jpg",
-      "/images/spartanGauntlet.jpg",
-      "/images/spartanBleachersDown.jpg",
-      "/images/spartanEveryone.jpg",
-      "/images/spartanFlexing2.jpg",
-      "/images/spartanHome.jpg",
-      "/images/spartanFlexing1.jpg",
-      "/images/spartanRings.jpg",
-      "/images/spartanBleachersFlexing.jpg",
-      "/images/spartanBleachersHangLoose.jpg",
-      "/images/spartanCommitted.png"
-    ],
-    "likes": 192,
-    "comments": [
-      "63979d0bf09fe86d2a7daad3",
-      "63979d23f09fe86d2a7daad4",
-      "63979d23f09fe86d2a7daad5"
-    ],
-    "date": {
-      "$date": "2022-11-19T00:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "63b9f60b566f2d30309f856c"
-    },
     "title": "Minas Gerais Tourism",
-    "list": "Project",
-    "date": {
-      "$date": "2022-03-10T00:00:00.000Z"
-    },
-    "description": "Tags: Django, Python, Bootstrap, Ajax, Javascript, HTML, CSS, Large, Competition\nThis is the project that I created to win the NJ FBLA Coding & Programming 2022 competition.\nIt was definitely a daunting task. When I read the prompt, I did not interpret that FBLA was essentially asking for a simple version of TripAdvisor. I cannot recall properly the idea I had, but it involved using the user's location and Google Maps API to create a list of nearby places they can visit. This list would be categorized into museums, food, leisure, etc. However, after my FBLA advisor saw this and told me to scrap it completely, I would have to sacrifice a few things to catch up to the other competitors.\nI remember searching for Python web frameworks. At the time, Python was the language I was most comfortable with. I found a Django Udemy course, and the following week was winter break. I finished the 35-hour course in one week. I spent over 8 hours a day on the computer watching videos and practicing what I learned.\nThis was during the COVID time, and though it is really sad that my school had to close for the coming two weeks because of increased cases, I saw it as a good opportunity to spend even more time coding. It is not a good look to say this, but to be honest, all I did all day was code, even during my online classes. This was definitely the lowest point for many of my relationships, especially with my girlfriend. I cannot even remember interacting with her for those three weeks. Regardless, I think it was worth it, and I am lucky I have someone by my side who appreciates and understands my drive and work ethic (despite it being a little too much sometimes).\nIt was another month of coding until I had to present the project to the advisors and another week until the competition. And when competition day came, I was feeling confident. Just before the competition, I was getting very nervous, so I ran two miles to ensure I was physically exhausted and not jittery when presenting. I took a shower minutes before the big presentation and dressed up again. I remember that the presentation was delayed by about half an hour. I saw people going in confidently but coming out with unsure expressions. It was a hard reality to take that they were struggling in there. The more people that came out, the faster the other competitors in line grabbed their computers and began typing, trying to make last-minute changes to their programs. However, I knew that whatever I did at that point would not win the competition, but would be better off shutting my computer and preparing myself mentally to give a good presentation.\nWhen it was time to present, I was ready and felt confident. The presentation actually went a few seconds over time because I had some technical issues. And, at the end, there was a little Q&A time. My advisors constantly kept reminding me to feel confident as I was the most knowledgeable person in the room regarding my project and the technologies I used. However, one of the judges was actually a software engineer and even worked in Brazil. I talked with him in Portuguese for a while, but he asked me some very hard questions regarding the project's specific technology and stuff. He mentioned that I used Argon2 to encrypt the password of users and asked to see the encrypted passwords in the SQLite database. However, at that moment, I did not have a super user to see the database as I had cleared in the night before. So, I said I could create one but it would take a second. Fortunately though, the judge's last question was, \"why did you decide to use such advanced features and technologies?\" All I could say was, \"I thought that was the expectation.\"",
-    "body": "Body",
-    "links": [
-      "https://ralmeida.dev/mg_tourism"
+    "start_month": "March",
+    "start_year": 2022,
+    "skills": [
+      "Django",
+      "Python",
+      "Bootstrap",
+      "Ajax",
+      "Javascript",
+      "HTML",
+      "CSS"
     ],
+    "description": "The Minas Gerais Tourism project is a web application similar to a simplified version of TripAdvisor, designed to promote tourism in Minas Gerais, Brazil. I was the sole developer, responsible for all aspects of the project, from learning Django to implementing the front-end and back-end.  It was created for the NJ FBLA Coding & Programming 2022 competition. This project significantly enhanced my web development skills, particularly in using Python web frameworks and managing a large-scale project independently.",
+    "links": "https://ralmeida.dev/mg_tourism",
     "images": [
       "/images/mg_tourism.png"
     ],
-    "likes": 11,
-    "comments": []
+    "tags": [
+      "large"
+    ]
   },
   {
-    "_id": {
-      "$oid": "63b9fae5566f2d30309f856d"
-    },
     "title": "Peru Spanish Project",
-    "list": "Project",
-    "date": {
-      "$date": "2022-06-17T00:00:00.000Z"
-    },
-    "description": "Tags: Django, Python, Bootstrap, Ajax, Javascript, HTML, CSS, Medium, School\nThis was the project I presented to get a 100 on my Spanish III final project.\nNot too long after my MG Tourism project, I was still heavily invested in web development with Django. I used much of the same code for this project to ensure I fit into the deadline. The idea is that you can explore Peruvian history's history, customs, and places through the years. It has an interactive timeline that updates the contents at certain years.\nTo present this project, we had a little jeopardy given where the students would use the advanced search feature to find the answer to the questions as we played the game. ",
-    "body": "Body",
-    "links": [
-      "https://ralmeida.dev/peru"
+    "start_month": "June",
+    "start_year": 2022,
+    "skills": [
+      "Django",
+      "Python",
+      "Bootstrap",
+      "Ajax",
+      "Javascript",
+      "HTML",
+      "CSS"
     ],
+    "description": "The Peru Spanish Project is a web application that explores Peruvian history, customs, and places through an interactive timeline. I adapted code from my previous MG Tourism project to create this, handling all development aspects.  It was created as a final project for my Spanish III class. This project reinforced my Django skills and demonstrated my ability to adapt existing code for new purposes.",
+    "links": "https://ralmeida.dev/peru",
     "images": [
       "/images/peru.png"
     ],
-    "likes": 10,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "63ba2d952273b7d250776762"
-    },
     "title": "Beauty and the Chic Webdeisgn Project",
-    "list": "Project",
-    "date": {
-      "$date": "2022-11-17T00:00:00.000Z"
-    },
-    "description": "Tags: Next.js, Javascript, HTML, CSS, Medium, School\nThis is a project I am currently working on. It will probably take a few months to finish it since I only work on it during class. it is being made with Next.js, TypeScript, and SCSS.\nMy webdesign teacher has worked with clients before and after teaching us the basics of HTML, CSS, and JavaScript, he thought it would be a good idea for us to tackle a group project. So he got some information from his clients, gave us the information, and told us to get started on a website. We decided to create a website for a salon. It will include a gallery of the work, a description of each worker, and a list of services.\nWe have got some very good ideas for it. I am working on the database and making it so that the owner can edit every piece of text on the website. But, while working with the design team I had the idea to make the gallery the background of the website, and to create a button than when pressed, all the components of the website rise up or lower down to make space for the gallery, creating a beautiful animation.\nThe project is coming out nicely, and the teacher is excited with our work. When it is complete, I will update this post.",
-    "body": "Body",
-    "links": [],
+    "start_month": "November",
+    "start_year": 2022,
+    "skills": [
+      "Next.js",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "SCSS"
+    ],
+    "description": "The Beauty and the Chic project is a website for a salon, featuring a gallery, worker descriptions, and a list of services. I am working on the database and making it so the owner can dynamically edit the website's text. This is a group project for my web design class, aimed at providing practical experience with client-based web development.  This project is teaching me about collaborative web development, database management, and creating dynamic, user-editable content.",
+    "links": null,
     "images": [],
-    "likes": 7,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "63ba52d02273b7d250776763"
-    },
     "title": "Capstone Computational Thinking Project",
-    "list": "Project",
-    "date": {
-      "$date": "2022-12-12T00:00:00.000Z"
-    },
-    "description": "Tags: Django, Next.js, Python, Ant Design, TypeScript, HTML, CSS, Medium, School\nI am creating a custom tool to collect data for my Capstone Research experiment. The objective is to find a correlation between code reading and computational thinking skills.\nThis custom tool is being made with Next.js and SQLite through Prisma database, and uses a neo-brutalism design (cuz why not). Each experiment participant will receive a unique ID that they will use to login to the website and complete their activities. They will do a pretest and posttest solving a competitive coding problem, and through the experiment they will do code reading and peer-review activities.\nThe reason why I had this idea in the first place is that I have noticed how unlike in English class were we read more than write, in Computer Science classes, we code more than read. It only makes sense to read more than write because that is how the average human is, we consume more than create. Therefore, you must be a better reader than writer, but this philosophy is not applied in coding. Additionally, I have yet to have a personal experience in learning how to read code, always how to write.",
-    "body": "",
-    "links": [],
+    "start_month": "December",
+    "start_year": 2022,
+    "skills": [
+      "Django",
+      "Next.js",
+      "Python",
+      "Ant Design",
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ],
+    "description": "The Capstone Computational Thinking Project is a custom tool designed to collect data for a research experiment correlating code reading and computational thinking skills. I initially built the project entirely in Next.js, but later rebuilt the backend with Django Rest Framework and the frontend with Next.js and Ant Design, with significant assistance from my cousin.  The tool is used to conduct my Capstone Research experiment, involving pretests, posttests, code reading, and peer-review activities. This project taught me the importance of choosing the right frameworks, the value of mentorship, and the benefits of refactoring code for improved structure and efficiency.",
+    "links": "https://ralmeida.dev/capstone",
     "images": [
       "/images/capstone.png"
     ],
-    "likes": 10,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "63eac92c80e4b43c171606ea"
-    },
     "title": "Update: Capstone Computational Thinking Project",
-    "list": "Project",
-    "date": {
-      "$date": "2023-02-13T00:00:00.000Z"
-    },
-    "description": "This is an update to my previous post regarding my capstone experiment. There have been drastic changes to the whole structure of the project, and it is a pretty funny story of how I got there. First, my cousin, a software engineer, came from Canada to spend my grandmother's (his godmother) birthday with us. Whenever he was around, I took the opportunity to show him the projects I was proud of. He loved all of them and gave me some fantastic ideas, especially for my FBLA 2023 one, but being as experienced as he was, he roasted the structure and design choices I made on every project!\nThe weekend after the day he left, he texted me saying he would be free and asked if I wanted help with any of the projects I had. However, he added, \"matter of fact, let's just start it from the ground up because whatever project you showed me, I can recreate it in one day.\" Of course, he was joking, but I did not know how to feel, offended or impressed! Regardless, it felt like a blessing sent from the Divine when he asked that. That week, I was stressed with this capstone project. I needed it done ASAP, but there were so many little issues that I felt overwhelmed. I believe I have never felt like that.\nAt first, I was reluctant to start the project from scratch. I knew firsthand how hard it was to get it to the point it was, and it was not even close to being finished. However, the more I listened to my cousin, the more convinced I was that starting from scratch would be a good idea. And also more confident in his skill in helping. So firstly, we began by thinking about the backend. Initially, my capstone project was all Next.js. But my cousin kept telling me that no one ever does that, especially when much more powerful frameworks for a backend exist, like Django Rest Framework. Having created the MG Tourism project that won me first place in the FBLA 2022 Coding & Programming state competition, I felt comfortable following his lead in Django. Unbelievably, we recreated the backend I had in Next.js in Django in just a few hours, less than a day!\nNext up was to recreate the frontend, which we would stick with Next.js. The twist was that instead of using Bootstrap for all the CSS and components, my cousin recommended Ant Desing. The experience using it at first could have been better. This library was initially created in Chinese, so many variable names seem slightly different. For example, Ant has it as small, MIDDLE, or large instead of small, medium, or large. This is just a tiny thing, but imagine how many other instances are around the library. Overall though, it was just new to me, so I really struggled. One time, I was having a big issue with the table that displays all the questions. At that point, I was so frustrated, I was ready to scrap everything and go back to whatever I had or stop using Ant and go back to Bootstrap. However, I got on a call with my cousin, and he said this: \"zoom out your code a bit so I can see everything.\" Then he went silent, \"I'm thinking, give me a second.\" Then he started telling me to move things around, create a function here and put a variable there, and in just a few minutes, he solved the problem that wasted my whole day!\nTo conclude, it was a blast recreating this with my cousin. It may look like I did not learn a lot since I used the same frameworks I have used before, but just being in his presence and hearing his thought process out loud, I learned invaluable things, things I would only have learned with years of experience. Now the project is finally up and running since posting this, and it is in a state I could have never imagined.",
-    "body": "",
-    "links": [
-      "https://ralmeida.dev/capstone"
+    "start_month": "February",
+    "start_year": 2023,
+    "skills": [
+      "Django",
+      "Next.js",
+      "Python",
+      "Ant Design",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Prisma"
     ],
+    "description": "This is an update to the Capstone Computational Thinking Project, detailing significant changes to the project's structure. I collaborated with my cousin, a software engineer, to rebuild the project from scratch, switching the backend to Django Rest Framework and using Ant Design for the frontend. The purpose of this update was to improve the project's architecture and scalability. Through this collaboration, I learned about backend frameworks, frontend design libraries, and the value of expert guidance in software development.",
+    "links": "https://ralmeida.dev/capstone",
     "images": [],
-    "likes": 100,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "6430d3d23230f79cdbf9497c"
-    },
-    "title": "Columbia ED Decision",
-    "list": "Achievement",
-    "date": {
-      "$date": "2022-12-16T00:00:00.000Z"
-    },
-    "description": "Yesterday I got my early decision from Columbia. I had a live stream set up, and I had the whole gang watching. I even had family from Brazil there. And before setting up this live, some of my friends said that I was “crazy” for that- “what if you do not get accepted.” They said it would be embarrassing and that I should only share the good news when it came. I believe my friends thought that way as they felt that a rejection would mean I would lose something. The rejection would signal an attack on something I have been building. And, if they described it as embarrassing, they were not talking about something internal. This is really the only conclusion I can sensibly come to. Regardless of their thoughts, it does not make my friends bad, wrong, or worse than someone else. However, I believe they will change their mind like I feel I have.\nIt is not a matter of being cocky or humble; it is simply the truth: I have achieved much. I am proud of myself, and I firmly believe I actively worked for my accomplishments. I credit this aspect of me to working out, but that is a story for another blog post. But one thing I want to say is that working out taught me to leave my ego at the gym door. Gymgoers say this because an egotistical lifter lifts with an ego stronger than themselves, which always results in an injury… But this saying goes beyond not hurting yourself; it also involves being comfortable with telling yourself that you cannot (lift this weight), that you did not (lift this weight), and that sometimes you will not (lift this weight). I also firmly believe that this mentality opens doors for growth.\nI am babbling about this gym and ego stuff because this allowed me to stream opening the letter regardless of the decision. I am comfortable with accepting I did not get in. Moreover, I also said I have achieved much, and in doing so, people around me indeed built expectations of what I should achieve. Not meeting such expectations is another source of “embarrassment” I got rid of long ago.\nWell… After all the B.S. I said above (which I honestly (at least try to) believe in), I was still upset after I opened the letter. Man, my heart was beating slowly but very powerfully. I could hear it and felt it everywhere in my body. And despite that, I was the only person in that situation with an upbeat spirit; literally trolling all viewers and family in the room by hovering my mouse over the button, selecting the text, and faking clicks around the “View Update” text. It felt like others were tenser than me. Regardless, all the great moments I imagined biking around Central Park after a busy day at Columbia were destroyed. I got deferred.\nMaybe I should not have had any expectations. Maybe I should have worked harder to achieve that goal. Maybe this, maybe that… That is all I thought about. I thought about all that in a split second, though. I kept a smile on my face and did not particularly feel anyway. Although, that is definitely not a good experience.\nI can stay here typing away everything I felt, thought, and did. However, the main takeaway is regarding something I now value more than ever before: vision. I lost vision. I lost sight of what really mattered. If I felt anyway negative, neutral, or potentially positive. Whatever that feeling I felt was, I only felt it because I lost sight of what truly matters. What matters is what I do to myself, where I take myself, and ultimately being able to provide and give back to my family. I had a temporary case of myopia; for some reason, all I could see ahead of me was the decision. I forgot that everything I lived and my family, especially my mother, went through was for something far greater than Columbia. And although it was not the decision I wanted, I would not have realized this if I had gotten accepted. So, it may be better that I got deferred and gained this insight.\nTo conclude, I wanted to keep working for another month anyways. All I dreamed of and asked for was to spend day after day banging out all these other applications and have no rest. This was not the time to catch a break, and maybe I was waiting for a tiny little break. Back to work we go!\n“There is only one way to avoid criticism: do nothing, say nothing, and be nothing.” - Aristotle.",
-    "body": "N/A",
-    "links": [],
-    "images": [],
-    "likes": 16,
-    "comments": []
-  },
-  {
-    "_id": {
-      "$oid": "6431a10997d15763b2bfa2e3"
-    },
     "title": "Event Manager",
-    "list": "Project",
-    "date": {
-      "$date": "2023-03-09T00:00:00.000Z"
-    },
-    "description": "Tags: Django, Next.js, GraphQL, Python, TypeScript, HTML, CSS, Large, Competition\nEvent Manager is the largest project I have created for a competition. It was created for the 2023 FBLA Coding & Programming Competition. The prompt was to create an application that would increase student involvement in school events, such as sports games, get-togethers, and speakers.\nI ended up creating a project with countless features:\n⋅ Animated page with a random prize winner\n⋅ Profile page for students with a personalized calendar\n⋅ Group creation and group-shared calendar\n⋅ Advanced event search and sign-up\n⋅ A points shop where students could use the points they accumulated from attending events\n⋅ Admin page where teachers could manage student accounts\n⋅ Dynamic leaderboard for the students with the most events attended\n⋅ Markdown rendering for teachers to post school news\n⋅ Major announcement popup for teachers to post any breaking news\n⋅ Interactive help page with OpenAI API and an intelligent Q&A search that highlights the words you are typing on the questions and answers and also reorders them depending on the best match\n⋅ Much more!\nBesides creating a fantastic project, competing at the state and the national level was a unique experience I will not forget. It came with a lot of reflection to do and takeaways.",
-    "body": "N/A",
-    "links": [
-      "https://drive.google.com/drive/folders/1txaHZD2JNFESvQmFJpQGpbzGv2tBOBL8?usp=share_link"
+    "start_month": "March",
+    "start_year": 2023,
+    "skills": [
+      "Django",
+      "Next.js",
+      "GraphQL",
+      "Python",
+      "TypeScript",
+      "HTML",
+      "CSS"
     ],
+    "description": "Event Manager is a web application designed to increase student involvement in school events. I was the sole developer, responsible for creating features like a personalized calendar, group creation, event search, a points shop, an admin page, a leaderboard, and an interactive help page with OpenAI API integration.  It was created for the 2023 FBLA Coding & Programming Competition.  This project significantly expanded my full-stack development skills and taught me about project management, competition strategy, and the importance of reflection.",
+    "links": "https://drive.google.com/drive/folders/1txaHZD2JNFESvQmFJpQGpbzGv2tBOBL8?usp=share_link",
     "images": [
       "/images/fbla2023.jpg"
     ],
-    "likes": 23,
-    "comments": [
-      "6447caf6d7a0118914c42cec",
-      "6447caf8d7a0118914c42ced",
-      "6447caf8d7a0118914c42cf7",
-      "6447caf8d7a0118914c42cf2",
-      "6447caf8d7a0118914c42cf3",
-      "6447caf8d7a0118914c42cf5",
-      "6447caf8d7a0118914c42cf6",
-      "6447caf8d7a0118914c42cf0",
-      "6447caf8d7a0118914c42cee",
-      "6447caf8d7a0118914c42cf9",
-      "6447caf8d7a0118914c42cef",
-      "6447caf8d7a0118914c42cf4",
-      "6447caf8d7a0118914c42cf1",
-      "6447caf8d7a0118914c42cf8",
-      "6447caf9d7a0118914c42cfa",
-      "6447caf9d7a0118914c42cfb",
-      "6447caf9d7a0118914c42cfc",
-      "6447caf9d7a0118914c42cfd",
-      "6447caf9d7a0118914c42cfe",
-      "6447caf9d7a0118914c42cff",
-      "6447caf9d7a0118914c42d00",
-      "6447caf9d7a0118914c42d01",
-      "6447caf9d7a0118914c42d02"
+    "tags": [
+      "large"
     ]
   },
   {
-    "_id": {
-      "$oid": "6436315e6dabc53af899d860"
-    },
-    "title": "The Final College Decision",
-    "list": "General",
-    "date": {
-      "$date": "2023-04-01T00:00:00.000Z"
-    },
-    "description": "It finally ended. I essentially have been dealt all the cards of this game and can finally begin thinking of the next best move I can make. I will begin by talking more generally about my experience and then work down to specific days and ideas I came across.\nFirstly, it is all very weird. The things you see and the stories you hear are insane, yet so believable for someone that is going through the process. For someone that will be entering it, or will never experience it, it is a lot to take in. So much so, that it would take days to understand one of the stories I am talking about.\nYou will see amazing people not getting accepted to schools they truly deserve. As hard as it is to believe it, you will also see the true potential of many who you may have thought that a certain school was a distant dream to them. You will also see lots of contradictory results for essentially all students. Given this, there is only one thing I can assure someone about the end of this process: you will see how stupid you were before it all started, no matter how much you prepare. If you truly take the time to reflect on everything that is happening, there is so much potential to mature that, although college is not everything in life, at 18, it will change how you see things.\nI guess I will start on 3/14, pi day (known as MIT Day for applicants). MIT is a dream school for anyone that wants to be challenged and do computer science. But because of how hard it is to get into, I really had to internalize the things I talked about in my blog post from ED Columbia. And just like the decision from Columbia, I set up another big live stream. And when I opened the decision, it was Columbia all over again. The main feeling I remember having is wanting to get a break but essentially being denied it; I got waitlisted. I even left a comment in the blog post linked above. It may sound a little cringe and childish, but thinking about it really helped me stay focused and motivated to work. Additionally, these two occurrences of deferral and waitlist helped me get more comfortable with discomfort. They helped me continue working despite being tired and wanting a break.\nThen came Bowdoin. It is somewhat of a disgusting story, but bear with me… Get it? Their mascot is a polar bear. Extremely funny jokes aside, I knew the exact time it was coming out, 7pm. I would be teaching coding at this time, but that was not a big deal. I could just quickly check the letter and continue the lesson as normal. However, I had an inexplicable belly ache the second it hit 6:55pm. I excused myself from the class, and just gave them a quick exercise to keep them occupied. I then went to the bathroom and opened the portal. I got in! The second I saw that, I did feel extremely happy, but no type of overreaction. However, an exact dot in my forehead started hurting. It was the weirdest headache I ever had. And then, my nose started bleeding. I do not know if the belly ache, headache, and nosebleed were all coincidences, but it was definitely interesting. Regardless, it was the first acceptance that I got, and I finally got rid of that feeling that maybe I would not be fit to go anywhere or would not end up anywhere that would truly challenge me. I had a top school wanting me. I believe that after the previous two decisions, but especially this acceptance, I got number to everything else.\nThe next day came Case Western, Oberlin, and Williams. I noticed I had received my update to them while sitting at the table of an Apple Bee’s with some friends. Just like how I am in the live streams, I felt fearless, and just told them, “You, I just got my decision from Case Western, let’s see it.” When I said that, everyone broke their necks. It was hilarious. So, I opened it and got accepted. Everyone was excited, and my friend asked, “when is the next one?” As he said that I saw an email from Oberlin, so I told him, “It’s right now!” The internet was painfully slow, which also made the situation more tense, but I also got admitted. I was feeling happy. And then he asked the same question again, and I told him, “It’s right now again, I got an email from Williams!” We checked, and I got rejected. But regardless of the rejection at the end, I was ecstatic. But once again, at the table, all my friends talked about is how crazy it is that I opened the letters right there in front of them and had no reaction.\nA few days later came Wake Forest. I will keep it brief; I would have loved to be accepted, but I was straight up rejected, not even put in the wait list. I personally felt I had a good shot of being admitted. I had the scores, Wake Forest is a Golden Door Scholarship partner, and I even attended their exclusive meetings with Golden Door (and asked amazing questions). However, I think I really messed up in my interview- I did not prepare at all. In the email, they said the presentation was going to be “light” and “easy going.” However, I was getting asked some very tough questions. I did know why I wanted to attend Wake Forest as I had written my essays for them. But maybe another thing is that, because I did not prepare, I was more nervous than normal.\nTufts came out shortly after. I also felt that my application was strong. I did a lot of research on them, stalked their social media pages, talked with a lot of current students, and had quality stuff to write about. I got denied though. And, at this point during the application process, the rejections, even from schools that I truly wished I had been accepted to were not bothering me.\nBrandeis came out the next day, and I got accepted. I took part in their fly-in program. They essentially paid for a plane ticket for me to sleep there two nights in someone’s dorm. I met a lot of amazing people and had a great time learning about the schools and talking with the coolest hosts (Brandeis undergraduates) ever. I also had the opportunity to do an interview there. I had done some research on the school before attending, and there I made sure I asked the undergraduates about their experience and found an undergraduate in a similar situation to me when it comes to immigration status. So, despite not directly preparing for the interview as the process for applying for it was literally one hour before I had it, I felt well prepared. At the time, that was the second interview I did. My first was the one for Thrive Scholars. And although I felt that the Thrive Scholars one went well, this one was better by leaps and bounds. Although Brandeis is a top institution, it was on the lower end of my application list. Nonetheless, I was ecstatic when I got admitted. This was also a decision that I opened at a restaurant table.\nShortly after, I very unceremoniously opened my UNC Chapel Hill letter. Honestly, I do not even remember exactly what I was doing. I had heard a lot of talk about this school because of the business community in my high school. It is a nationally ranked business school, and very hard to get into. So, I was very happy when I read that I was admitted! It is also ranked in the top 20s for Computer Science, and it is an amazing choice. This is the only public school I applied to because it is a Golden Door Scholarship partner. Public schools cannot offer me aid, but I would have the opportunity to attend because of UNC’s special partnership with Golden Door. It is now in my top choices together with Bowdoin, but there is still much that I must think about before deciding.\nNearing the end of the process came Emory. An amazing school, also Golden Door Scholarship partner. I am very happy that I got admitted to it. It was one of my top choices. Although it is not the best for Computer Science, overall, it is an amazing school and always ranked very high for overall quality of life. The process of opening the letter for this school was also interesting. I was in call with my girlfriend when I got the email. I told her that I would make a bet, I would owe her if I could not guess my admission result from her reaction. So, I gave her my credentials and paid close attention to her reaction. She was trying to hold back a smile, but because of the context of the moment, I genuinely thought I got rejected. I took her smile as a, “ha-ha you loser, you did not get in.” So, when I told her my final guess, she said I owed her because I had gotten in.\nNow to the big boys, all coming out on the same day. I applied to Columbia, Cornell, and Columbia. Yes, I did send a letter of continued interest to Columbia. I did not mention it on my last post on Columbia, but I also attended their fly-in program. From my research, in previous years, an insane 60% of the fly-in admits attended Columbia. So, now being deferred and still having that fly-in credential, I felt that my chances were very high. Moreover, I also had very close contact with Cornell. At Thrive, there was a day that an admissions officer would come to Campus and my group got randomly selected to talk with Cornell. We had the director of admissions there. He talked about the application process in detail which taught me much that I did not know. At the end of it, he gave us his contact details, and I went up to talk to him. I told him what Cornell thought about sending in extra materials and he said that they loved it. I told him I had plans of creating a blog, and he said that that would be amazing. So, I kept in close contact with him. Whenever I had any questions about Cornell, and even colleges in general, I would email him, and he would immediately respond. I kept sending him updates on my blog. He saw the blog when it was just an extremely simple page that only said, “Welcome to Rafael’s blog.” When I submitted my application, I emailed him, and he said that I did an amazing job on my writing. Princeton though, I literally read the applications prompt the day of. And, of course with the odds stacked against me, I got rejected by every single one. It was the same thing again, the powerful heartbeats with the smile on my face. It was especially heartbreaking to get rejected from Cornell because of that human connection I associated with them. I did email the guy afterwards, but he has yet to respond… Columbia was equally heartbreaking for a much deeper personal reason involving my girlfriend. The rejection from Princeton only meant that it was guaranteed I would be far away from my mom, so that was a bummer.\nAnd now finally, Duke. This was literally my last hope of getting in to a top ten school, and it went south. Duke is a Golden Door Scholarship partner, so having been accepted to Chapel Hill and Emory, two highly selective partners, I felt strong. However, I reread my writing and although each essay sounded good standalone, all three together sounded horrible. I did take my time during my application and was confident. However, I now learned the lesson to take the time to look at it as a whole. I was excited to be admitted by Duke too, not only because of its partnership with GDS, but because they have a strong commitment to investing lots in their students, something I really appreciate.\nBut that sums up the surface of my experience. I tried to include everything, but it is all already so much that I may have missed a story or two and some small details. However, I say the surface because I did not talk about all the reflecting and deep thoughts I had about this process. I feel like sometimes that I think too much, but I have been thinking about how experiencing a lot in life does not mean anything if you do not take the time to reflect on it. So, I took the time to reflect, connect the dots, and fill gaps regarding this experience. I will be making more posts regarding the main insights I have had.",
-    "body": "N/A",
-    "links": [],
-    "images": [
-      "/images/colleges.jpg"
-    ],
-    "likes": 21,
-    "comments": [
-      "6447cb1cd7a0118914c42d03"
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "64363a5e8d64ac52192056a6"
-    },
-    "title": "Fitness Journey Update",
-    "list": "Gym",
-    "date": {
-      "$date": "2023-04-12T00:00:00.000Z"
-    },
-    "description": "I just wanted to make a small blog post on how my fitness journey is going right now. I am happy with it, but it could be better. The biggest thing holding me back is weight. I weigh myself at home, and I am about 163 pounds. Which is just right for my height according to the BMI measurement. However, I weighed myself on three different mechanical scales, and it seems like my digital scale at home is off by 10 pounds! This puts me at barely not anorexic for my weight, haha! As I write this, I just measured my body composition, which usually comes out with pretty believable numbers, but this time they came a bit insane: 154lbs of bodyweight, 81.1lbs of muscle, **8.8lbs of fat, 5.7% body fat**,  106.5lbs of water (sounds right as 70% of 154lbs is 107.8lbs, and 1793 calories for my basal metabolic rate. I believe my body weight is around 12%, though.\nI know how to solve this issue, stop bitching, and eat more. But it is just incredibly hard. Sometimes I feel like I do not even have time to go number two during the week; now imagine eating more and having to go more number two. It is insanity. When I was at Amherst College for six weeks, that was my peak. I was actually weighing 163, and I looked insane. Surprisingly, I was not as strong as I am now but looked a lot fuller. It is hard to compare my normal life with my life there. At Amherst, I ate three meals a day for free at their dining hall. The only way it could have been better and more convenient was for someone to chew it for me.\nI moved to a new gym. I finally left Planet Fitness, and although I made good friends there, I am happy I left that horrible community. Most people there do not even want to work out, making me feel bad for those who genuinely do not know and those who would like a more disciplined community. I am going to the YMCA now. I always had something against it thinking that because it is a program, it would be lower quality. I was strongly mistaken because the gym is much better. The community is also vastly different. I have never seen a girl there, and most dudes are under eighteen. This also made me want actually to listen to the YMCA song, and if you do, notice that it is a little dark. It is sad that in our society, many men feel the way described in the song and need a place like the Y.\nI have also started taking cold baths every weekend. They say you need about eleven minutes per week, so I take a fourteen-minute cold bath every weekend. The first picture below is me just after one with my brother. The experience was pretty good. When I think about the cold, I get a little anxious, but I still crave it. It is an amazing rush when you get in, and feels good when you get out. Honestly, I cannot speak heavily about the effects it has had on my life. However, I do not think I will be stopping any time soon. This is probably one of the only things that excite me to go to Bowdoin despite the cold since it is on the coast of Maine, and I could just ice bathe on the coast!\nBelow I also have the image I submitted to the year book club for my \"most athletic superlative.\" I do not consider myself athletic, in the sense that I am a good athlete. However, I guess the way I look makes others think that I am. What can I do about that?",
-    "body": "",
-    "links": [],
-    "images": [
-      "/images/physique-update1-pic1.jpg",
-      "/images/physique-update1-pic2.jpg",
-      "/images/physique-update1-pic3.jpg"
-    ],
-    "likes": 43,
-    "comments": [
-      "6447cb48d7a0118914c42d04"
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "6452d2c3791e4671b83ed386"
-    },
-    "title": "Commit Day",
-    "list": "Achievement",
-    "date": {
-      "$date": "2023-05-01T00:00:00.000Z"
-    },
-    "description": "The infamous day approached, and I remember looking at the calendar and seeing the days go from April 21 to May 1. Around the time the decision from UNC-Chapel Hill came out, which was way before the 1st, my Golden Door Scholarship counselor was already pressuring me to make a decision. Around the 25th, she told me to decide within two days.\nBut of course, the way I am always makes me decide in a manner that there is no doubt in my decision. There should be no weight in my mind after I pick. Luckily, it went this way, despite my making the wrong decision at first. Now that I sit and write this, it makes me think about how gaming has helped me strike an outstanding balance between hesitation and commitment. Although hesitation has a bad connotation, my experience with making my college decision proves that it is good when used appropriately. Very frequently, we do not have the luxury to hesitate, and in doing so, we only create more weight for our minds after the fact.\nTo help me decide, I visited Bowdoin and Emory, my two final choices. The experiences were vastly different, not only because the schools were different but also because of how I ended up there. For Bowdoin, I attended their Bowdoin Bearings program, essentially a fly-in. They paid for my ticket, and I slept in someone’s dorm. On the other hand, I spent a high price on my Emory ticket because I bought it last minute and had no idea where I would sleep. The only thing I was sure of was that a few kind souls I contacted through LinkedIn told me to call them when arriving on campus. One guy was practically random, but Gus was also a Golden Door Scholar.\nIt would be hard to make the experience at Bowdoin any better. I met amazing people that I connected with. I even met a Brazilian. The food and the campus were impeccable, and I even walked in on two classes. I felt overwhelmed. Fortunately, I took all that steam off during a great session at their gym. It is amazing how clear my mind is when I work out and how I can experience everything around me more objectively, not only during but also after the workout (this is a topic for another store, though, maybe).\nThe experience at Emory, though, was out of this world. I remember getting back home from Bowdoin and telling everyone that I was essentially committed, that Emory would have to be out of this world for me to change my mind. I landed in Atlanta, took a train to the city’s center, and then some electric scooters caught my gaze. So, I rode an electric scooter for about thirty minutes until I got to campus. When I got there, I called up Gus. He said he was out of campus, and my heart sank, but he said, “I am actually a dinner with other GDS kids and we reserved a spot for you.” It is pretty hard to describe how I felt so I will tell you my situation, and hopefully, you can feel it for yourself. That day I woke up at 8 am, ate, took the plane, and landed at 3 pm. I got to campus around 5 pm. I had not eaten, was carrying a hefty bag, my feet hurt, and I constantly checked my pockets for my belongings.\nGus came back to campus and took me to the diner he was at. We talked about ourselves on our way, and Gus told me about the school. When we arrived, GDS had a mandatory meeting for specific students, so they ate while on Zoom. I told Gus to turn on the camera so that Maria, my GDS counselor, could see both of us together. She was delighted! Then I returned to campus, walked around a bit with Gus, went to his dorm, and then went to another dorm. There, Gus, I, and the four guys who formed there talked for hours about the school. When it was time to leave, Gus asked me where I was staying. It was already late, and I could not lie; I said I did not even know; I was still figuring it out. He said, “It is fine. I will find a room for you.” So he called up another friend and asked if I could stay in his single. Everything worked out great. All this was only the first day. The second day was Preview Day, an Emory event from 8 am to 3 pm. My flight was at 10 pm. I went through the event, explored the school, attended panels and workshops, and met some incredible people. At the end of it, I immediately started calling my contacts, and they all had something different to do. It was hard to decide, but one person asked me to eat with them, and since I was starving, I could not refuse that. He paid for my meal, so I got to eat twice at the dining hall. Frankly, the food was mid. Either way, as we walked, talked, and ate, there was so much going on at campus, much more than Bowdoin. Everything was vibrant and lively, and the weather was terrific (something they said was common). Right after we ate, we went to a Raíces (Roots) meeting, a club for Hispanic students. We introduced ourselves, and everyone was surprised when I said I was a high school senior from NJ. We had a great time, ate again, and I taught them my favorite Brazilian card game. Right after that, I went to the airport.\nFrom the amount I am talking about, Emory, you would incorrectly guess I committed there. Although I spoke less about Bowdoin, the words I use to describe the experience there and how Emory had to be out of this world to beat it are genuine. Despite the two unique experiences and the massive difference that my experience at Emory was completely supported by people who made me feel at home and are essentially like me and from a community like mine, I decided to go to Bowdoin.\nMy friends and I joke about how I entirely based my decision on the acceptance rate. Bowdoin’s acceptance rate is half that of Emory. Despite believing that a 2:1 difference in acceptance rate must say something about the institution, I will try to put that aside and discuss the other parts of the argument for my decision.\nFirst and foremost, NO ONE AT BOWDOIN TOLD ME NOT TO GO! Not even in a joking way, as one person did at Emory. Another guy at Emory was extremely sad and would not have picked Emory again. He was very antisocial and did admit to being so and how that plays a role in his opinion. Regardless, I met various people at Bowdoin, and they were not just happy to be there but ecstatic. People at Bowdoin described their decision as the best thing they could have ever done.\nSecond, the academic scene at Bowdoin is much stronger. This may be due to the higher selectiveness of the school and how this may yield better students. However, Bowdoin is ranked very high for undergraduate teaching quality, and the two classes that I walked in on (they were not pre-registrations, meaning the professors did not expect me) blew my mind. They were at the end of their second semester, and everyone in the room had the energy as if they were learning the most exciting and novel thing ever as if they had just come back from the most refreshing break. There, I questioned professor quality, and of course, they would not lie to me; the Bowdoin students admitted that there were a few bad apples, but they even disagreed. This makes me think that a bad professor rating was not a popular opinion, even for specific professors. However, at Emory, everyone had at least one awful personal experience and broad experience with a professor. Academics is just something that I highly value. I would love to expand on this, but it is a topic for another time, but I absolutely despise my high school only because of the teachers. I cannot write enough words to describe the strength and negativity of my emotion toward going to at least more than half of my eight classes. The quality of the teachers is abysmal, and it is appalling what some of them do in class. I guess this goes to show that you only value something when you do not have it, and all I look forward to is having a good time while learning at Bowdoin. I know it will be challenging, but difficulty does not scare me, only mediocracy.\nThird, Bowdoin has vastly better outcomes. Compared to Emory, almost any major at Bowdoin has a median income of ~20k higher. Bowdoin prides itself on the strong alumni connections that it has. This is one of the main selling points of the school. This strong connection comes from the tiny and tight-knit community. But, the administrators must be doing something good to have 40% of alums actively donating.\nFourth, the opportunities and support for undocumented, first-gen, and low-income students are nearly incomparable to anything at Emory. This might have something to do with Emory being in Atlanta, but being low-income, first-gen, minority, undocumented, or a combination of any of them is normalized at Emory. However, it seems different at Bowdoin. When you research Bowdoin, most of the statistics are from 2021 and before. Then, the population was primarily white, extremely high-income, and barely any first-gens. However, the class of 2027 is 37% first-gen.\nAdditionally, two years ago, they began to invest a lot in their THRIVE program, a program for people, as I described previously. THRIVE offers many opportunities, including the Geoffrey Canada Scholars, a fantastic program to get that extra support needed as a first-gen. Fortunately, I got admitted to it, and despite the great opportunities at Emory, I do not think anything there would come close to the level of being a Geoffrey Canada Scholar. This was a huge turning point n my decision. The main advantage that Emory had was this extra support and sense of community for first-gen and immigrants, but Bowdoin beat it when I got admitted to this program. At the end of this blog, I have the 100-word essay I submitted to Bowdoin for the program.\nFifth, I noticed many other little things during my time at Bowdoin. The food was absolutely amazing, which I value and believe is indispensable. Also, although the school is D3, nearly a third of the school are athletes. I would enjoy being part of a community where everyone is active. This reminds me of Thrive Scholars, a community-based organization I am part of that took me to Amherst College for six weeks. Most of the other scholars were extremely active there, and we spent most of our free time playing. I would love to have a college experience similar to that.\nThis sums it up: student happiness, academic scene and professor quality, better outcomes, opportunities for me to THRIVE, and more minor things essential to life like food and physical activity. These were all things I considered right after texting Maria on Slack that I wanted to commit to Emory. I had to do this because Golden Door has to match you first with a school before you can formally commit. But a few hours later, I deleted the message. I was lucky she did not see it, haha. Later that day, she texted me, “Hello, Rafael.” This gave it away that she knew I had texted her. It also makes me wonder if she did see the message right as I sent it but chose not to respond until later. This means that she allowed me to hesitate and make the decision I believe is better.\nI look forward to going to Bowdoin. I will be there during the summer for the Geoffrey Canada program, and I have heard it is enjoyable. However, what I look forward to the most is learning, going to class, and waking up excited to learn, just as I did at Amherst College. I do not believe I expressed enough how much I dread my recent experience in high school, but I hope that the little I described my emotions proves how much I want to be in a different environment.",
-    "body": "N/A",
-    "links": [
-      "https://youtu.be/AdBC9W-4l28"
-    ],
-    "images": [
-      "/images/rafael.almeida.jpg",
-      "/images/bowdoin-workout.jpg"
-    ],
-    "likes": 47,
-    "comments": [
-      "645be59949d2d3cdf81f58ad",
-      "64d5b9b0e5a8bcf661b920fd"
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "6452d33b791e4671b83ed387"
-    },
     "title": "Black History Month Project",
-    "list": "Project",
-    "date": {
-      "$date": "2023-02-28T00:00:00.000Z"
-    },
-    "description": "Tags: Next.js, PM2, Apache, Linux, Javascript, HTML, CSS, Small, School\nThis will be a shorter post talking about a class project I lead in my web design class.\nI thought of a theme, collected everyone’s website on a significant African American figure, and compiled the whole website together. The design came out fantastic! And I never thought such a massive group project would come out so cohesive. Additionally, it was interesting helping people make the websites and seeing how each person does code differently, which made me notice it is more artistic than I thought.\nThe website was not only made with html and css, although all the individual pages were. The home page was made with Next.js since we needed a few features of Node.js, like components, to make the site’s development easier. A classmate of mine initially drew all of the drawings, so we are very proud of what we could create from the ground up.",
-    "body": "",
-    "links": [
-      "https://ralmeida.dev/bhm"
+    "start_month": "February",
+    "start_year": 2023,
+    "skills": [
+      "Next.js",
+      "PM2",
+      "Apache",
+      "Linux",
+      "Javascript",
+      "HTML",
+      "CSS"
     ],
+    "description": "The Black History Month Project is a website compiling individual websites on significant African American figures. I led the project, collecting and integrating everyone's work, and designed the homepage using Next.js. It was created as a class project for my web design class. This project taught me about team leadership, project management, and the artistic aspects of coding.",
+    "links": "https://ralmeida.dev/bhm",
     "images": [
       "/images/bhm1.png",
       "/images/bhm2.png"
     ],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "small"
+    ]
   },
   {
-    "_id": {
-      "$oid": "6452d787791e4671b83ed388"
-    },
     "title": "UCVTS-Madness Website",
-    "list": "Project",
-    "date": {
-      "$date": "2023-04-19T00:00:00.000Z"
-    },
-    "description": "Tags: Next.js, Google Sheets API, Bootstrap, Javascript, HTML, CSS, Medium, School\nThis will be a shorter post describing a website I made for the UCVTS-Madness event in my school, a small basketball tournament hosted by the Black Student Union.\nHosted on my server (my mom’s old laptop), it has a live bracket connected to a Google Sheet, an odds voting system, team information, and a user pick accuracy leaderboard. Although the picks system was not advertised because it was considered “gambling,” though no stakes were at risk, the learning experience was exceptional! It was not a sizeable project but rather technical, as I needed a good knowledge of binary trees for the brackets.\nThis was also the second project I used Ant Design on. My cousin, who helped me recreate my Capstone website, introduced me to and, and it has been great using it. It is easier to get something off the ground with it but to tailor the project, make it look unique, and give it your own colors and design choices is very hard. Maybe I need to learn more about how and works, but I will use it again for now.\nIf you check the link above, you will see that the website still has the results from the last tournament, but it can work for any tournament. The bracket resizes itself depending on how many teams there are, and you always have the option to add a game to the “Other Games” section.",
-    "body": "",
-    "links": [
-      "http://ralmeida.dev/ucvts-madness"
+    "start_month": "April",
+    "start_year": 2023,
+    "skills": [
+      "Next.js",
+      "Google Sheets API",
+      "Bootstrap",
+      "Javascript",
+      "HTML",
+      "CSS"
     ],
+    "description": "The UCVTS-Madness Website is a site for a school basketball tournament, featuring a live bracket, odds voting system, team information, and a user pick accuracy leaderboard. I developed the entire website, including its connection to a Google Sheet for live updates.  It was created for the UCVTS-Madness event hosted by the Black Student Union at my school. This project enhanced my skills in using APIs, working with binary trees, and deploying a live, dynamic website.",
+    "links": "http://ralmeida.dev/ucvts-madness",
     "images": [
       "/images/ucvts-madness.png",
       "/images/ap-rally.jpg",
       "/images/ucvts-madness1.jpg",
       "/images/ucvts-madness2.jpg"
     ],
-    "likes": 4,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "670c2ea46b8057103f59cee6"
-    },
     "title": "QuickDeets",
-    "list": "Project",
-    "date": {
-      "$date": "2024-10-13T00:00:00.000Z"
-    },
-    "description": "Tags: Python, Django, Javascript, HTML, CSS, Whisper API, ChatGPT API, Medium, Competition\nI developed this project over the 36 hours of HackHarvard 2024. QuickDeets is a web app that aims to reduce the occurrence of patient harm events during their hospital stay. Harm events are anything that occurs while receiving care that prolongs a patient's stay in the hospital. I did some research to find out what the most common and indicative factors of potential harm events are and found that practitioner negligence plays a massive role in harm event frequency. The biggest bottleneck is the ability to access and share data about patients. As a nurse takes notes on a patient, it is often not immediately accessible by other nurses, especially those in different shifts. So I created QuickDeets, which leverages Whisper to automate note-taking through voice, a large language model that can parse the audio transcription and separate it into the correct category of harm events, and most importantly, can be easily used by existing hospitals. I made sure that the app was as realistic as possible by locally hosting an electronic health record, populating it with mock patient data, and using the industry standard protocols for communicating with hospital data to pull in existing data, ensuring the app does not have a cold start. However, the biggest innovation of this project is that it can leverage the personal devices of staff in low-income hospitals that do not have access to TVs and displays for sharing patient data and are the most susceptible to patient harm.",
-    "body": "",
-    "links": [
-      "https://devpost.com/software/quickdeets"
+    "start_month": "October",
+    "start_year": 2024,
+    "skills": [
+      "Python",
+      "Django",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Whisper API",
+      "ChatGPT API"
     ],
+    "description": "QuickDeets is a web app designed to reduce patient harm events in hospitals by improving data accessibility and sharing among healthcare practitioners. I developed the project solo, integrating Whisper for voice-automated note-taking and a large language model for categorizing patient data. It was created over 36 hours for HackHarvard 2024. This project deepened my understanding of healthcare technology, API integration, and rapid prototyping.",
+    "links": "https://devpost.com/software/quickdeets",
     "images": [],
-    "likes": 14,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "670c30316b8057103f59cee7"
-    },
     "title": "SpeedRead",
-    "list": "Project",
-    "date": {
-      "$date": "2023-10-22T00:00:00.000Z"
-    },
-    "description": "Tags: SwiftUI, Swift, ChatGPT API, Medium, Competition\nI developed a speed reading during the 2023 HackHarvard. SpeedRead is an iPad note-taking app. Now that I am doing a lot more reading while in college, I noticed that many PDFs have tight margins and line spacing, making it hard to take notes. SpeedRead solves that by extracting the text from the PDF, allowing you to customize the margins, line spacing, etc., and leveraging the SwiftUI PencilKit for note-taking. Moreover, SpeedRead uses a large language model to preprocess the PDF and highlight lines likely of high importance to annotate, ensuring you get all the essential details! It includes features like exporting the annotations as a PDF and a page locking feature that forces you to read the whole page before annotation, something that is crucial for active reading.",
-    "body": "",
-    "links": [
-      "https://devpost.com/software/speedread-f8pr21"
+    "start_month": "October",
+    "start_year": 2023,
+    "skills": [
+      "SwiftUI",
+      "Swift",
+      "ChatGPT API"
     ],
+    "description": "SpeedRead is an iPad note-taking app that enhances the reading and annotation experience for PDFs with tight margins and line spacing. I was the sole developer, using SwiftUI and PencilKit, and integrating a large language model for highlighting important lines. It was developed during the 2023 HackHarvard. This project improved my skills in iOS development, UI/UX design, and working with large language models.",
+    "links": "https://devpost.com/software/speedread-f8pr21",
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "670c71616b8057103f59cee8"
-    },
     "title": "WebTune",
-    "list": "Project",
-    "date": {
-      "$date": "2024-03-31T00:00:00.000Z"
-    },
-    "description": "Tags: Python, Django, Gemini API, React, Medium, Competition\nI developed WebTune during HackPrinceton 2024. During those days, I worked closely with two local businesses to develop a website for them. Additionally, I was setting up an offer to work as a software engineer for a company that needed SEO optimization. These two things culminated in WebTune, a Django package that offers abstract database models that leverage an LLM to create SEO-optimized data from your database objects. It works by downloading the package, importing the abstract models, and inheriting from them in your Django models. When creating or updating an object, the abstract model will use an LLM to analyze all of the data points, including images of the object, and generate JSON-LD and image alt text for that object. These are two things that are crucial for SEO optimization. This package has great implications for developers working primarily with small businesses, the ones needing fast development and great SEO.",
-    "body": "",
-    "links": [
-      "https://devpost.com/software/webtune-k5bd60"
+    "start_month": "March",
+    "start_year": 2024,
+    "skills": [
+      "Python",
+      "Django",
+      "Gemini API",
+      "React"
     ],
+    "description": "WebTune is a Django package that provides abstract database models to generate SEO-optimized data for website objects. I developed this package, leveraging an LLM to analyze data points and generate JSON-LD and image alt text. It was created during HackPrinceton 2024. This project enhanced my understanding of SEO, Django development, and creating reusable software components.",
+    "links": "https://devpost.com/software/webtune-k5bd60",
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "670c72fb6b8057103f59cee9"
-    },
     "title": " MeatCode",
-    "list": "Project",
-    "date": {
-      "$date": "2024-09-15T00:00:00.000Z"
-    },
-    "description": "Tags: Django, Python, Convex, React, Medium, Competition\nI developed MeatCode during HackMIT 2024. The idea for MeatCode came after my teammates, and I noticed how much LeetCoding we had been doing to apply to internships. We then asked, are there more ways to practice for these interviews besides the standard LeetCoding method? We noticed that there was no such thing, so we developed MeatCode. MeatCode will display a problem and a solution in LeetCode style but with a bug. The task is to fix the bug. Additionally, one last feature we worked on implementing was to display a proper solution and ask the user what the question asked was to arrive at that solution. With these two features, MeatCode users are more prepared for the job market because they will have more experience reading other people's code (and fixing it) and interpreting that code. ",
-    "body": "",
-    "links": [
-      "https://ballot.hackmit.org/project/vjrrm-deymt-jplvb-lxrfd"
+    "start_month": "September",
+    "start_year": 2024,
+    "skills": [
+      "Django",
+      "Python",
+      "Convex",
+      "React"
     ],
+    "description": "MeatCode is a platform that presents LeetCode-style problems with bugs, challenging users to fix the code or identify the question based on a correct solution. I worked with teammates to develop this platform, focusing on creating a novel approach to coding interview preparation. It was created during HackMIT 2024. This project taught me about collaborative software development and exploring alternative approaches to established practices.",
+    "links": "https://ballot.hackmit.org/project/vjrrm-deymt-jplvb-lxrfd",
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "670dd49b6b8057103f59ceea"
-    },
     "title": "Beeline Reader Editor",
-    "list": "Project",
-    "date": {
-      "$date": "2024-09-05T00:00:00.000Z"
-    },
-    "description": "Tags: HTML, CSS, Javascript, Small, Personal\nI created this tiny project to increase accessibility at my school. This project is also similar to SpeedRead. Now that I am doing much more reading in college, some PDFs have tight margins and line spacing, making them hard to read and annotate on a tablet. One day, while talking to a staff member from the accessibility office, I found that Bowdoin's Canvas has a unique accessibility tool called Beeline. It's an alternative format when you download a PDF uploaded by an instructor. It extracts the text from the PDF and puts it in an HTML file. It also highlights the text in a way that is better for reading. My brilliant idea was to take a PDF, convert it to HTML, then change the CSS so that the margins and line spacing are larger, and then convert that back to a PDF. I automated this process with this little project.",
-    "body": "",
-    "links": [
-      "https://ralmeida.dev/beeline-editor/"
+    "start_month": "September",
+    "start_year": 2024,
+    "skills": [
+      "HTML",
+      "CSS",
+      "Javascript"
     ],
+    "description": "The Beeline Reader Editor is a tool to improve the readability of PDFs by converting them to HTML, adjusting margins and line spacing, and converting them back to PDF. I created this project to enhance accessibility at my school. It was created to address the issue of PDFs with tight margins and line spacing. This project reinforced my understanding of web technologies and accessibility.",
+    "links": "https://ralmeida.dev/beeline-editor/",
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "small"
+    ]
   },
   {
-    "_id": {
-      "$oid": "670ddd266b8057103f59ceeb"
-    },
     "title": "AP Statistics TI 84 Helper",
-    "list": "Project",
-    "date": {
-      "$date": "2023-06-14T00:00:00.000Z"
-    },
-    "description": "Tags: Python, Medium\nThis was my final project for my AP Statistics class. I created a Python program for the TI 84 Python edition that would show you the AP stats book page content on how to solve any question given keywords in it. It works by analyzing the lesson objectives for each chapter of the book and then building relationships between the words and the lesson objectives. Then, it creates a vast frequency tree of which words are most common and recursively which words are most familiar with that word. The app in the calculator will ask you to enter a letter from A-Z, each representing a word, and repeatedly prompt for subsequent words. When done, it will search through the lesson objectives and display them with the best matches. The biggest challenge of this project was using Python, an inefficient language on a device with minimal capabilities. I got around this by learning about efficient search algorithms and Python data structures and creating my compression system of the words and lesson objectives. Crazy enough, this app is allowed during the AP stats exam because there is no restriction on what you can install in your calculator. This app gives a huge advantage to anyone using it because it makes the calculator go beyond just calculating; it also tells you how to solve the questions.",
-    "body": "",
-    "links": [],
+    "start_month": "June",
+    "start_year": 2023,
+    "skills": [
+      "Python"
+    ],
+    "description": "The AP Statistics TI 84 Helper is a Python program for the TI 84 Python edition calculator that provides guidance on solving statistics problems based on keywords. I developed the entire program, including the efficient search algorithms and data compression system. It was created as my final project for my AP Statistics class. This project challenged me to work within the constraints of a limited device and taught me about efficient algorithm design and data compression.",
+    "links": null,
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "67198c586b8057103f59ceed"
-    },
     "title": "SAT Helper",
-    "list": "Project",
-    "date": {
-      "$date": "2023-11-24T00:00:00.000Z"
-    },
-    "description": "Tags: TI-Basic, Small, Personal\nI had the idea to create this project after I searched for an application to help on the SAT (which is allowed since CollegeBoard does not check calculators before exams) and found a guy asking people to buy his book to then give access to a raggedy app! So I went through the screenshots that this guy had of the app, learned TI-Basic two nights before my SAT (maybe I should have studied), and created an application with most of the functionality needed for the math section of the SAT. It included things like a better UI for solving two variable equations, converting the format of the equation of a line, and more. It worked out because I got a 1530 and then a 1560!",
-    "body": "",
-    "links": [
-      "https://github.com/rafaelolal/ti84"
+    "start_month": "November",
+    "start_year": 2023,
+    "skills": [
+      "TI-Basic"
     ],
+    "description": "The SAT Helper is a TI-Basic application for the TI 84 calculator designed to assist with the math section of the SAT. I developed this application, learning TI-Basic in a short timeframe. It was created after I found a poorly made, paid alternative. This project taught me about rapid skill acquisition and creating practical tools under pressure.",
+    "links": "https://github.com/rafaelolal/ti84",
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "small"
+    ]
   },
   {
-    "_id": {
-      "$oid": "671adc4c6b8057103f59ceee"
-    },
     "title": "Stock Decision Metric APIs at Citadel",
-    "list": "Project",
-    "date": {
-      "$date": "2024-06-07T00:00:00.000Z"
-    },
-    "description": "Tags: Python, Django, HTML, CSS, Yahoo API, Gemini API, Small, Personal\nThis project was my final project at the 2024 Citadel Externship. It consisted of APIs that, given a date range, would get stock data using the Yahoo Finance API and use my custom implementation of typical buy/sell decision metrics like RSI, Stochastic Oscillators, Bollinger Bands, etc., to make decisions. It then plots the maximum profit each metric could generate and displays that on the front end. It was a small, enjoyable project to create as we only had about a day to learn about all of these metrics, implement them, and make a presentation for Citadel engineers. Moreover, the engineers were very impressed as this was the only successful full-stack application. None of the other projects featured a working back-end and a connected frontend.",
-    "body": "",
-    "links": [
-      "https://github.com/rafaelolal/citadel_final"
+    "start_month": "June",
+    "start_year": 2024,
+    "skills": [
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "Yahoo API",
+      "Gemini API"
     ],
+    "description": "The Stock Decision Metric APIs project consists of APIs that analyze stock data using custom implementations of decision metrics like RSI and Bollinger Bands to make buy/sell decisions. I developed the APIs and the connected frontend, integrating the Yahoo Finance API for data retrieval. It was created as my final project at the 2024 Citadel Externship. This project deepened my understanding of financial metrics, API development, and full-stack application development.",
+    "links": "https://github.com/rafaelolal/citadel_final",
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "small"
+    ]
   },
   {
-    "_id": {
-      "$oid": "671ade636b8057103f59ceef"
-    },
     "title": "Scheduling Bot at AiGoLearning",
-    "list": "Project",
-    "date": {
-      "$date": "2022-03-26T00:00:00.000Z"
-    },
-    "description": "Tags: Python, Discord API, Personal, Medium\nWhile teaching Python at AiGoLearning, a non-profit that teaches little kids coding, I noticed a significant inefficiency in recruiting new teachers. First, they must undergo an evaluation process, which three organization members manually schedule. They would message evaluators and try to find one that matched the availability of the new teacher. They could have easily automated this with an online scheduling/calendar platform, but the organization's owner did not want to adopt too many new apps. When I came around, he asked if I could develop something integrated with Discord, our central communication platform. So, I created the Scheduling bot. It completely controlled the flow of the Evaluation Discord server. It would give people roles and manage what people can see, but most importantly, it would prompt people with the evaluator role for their availability and receive requests from new teachers. It would do all of this through messages sent on  Discord. It then would private message all the available evaluators and wait until one of them accepted the request. This server was used to evaluate over 70 new teachers and completely freed up the time of 3 organization members.",
-    "body": "",
-    "links": [
-      "https://github.com/rafaelolal/scheduling_bot"
+    "start_month": "March",
+    "start_year": 2022,
+    "skills": [
+      "Python",
+      "Discord API"
     ],
+    "description": "The Scheduling Bot is a Discord bot that automates the scheduling of teacher evaluations at AiGoLearning. I developed the bot to manage roles, handle availability requests, and coordinate communication between new teachers and evaluators. It was created to streamline the teacher evaluation process at AiGoLearning. This project improved my skills in bot development, API integration, and automating organizational processes.",
+    "links": "https://github.com/rafaelolal/scheduling_bot",
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "67201a5c6b8057103f59cef0"
-    },
     "title": "CH Hardwood Floors",
-    "list": "Project",
-    "date": {
-      "$date": "2024-04-15T00:00:00.000Z"
-    },
-    "description": "Tags: Next.js, TypeScript, HTML, SCSS, Personal, Medium\nThis is a website that I created for a local flooring contracting business. This is undoubtedly one of the projects I am most proud of because it is being actively used and fully deployed. Working on this project vastly improved my communication skills and ability to work with ambiguity to know precisely how to deliver and to deliver something that will satisfy the customer. Moreover, this project put me through the process of ideation, development, deployment, and iteration, which is rare for many people in their early careers. I also heavily used the newfound knowledge of SEO that I gained throughout my internship with Smashamp to create something that would quickly climb the Google ranks. This site boosted visitors by over 100x. It incredibly impacted the business and has already brought dozens of new customers.",
-    "body": "",
-    "links": [
-      "https://chhardwoodfloor.com"
+    "start_month": "April",
+    "start_year": 2024,
+    "skills": [
+      "Next.js",
+      "TypeScript",
+      "HTML",
+      "SCSS"
     ],
+    "description": "CH Hardwood Floors is a website for a local flooring contracting business. I was responsible for the entire project lifecycle, from ideation to deployment and iteration, including SEO optimization. It was created to boost the online presence and attract new customers for the business. This project significantly enhanced my communication, project management, and SEO skills, and provided experience in delivering a real-world, impactful product.",
+    "links": "https://chhardwoodfloor.com",
     "images": [],
-    "likes": 7,
-    "comments": []
+    "tags": [
+      "medium"
+    ]
   },
   {
-    "_id": {
-      "$oid": "67203ac06b8057103f59cef1"
-    },
     "title": "Art Gallery Problem",
-    "list": "Project",
-    "date": {
-      "$date": "2024-10-28T00:00:00.000Z"
-    },
-    "description": "Tags: C++, OpenGL, Small, School\nThis is the 5th project in my Computational Geometry class where we learn algorithms for multiple dimensions (2D and up). We are now learning about the art gallery problem, which involves computing the visibility of a point within a simple polygon. Something really interesting is that the proof for the sufficient amount of \"guards\" to see a whole gallery was proved by a Bowdoin professor and is in The Book. Anyways, I had a lot of fun in this project as it involved the usage of lots of basic geometrical concepts that we learned like segment intersection, points being in a polygon, shooting rays, and more. The way the program works is it lets you click around to form a polygon and after you are done, you will begin placing \"guards\" that watch the museum you built. I attached a screenshot and the GitHub repository.",
-    "body": "",
-    "links": [
-      "https://github.com/bowdoin-compgeom-f24/guard-chair"
+    "start_month": "October",
+    "start_year": 2024,
+    "skills": [
+      "C++",
+      "OpenGL"
     ],
+    "description": "The Art Gallery Problem project is a C++ program using OpenGL that allows users to create polygons and place guards to visualize the art gallery problem in computational geometry. I implemented the program, applying concepts like segment intersection and point-in-polygon tests. It was created as the 5th project in my Computational Geometry class. This project deepened my understanding of computational geometry algorithms and C++ programming.",
+    "links": "https://github.com/bowdoin-compgeom-f24/guard-chair",
     "images": [
       "/images/gallery.png"
     ],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "small"
+    ]
   },
   {
-    "_id": {
-      "$oid": "67214ad538a98bfdf633857c"
-    },
     "title": "Maze Bot",
-    "list": "Project",
-    "date": {
-      "$date": "2022-02-18T00:00:00.000Z"
-    },
-    "description": "Tags: Python, Discord API, Small, Personal\nI created a funny Discord bot for a competition in my school's Coding Club to develop a bot that lets you play a small game. I added this bot to my school's Coding Club's Discord server and others. It enables you to challenge another member of the server to puzzle-solve. Then, you can press to go in one of the cardinal directions to traverse the maze. Take note that this all happens within Discord's messaging system. When one person reaches the end, the losing opponent is humiliated in the server, haha! I was particularly proud to develop this, mainly because it was something people used for a while and actually enjoyed playing with. Moreover, I am impressed with the amount of OOP, abstraction, and structure this project required. I attached a link to the GitHub of the even larger AiGoCode bot I created, but one of the features is the Maze Bot.",
-    "body": "",
-    "links": [
-      "https://github.com/rafaelolal/aigocode_bot/tree/master"
+    "start_month": "February",
+    "start_year": 2022,
+    "skills": [
+      "Python",
+      "Discord API"
     ],
+    "description": "The Maze Bot is a Discord bot that allows users to challenge each other to solve mazes within Discord's messaging system. I developed the bot, including the maze generation and interaction logic. It was created for a competition in my school's Coding Club. This project enhanced my skills in bot development, game design, and object-oriented programming.",
+    "links": "https://github.com/rafaelolal/aigocode_bot/tree/master",
     "images": [
       "/images/maze_bot.png"
     ],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "small"
+    ]
   },
   {
-    "_id": {
-      "$oid": "67225cf9a3ba03280beb2793"
-    },
     "title": "AiGoCode Bot",
-    "list": "General",
-    "date": {
-      "$date": "2022-12-31T00:00:00.000Z"
-    },
-    "description": "Tags: Python, Discord API, Large, Personal\nI created this Discord bot for AiGoLearning, a non-profit that teaches little kids coding. Specifically, AiGoLearning began the AiGoCode initiative, a project I was leading. AiGoCode was a LeetCode-like website, but that was more appealing to children. The students used this website for homework and practice assignments. Most importantly, AiGoLearning hosted its hackathon on Discord, so we wanted a way to bring all the features of AiGoCode and more to Discord. So I created the AiGoCode Bot, which included funny games like the Maze bot I posted about, tictactoe, and served as an interface between Discord and the AiGoCode site. People could directly challenge their friends on a Discord channel to solve a competitive coding problem. I developed the bot entirely from the ground up while I managed a team of two other people who worked on the website.",
-    "body": "",
-    "links": [
-      "https://github.com/rafaelolal/aigocode_bot"
+    "start_month": "December",
+    "start_year": 2022,
+    "skills": [
+      "Python",
+      "Discord API"
     ],
+    "description": "The AiGoCode Bot is a Discord bot created for AiGoLearning, integrating features from the AiGoCode website and providing additional games and functionalities. I led the development of the bot, managing a team of two others working on the website. It was created to enhance the AiGoCode initiative and support the organization's hackathon on Discord.  This project improved my leadership, project management, and large-scale bot development skills.",
+    "links": "https://github.com/rafaelolal/aigocode_bot",
     "images": [],
-    "likes": 0,
-    "comments": []
+    "tags": [
+      "large"
+    ]
   }
 ]
