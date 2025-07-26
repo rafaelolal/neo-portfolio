@@ -1,6 +1,8 @@
 Neo Portfolio
 GITHUB LINK FOR ALL PROJECTS + DEMONSTRATION LINK
 
+# USE ANUBIS PROXY TO GET RID OF AI CRAWLERS
+
 Everything
 * List
     * Projects

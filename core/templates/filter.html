@@ -1,6 +1,6 @@
 {% load filters %}
 {% if model_name == "Project" %}
-        <form class="d-inline" method="get">
+        <form class="my-4" method="get">
                 <button type="submit"
                         name="tag"
                         value="{% if request.GET.tag == 'Featured' %}{% else %}Featured{% endif %}"
@@ -31,7 +31,7 @@
 {% elif model_name == "Skill" %}
 {% elif model_name == "Education" %}
 {% elif model_name == "Award" %}
-        <form class="d-inline" method="get">
+        <form class="my-4" method="get">
                 <button type="submit"
                         name="tag"
                         value="{% if request.GET.tag == 'School' %}{% else %}School{% endif %}"

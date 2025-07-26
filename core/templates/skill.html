@@ -1,12 +1,34 @@
 {% load filters %}
 <div class="card">
-    <div class="card-header">{{ skill.name }}</div>
+    <div class="card-header">
+        <h5 class="card-title">{{ skill.name }}</h5>
+    </div>
     <ul class="list-group list-group-flush">
-        {% for size, count in skill|get_project_count %}
-            <li class="list-group-item">{{ size }} projects: {{ count }}</li>
-        {% endfor %}
-        {% for section, count in skill|get_section_count %}
-            <li class="list-group-item">{{ section }}: {{ count }}</li>
-        {% endfor %}
+        <!-- Projects section -->
+        {% with project_counts=skill|get_project_count %}
+            {% if project_counts %}
+                <li class="list-group-item">
+                    <h6 class="card-subtitle mb-2 text-muted my-1">Projects</h6>
+                    <div class="mb-2">
+                        {% for size, count in project_counts %}
+                            {% if count != 0 %}<span class="badge bg-primary me-1 mb-0">{{ size }} {{ count }}</span>{% endif %}
+                        {% endfor %}
+                    </div>
+                </li>
+            {% endif %}
+        {% endwith %}
+        {% with section_counts=skill|get_section_count %}
+            {% if section_counts %}
+                <li class="list-group-item">
+                    <!-- Others -->
+                    <h6 class="card-subtitle mb-2 text-muted">Others</h6>
+                    <div>
+                        {% for section, count in section_counts %}
+                            {% if count != 0 %}<span class="badge bg-outline-secondary me-1">{{ section }} {{ count }}</span>{% endif %}
+                        {% endfor %}
+                    </div>
+                </li>
+            {% endif %}
+        {% endwith %}
     </ul>
 </div>
