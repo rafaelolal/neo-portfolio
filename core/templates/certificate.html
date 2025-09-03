@@ -1,1 +1,50 @@
-<p>{{ certificate.name }}</p>
+{% load filters %}
+
+<div id="{{ certificate.name|slugify }}">
+    {% if certificate.name %}
+    <h2 style="font-size: 2em;">{{ certificate.name }}</h2>
+    {% endif %}
+
+    {% if certificate.association %}
+    <p>{{ certificate.association }}</p>
+    {% endif %}
+
+    {% if certificate.issuer and certificate.issuer != certificate.association %}
+    <p>{{ certificate.issuer }}</p>
+    {% endif %}
+
+    {% if certificate.start_month and certificate.start_year %}
+    <p>
+        {% if certificate.start_month %}{{ certificate.start_month|month_name }}{% endif %}
+        {{ certificate.start_year }}
+    </p>
+    {% endif %}
+
+    {% if certificate.skills.all %}
+    <div style="">
+        <ul style="list-style: none; padding-left: 0px;">
+            {% for skill in certificate.skills.all %}
+            <li style="display: inline-block; margin-right: 0.5rem;">{{ skill.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if certificate.description %}
+    <p>{{ certificate.description }}</p>
+    {% endif %}
+
+    {% if certificate.images.all %}
+    <div>
+        {% for image in certificate.images.all %}
+        {% if image.image %}
+        <img height="250px" width="auto" src="{{ image.image.url }}" alt="{{ image.description|default:certificate.name }}">
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if certificate.link %}
+    <p><a href="{{ certificate.link }}" target="_blank">View Certificate</a></p>
+    {% endif %}
+</div>

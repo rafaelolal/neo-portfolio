@@ -7,4 +7,5 @@ logs/*
 django_cache
 # media/images/*
 !media/images/.gitkeep
-staticfiles
+staticfiles/
+*.venv

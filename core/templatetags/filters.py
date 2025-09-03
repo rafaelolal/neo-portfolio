@@ -23,10 +23,7 @@ def get_project_count(skill):
 @register.filter(name="get_section_count")
 def get_section_count(skill) -> list[tuple[str, int]]:
     sections = [
-        ["Experience", 0],
-        ["Education", 0],
         ["Certificate", 0],
-        ["Course", 0],
         ["Award", 0],
     ]
 
@@ -43,16 +40,12 @@ def get_section_count(skill) -> list[tuple[str, int]]:
 def get_navbar_urls():
     urls = (
         ("Projects", reverse("project_list")),
-        ("Experience", reverse("experience_list")),
-        ("Education", reverse("education_list")),
         ("Skills", reverse("skill_list")),
         ("Awards", reverse("award_list")),
-        ("Courses", reverse("course_list")),
         ("Certificates", reverse("certificate_list")),
-        ("About", reverse("about")),
-        ("Contact", reverse("contact")),
     )
 
+    # return "hello"
     return urls
 
 

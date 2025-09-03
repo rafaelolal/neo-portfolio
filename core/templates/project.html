@@ -1,49 +1,54 @@
-{% load filters %}
-<div class="card mb-4">
-    <div class="card-header d-flex justify-content-between align-items-center">
-        <h5 class="card-title mb-0">{{ project.name }}</h5>
-        <!-- Link (if available) -->
-        {% if project.link %}
-            <small>
-                <span class="badge rounded-pill bg-info">
-                    <a href="{{ project.link }}"
-                       target="_blank"
-                       class="text-decoration-none text-white">Link</a>
-                </span>
-            </small>
-        {% endif %}
-    </div>
-    <!-- Project Image (if available) -->
-    {% if project.image %}
-        <img src="{{ project.image.url }}"
-             class="card-img rounded-0"
-             alt="{{ project.name }}"
-             width="auto"
-             height="200px" />
+<!-- Beware, this code is chat generated! -->
+
+<div id="{{ project.name|slugify }}" style="">
+    {% if project.name %}
+    <h2 style="font-size: 2em">{{ project.name }}</h2>
     {% endif %}
-    <div class="card-body">
-        <!-- Association (if available) -->
-        {% if project.association %}
-            <p class="text-muted mb-2">
-                <small><i class="fas fa-building"></i>{{ project.association }}</small>
-            </p>
+
+    {% if project.association %}
+    <p>{{ project.association }}</p>
+    {% endif %}
+
+
+    {% if project.start_year or project.end_year %}
+    <p>
+        {% if project.start_month %}{{ project.get_start_month_display }}{% endif %}
+        {{ project.start_year }}
+        {% if project.end_year %}
+        -
+        {% if project.end_month %}{{ project.get_end_month_display }}{% endif %}
+        {{ project.end_year }}
         {% endif %}
-        <p class="card-text">{{ project.description }}</p>
-        <!-- Timeline (if dates available) -->
-        {% if project.start_month and project.start_year %}
-            <p class="text-muted">
-                <small>{{ project.start_month|month_name }} {{ project.start_year }}
-                    {% if project.end_month and project.end_year %}
-                        &nbsp;- {{ project.end_month|month_name }} {{ project.end_year }}
-                    {% endif %}
-                </small>
-            </p>
-        {% endif %}
-        <!-- Skills (if available) -->
-        {% if project.skills.all %}
-            <div class="mb-3">
-                {% for skill in project.skills.all %}<span class="badge bg-primary me-1">{{ skill.name }}</span>{% endfor %}
-            </div>
-        {% endif %}
+    </p>
+    {% endif %}
+
+    {% if project.skills.all %}
+    <div style="">
+        <ul style="list-style: none; padding-left: 0px;">
+            {% for skill in project.skills.all %}
+            <li style="display: inline-block; margin-right: 0.5rem">{{ skill.name }}</li>
+            {% endfor %}
+        </ul>
     </div>
+    {% endif %}
+
+    {% if project.description %}
+    <p>{{ project.description }}</p>
+    {% endif %}
+
+
+
+    {% if project.images.all %}
+    <div>
+        {% for image in project.images.all %}
+        {% if image.image %}
+        <img height="250px" width="auto" src="{{ image.image.url }}" alt="{{ image.name }}">
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if project.link %}
+    <p><a href="{{ project.link }}">Project Link</a></p>
+    {% endif %}
 </div>

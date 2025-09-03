@@ -1,38 +1,35 @@
-{% load compress %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-              content="{% block meta_description %}Portfolio website showcasing projects and skills{% endblock meta_description %}">
-        <meta name="keywords"
-              content="{% block meta_keywords %}portfolio, projects, skills, education, experiences{% endblock meta_keywords %}">
-        <title>
-            {% block title %}
-                Portfolio
-            {% endblock title %}
-        </title>
-        {% compress css %}
-            <link type="text/x-scss"
-                  href="{% static 'scss/main.scss' %}"
-                  rel="stylesheet">
-        {% endcompress %}
-    </head>
-    <body>
-        <!-- Navbar -->
-        {% include "navbar.html" %}
-        <!-- Content -->
-        <div class="container min-vh-100">
-            {% block content %}
-            {% endblock content %}
-        </div>
-        <!-- Footer -->
-        {% include "footer.html" %}
-        <!-- Bootstrap JS -->
-        <script src="{% static 'vendor/bootstrap/bootstrap.bundle.min.js' %}"></script>
-        {% block extra_js %}
-        {% endblock extra_js %}
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Portfolio
+        {% endblock title %}
+    </title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    {% include "navbar.html" %}
+    <!-- Content -->
+    <main>
+        {% include "filter.html" with model_name=model_name %}
+        {% block content %}
+        {% endblock content %}
+    </main>
+</body>
+
+<style>
+    /* remove default margin and padding */
+    body, h1, h2, h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+</style>
+
 </html>

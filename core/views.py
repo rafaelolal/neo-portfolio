@@ -1,25 +1,69 @@
-from django.views.generic import TemplateView
+from django.db.models import Count
+from django.views.generic import ListView
 
-from .models import Image, Page, Profile
+from .models import (
+    Award,
+    Certificate,
+    Image,
+    Profile,
+    Project,
+    Skill,
+)
 
 
-class AboutView(TemplateView):
-    template_name = "about.html"
+class BaseListView(ListView):
+    template_name = "list.html"
+    context_object_name = "objects"
+    paginate_by = 12
+
+    def get_queryset(self):
+        objects = (
+            super()
+            .get_queryset()
+            .order_by("-start_month")
+            .order_by("-start_year")
+        )
+        tag = self.request.GET.get("tag")
+        if tag:
+            return objects.filter(tags__name__iexact=tag)
+
+        return objects
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["object"] = Profile.objects.first()
-        context["image"] = Image.objects.filter(name__iexact="Me").first()
-        context["page"] = Page.objects.filter(name__iexact="About").first()
-        return context
-
-
-class ContactView(TemplateView):
-    template_name = "contact.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["object"] = Profile.objects.first()
-        context["page"] = Page.objects.filter(name__iexact="Contact").first()
+        context["about"] = Profile.objects.first()
+        context["model_name"] = self.model.__name__
 
         return context
+
+
+class ProjectListView(BaseListView):
+    model = Project
+
+
+class CertificateListView(BaseListView):
+    model = Certificate
+
+
+class AwardListView(BaseListView):
+    model = Award
+
+
+class ImageListView(BaseListView):
+    model = Image
+
+
+class SkillListView(BaseListView):
+    model = Skill
+
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .annotate(
+                total_count=(
+                    Count("projects") + Count("awards") + Count("certificates")
+                )
+            )
+            .order_by("-total_count")
+        )

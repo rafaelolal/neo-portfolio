@@ -3,9 +3,6 @@ from django.contrib import admin
 from .models import (
     Award,
     Certificate,
-    Course,
-    Education,
-    Experience,
     Image,
     Page,
     Profile,
@@ -17,10 +14,7 @@ from .models import (
 
 models = [
     Project,
-    Experience,
-    Education,
     Certificate,
-    Course,
     Award,
     Image,
     Skill,

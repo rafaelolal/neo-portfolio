@@ -1,37 +1,115 @@
 {% load filters %}
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-    <div class="container-fluid">
-        <button class="navbar-toggler ms-auto"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end"
-             tabindex="-1"
-             id="offcanvasNavbar"
-             aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-center flex-grow-1">
-                    {% get_navbar_urls as navbar_urls %}
-                    {% for title, url in navbar_urls %}
-                        <li class="nav-item">
-                            <a class="nav-link {% if request.path == url %}active{% endif %}"
-                               {% if request.path == project_url %}aria-current="page"{% endif %}
-                               href="{{ url }}">{{ title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+
+<!-- Beware, this code is chat generated! -->
+
+<input type="checkbox" id="menu-toggle" hidden>
+<!-- Must use label tag here for some reason -->
+<button class="menu-open-button" style="font-size: 2em;"><label for="menu-toggle">MENU</label></button>
+<label for="menu-toggle" class="overlay"></label>
+
+<nav class="navbar" style="height: 100vh; border-right: 1px solid #eee;">
+    <ul style="list-style: none; margin: 1em; padding-left: 0px;">
+        {% get_navbar_urls as urls %}
+        {% for name, url in urls %}
+        <li>
+            <a href="{{ url }}" style="font-size: 2em;">{{ name }}</a>
+            <!-- if name is the current page -->
+            {% if request.path == url%}
+            <ul class="submenu" style="list-style: none; padding-left: 1em;">
+                {% for object in objects %}
+                <!-- link using hash -->
+                <li><a href="#{{ object.name|slugify }}">{{ object.name }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div style="margin-top: auto; padding: 1em; border-top: 1px solid #eee; text-align: right;">
+        <a href="mailto:{{ about.email }}">{{ about.email }}</a><br>
+        <a href="{{ about.github }}" target="_blank">GitHub</a><br>
+        <a href="{{ about.linkedin }}" target="_blank">LinkedIn</a>
     </div>
 </nav>
+
+<style>
+    /* Base and Mobile Styles */
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        /* Necessary for readability over page content */
+        background: white;
+        z-index: 1000;
+        /* Necessary for long navigation lists */
+        overflow-y: auto;
+    }
+
+    .menu-open-button {
+        padding: 0.25em;
+        position: fixed;
+        left: 0.25em;
+        bottom: 0.25em;
+        writing-mode: vertical-rl;
+        /* Necessary to be visible on top of page content */
+        z-index: 1001;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #menu-toggle:checked~.navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu-toggle:checked~.overlay {
+        display: block;
+    }
+
+    #menu-toggle:checked~.menu-open-button {
+        display: none;
+    }
+
+    /* Desktop Styles */
+    @media (min-width: 769px) {
+        main {
+            margin-left: 50vw;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-open-button,
+        .overlay {
+            display: none;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const submenus = document.querySelectorAll('.submenu');
+
+        // Close menu when a nav link is clicked
+        submenus.forEach(function (submenu) {
+            submenu.addEventListener('click', function () {
+                menuToggle.checked = false;
+            });
+        });
+    });
+</script>

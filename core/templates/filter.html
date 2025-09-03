@@ -1,62 +1,38 @@
 {% load filters %}
 {% if model_name == "Project" %}
-        <form class="my-4" method="get">
-                <button type="submit"
-                        name="tag"
-                        value="{% if request.GET.tag == 'Featured' %}{% else %}Featured{% endif %}"
-                        class="btn {% if request.GET.tag == 'Featured' %}btn-secondary{% else %}btn-outline-secondary{% endif %}">
-                        Featured
-                </button>
-                <button type="submit"
-                        name="tag"
-                        value="{% if request.GET.tag == 'Small' %}{% else %}Small{% endif %}"
-                        class="btn {% if request.GET.tag == 'Small' %}btn-primary{% else %}btn-outline-primary{% endif %}">
-                        Small
-                </button>
-                <button type="submit"
-                        name="tag"
-                        value="{% if request.GET.tag == 'Medium' %}{% else %}Medium{% endif %}"
-                        class="btn {% if request.GET.tag == 'Medium' %}btn-primary{% else %}btn-outline-primary{% endif %}">
-                        Medium
-                </button>
-                <button type="submit"
-                        name="tag"
-                        value="{% if request.GET.tag == 'Large' %}{% else %}Large{% endif %}"
-                        class="btn {% if request.GET.tag == 'Large' %}btn-primary{% else %}btn-outline-primary{% endif %}">
-                        Large
-                </button>
-        </form>
-{% elif model_name == "Experience" %}
+<form method="get" class="filter" style="border-bottom: 1px solid #eee;">
+        <a href="{{ request.path }}" style="text-decoration: none;"><button type="button">All</button></a>
+        <button type="submit" name="tag" value="Featured"
+        {% if request.GET.tag != 'Featured'%}{% else %}disabled{% endif %}>Featured </button>
+        <button type="submit" name="tag" value="Small"
+        {% if request.GET.tag != 'Small'%}{% else %}disabled{% endif %}>Small</button>
+        <button type="submit" name="tag" value="Medium"
+        {% if request.GET.tag != 'Medium'%}{% else %}disabled{% endif %}>Medium</button>
+        <button type="submit" name="tag" value="Large"
+        {% if request.GET.tag != 'Large'%}{% else %}disabled{% endif %}>Large</button>
+</form>
 {% elif model_name == "Certificate" %}
 {% elif model_name == "Skill" %}
-{% elif model_name == "Education" %}
 {% elif model_name == "Award" %}
-        <form class="my-4" method="get">
-                <button type="submit"
-                        name="tag"
-                        value="{% if request.GET.tag == 'School' %}{% else %}School{% endif %}"
-                        class="btn {% if request.GET.tag == 'School' %}btn-primary{% else %}btn-outline-primary{% endif %}">
-                        School
-                </button>
-                <button type="submit"
-                        name="tag"
-                        value="{% if request.GET.tag == 'State' %}{% else %}State{% endif %}"
-                        class="btn {% if request.GET.tag == 'State' %}btn-primary{% else %}btn-outline-primary{% endif %}">
-                        State
-                </button>
-                <button type="submit"
-                        name="tag"
-                        value="{% if request.GET.tag == 'National' %}{% else %}National{% endif %}"
-                        class="btn {% if request.GET.tag == 'National' %}btn-primary{% else %}btn-outline-primary{% endif %}">
-                        National
-                </button>
-                <button type="submit"
-                        name="tag"
-                        value="{% if request.GET.tag == 'International' %}{% else %}International{% endif %}"
-                        class="btn {% if request.GET.tag == 'International' %}btn-primary{% else %}btn-outline-primary{% endif %}">
-                        International
-                </button>
-        </form>
+<form method="get" class="filter" style="border-bottom: 1px solid #eee;">
+        <a href="{{ request.path }}" style="text-decoration: none;"><button type="button">All</button></a>
+        <button type="submit" name="tag" value="School"
+        {% if request.GET.tag != 'School'%}{% else %}disabled{% endif %}>School</button>
+        <button type="submit" name="tag" value="State"
+        {% if request.GET.tag != 'State'%}{% else %}disabled{% endif %}>State</button>
+        <button type="submit" name="tag" value="National"
+        {% if request.GET.tag != 'National'%}{% else %}disabled{% endif %}>National</button>
+        <button type="submit" name="tag" value="International"
+        {% if request.GET.tag != 'International'%}{% else %}disabled{% endif %}>International</button>
+</form>
 {% elif model_name == "Course" %}
 {% elif model_name == "Image" %}
 {% endif %}
+
+<style>
+.filter button {
+        font-size: 2em;
+        margin: 0.50em;
+        margin-right: 0px;
+}
+</style>

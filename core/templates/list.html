@@ -1,80 +1,32 @@
 {% extends "base.html" %}
 {% load filters %}
 {% block meta_description %}
-    {{ page.description }}
+{{ page.description }}
 {% endblock meta_description %}
 {% block meta_keywords %}
-    {{ page.keywords }}
+{{ page.keywords }}
 {% endblock meta_keywords %}
 {% block title %}
-    {{ page.name }}
+{{ page.name }}
 {% endblock title %}
 {% block content %}
-    <div class="container my-4">
-        <h1 class="mb-4">{{ page.name }}</h1>
-        {% include "filter.html" with model_name=model_name %}
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            {% for object in objects %}
-                <div class="col">
-                    {% if object|class_name == "Project" %}
-                        {% include "project.html" with project=object %}
-                    {% elif object|class_name == "Experience" %}
-                        {% include "experience.html" with experience=object %}
-                    {% elif object|class_name == "Certificate" %}
-                        {% include "certificate.html" with certificate=object %}
-                    {% elif object|class_name == "Skill" %}
-                        {% include "skill.html" with skill=object %}
-                    {% elif object|class_name == "Education" %}
-                        {% include "education.html" with education=object %}
-                    {% elif object|class_name == "Award" %}
-                        {% include "award.html" with award=object %}
-                    {% elif object|class_name == "Course" %}
-                        {% include "course.html" with course=object %}
-                    {% elif object|class_name == "Image" %}
-                        {% include "image.html" with image=course %}
-                    {% endif %}
-                </div>
-            {% endfor %}
+<div style="padding: 1em;">
+    {% for object in objects %}
+        <div>
+            {% if object|class_name == "Project" %}
+            {% include "project.html" with project=object %}
+            {% elif object|class_name == "Certificate" %}
+            {% include "certificate.html" with certificate=object %}
+            {% elif object|class_name == "Skill" %}
+            {% include "skill.html" with skill=object %}
+            {% elif object|class_name == "Award" %}
+            {% include "award.html" with award=object %}
+            {% elif object|class_name == "Course" %}
+            {% include "course.html" with course=object %}
+            {% elif object|class_name == "Image" %}
+            {% include "image.html" with image=course %}
+            {% endif %}
         </div>
-        {% if is_paginated %}
-            <nav aria-label="Page navigation" class="mt-4">
-                <ul class="pagination justify-content-center">
-                    {% if page_obj.has_previous %}
-                        <li class="page-item">
-                            <a class="page-link"
-                               href="?page=1{% if query_string %}&{{ query_string }}{% endif %}">First</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link"
-                               href="?page={{ page_obj.previous_page_number }}{% if query_string %}&{{ query_string }}{% endif %}">Previous</a>
-                        </li>
-                    {% else %}
-                        <li class="page-item disabled">
-                            <span class="page-link">Previous</span>
-                        </li>
-                    {% endif %}
-                    {% for page_num in page_range %}
-                        <li class="page-item {% if page_obj.number == page_num %}active{% endif %}">
-                            <a class="page-link"
-                               href="?page={{ page_num }}{% if query_string %}&{{ query_string }}{% endif %}">{{ page_num }}</a>
-                        </li>
-                    {% endfor %}
-                    {% if page_obj.has_next %}
-                        <li class="page-item">
-                            <a class="page-link"
-                               href="?page={{ page_obj.next_page_number }}{% if query_string %}&{{ query_string }}{% endif %}">Next</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link"
-                               href="?page={{ paginator.num_pages }}{% if query_string %}&{{ query_string }}{% endif %}">Last</a>
-                        </li>
-                    {% else %}
-                        <li class="page-item disabled">
-                            <span class="page-link">Next</span>
-                        </li>
-                    {% endif %}
-                </ul>
-            </nav>
-        {% endif %}
-    </div>
+    {% endfor %}
+<div>
 {% endblock content %}

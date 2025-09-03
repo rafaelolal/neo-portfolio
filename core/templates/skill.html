@@ -1,34 +1,33 @@
 {% load filters %}
-<div class="card">
-    <div class="card-header">
-        <h5 class="card-title">{{ skill.name }}</h5>
+
+<!-- need to find a better way to organize this, cant just be a regular shmegular scroll down, too much white space and too much scrolling for very little extra info -->
+
+<div id="{{ skill.name|slugify }}">
+    <h2 style="font-size: 2em">{{ skill.name }}</h2>
+
+    {% with project_counts=skill|get_project_count %}
+    {% if project_counts %}
+    <div>
+        <p style="display: inline-block;">Projects: </p>
+        <ul style="display: inline-block; padding-left: 0px; list-style: none;">
+            {% for size, count in project_counts %}
+            {% if count != 0 %}<li style="display: inline-block;">{{ count }} {{ size }}</li>{% endif %}
+            {% endfor %}
+        </ul>
     </div>
-    <ul class="list-group list-group-flush">
-        <!-- Projects section -->
-        {% with project_counts=skill|get_project_count %}
-            {% if project_counts %}
-                <li class="list-group-item">
-                    <h6 class="card-subtitle mb-2 text-muted my-1">Projects</h6>
-                    <div class="mb-2">
-                        {% for size, count in project_counts %}
-                            {% if count != 0 %}<span class="badge bg-primary me-1 mb-0">{{ size }} {{ count }}</span>{% endif %}
-                        {% endfor %}
-                    </div>
-                </li>
-            {% endif %}
-        {% endwith %}
-        {% with section_counts=skill|get_section_count %}
-            {% if section_counts %}
-                <li class="list-group-item">
-                    <!-- Others -->
-                    <h6 class="card-subtitle mb-2 text-muted">Others</h6>
-                    <div>
-                        {% for section, count in section_counts %}
-                            {% if count != 0 %}<span class="badge bg-outline-secondary me-1">{{ section }} {{ count }}</span>{% endif %}
-                        {% endfor %}
-                    </div>
-                </li>
-            {% endif %}
-        {% endwith %}
-    </ul>
+    {% endif %}
+    {% endwith %}
+
+    {% with section_counts=skill|get_section_count %}
+    {% if section_counts %}
+    <div>
+        <p style="display: inline-block;">Others: </p>
+        <ul style="display: inline-block; padding-left: 0px">
+            {% for section, count in section_counts %}
+            {% if count != 0 %}<li style="display: inline-block;">{{ count }} {{ section }}</li>{% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    {% endwith %}
 </div>

@@ -1,52 +1,50 @@
 {% load filters %}
-<div class="card mb-4">
-    <div class="card-header d-flex justify-content-between align-items-center">
-        <h5 class="card-title mb-0">{{ award.name }}</h5>
-        <!-- Link (if available) -->
-        {% if award.link %}
-            <small>
-                <span class="badge rounded-pill bg-info">
-                    <a href="{{ project.link }}"
-                       target="_blank"
-                       class="text-decoration-none text-white">Link</a>
-                </span>
-            </small>
-        {% endif %}
-    </div>
-    <!-- Award Image (if available) -->
-    {% if award.images.count %}
-        <img src="{{ award.images.first.image.url }}"
-             class="card-img rounded-0"
-             alt="{{ award.images.first.description|default:award.name }}"
-             width="auto"
-             height="200px"
-             style="object-fit: cover" />
+
+<div id="{{ award.name|slugify }}">
+    {% if award.name %}
+    <h2 style="font-size: 2em;">{{ award.name }}</h2>
     {% endif %}
-    <div class="card-body">
-        <!-- Association and Issuer (if available) -->
-        {% if award.association %}
-            <p class="text-muted mb-2">
-                <small><i class="fas fa-building"></i> {{ award.association }}</small>
-            </p>
-        {% endif %}
-        {% if award.issuer and award.issuer != award.association %}
-            <p class="text-muted mb-2">
-                <small><i class="fas fa-certificate"></i>{{ award.issuer }}</small>
-            </p>
-        {% endif %}
-        <!-- Description (if available) -->
-        {% if award.description %}<p class="card-text">{{ award.description }}</p>{% endif %}
-        <!-- Issue Date (if available) -->
-        {% if award.start_month and award.start_year %}
-            <p class="text-muted">
-                <small><i class="fas fa-calendar"></i>{{ award.start_month|month_name }} {{ award.start_year }}</small>
-            </p>
-        {% endif %}
-        <!-- Skills (if available) -->
-        {% if award.skills.all %}
-            <div class="mb-3">
-                {% for skill in award.skills.all %}<span class="badge bg-primary me-1">{{ skill.name }}</span>{% endfor %}
-            </div>
-        {% endif %}
+
+    {% if award.association %}
+    <p>{{ award.association }}</p>
+    {% endif %}
+
+    {% if award.issuer and award.issuer != award.association %}
+    <p>{{ award.issuer }}</p>
+    {% endif %}
+
+    {% if award.start_month and award.start_year %}
+    <p>
+        {% if award.start_month %}{{ award.start_month|month_name }}{% endif %}
+        {{ award.start_year }}
+    </p>
+    {% endif %}
+
+    {% if award.skills.all %}
+    <div style="">
+        <ul style="list-style: none; padding-left: 0px;">
+            {% for skill in award.skills.all %}
+            <li style="display: inline-block; margin-right: 0.5rem;">{{ skill.name }}</li>
+            {% endfor %}
+        </ul>
     </div>
+    {% endif %}
+
+    {% if award.description %}
+    <p>{{ award.description }}</p>
+    {% endif %}
+
+    {% if award.images.all %}
+    <div>
+        {% for image in award.images.all %}
+        {% if image.image %}
+        <img height="250px" width="auto" src="{{ image.image.url }}" alt="{{ image.description|default:award.name }}">
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if award.link %}
+    <p><a href="{{ award.link }}" target="_blank">View Award</a></p>
+    {% endif %}
 </div>

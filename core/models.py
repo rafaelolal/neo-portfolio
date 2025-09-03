@@ -97,56 +97,12 @@ class Project(BaseModel, WithImageSkillTag):
         return self.name
 
 
-class Experience(BaseModel, WithImageSkillTag):
-    EMPLOYMENT_TYPES = (
-        ("full_time", "Full-time"),
-        ("part_time", "Part-time"),
-        ("self_employed", "Self-employed"),
-        ("freelance", "Freelance"),
-        ("contract", "Contract"),
-        ("internship", "Internship"),
-        ("apprenticeship", "Apprenticeship"),
-        ("volunteer", "Volunteer"),
-    )
-    LOCATION_TYPES = (
-        ("remote", "Remote"),
-        ("onsite", "On-site"),
-        ("hybrid", "Hybrid"),
-    )
-
-    employment_type = models.CharField(
-        max_length=255, choices=EMPLOYMENT_TYPES
-    )
-    location = models.CharField(max_length=255)
-    location_type = models.CharField(max_length=255, choices=LOCATION_TYPES)
-
-    def __str__(self):
-        return f"{self.name} - {self.association} - {self.start_year}/{self.start_month} - {self.end_year}/{self.end_month}"
-
-
-class Education(BaseModel, WithImageSkillTag):
-    degree = models.CharField(max_length=255)
-    field_of_study = models.CharField(max_length=255)
-    grade = models.CharField(max_length=255, blank=True, null=True)
-    activities = models.TextField(blank=True, null=True)
-
-    def __str__(self):
-        return self.name
-
-
 class Certificate(BaseModel, WithImageSkillTag):
     credential_id = models.CharField(max_length=255, blank=True, null=True)
     credential_url = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.name
-
-
-class Course(BaseModel, WithImageSkillTag):
-    number = models.CharField(max_length=255)
-
-    def __str__(self):
-        return f"{self.name} - {self.number}"
 
 
 class Award(BaseModel, WithImageSkillTag):

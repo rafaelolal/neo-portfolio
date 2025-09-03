@@ -1,3 +1,14 @@
+# Brutal todo
+
+1. Projects, add objects, dj review
+2. Skills, dj review
+3. Experience, add objects, basic template
+4. Contact, combine with about, dj review
+5. Education, add objects, basic template
+6. Awards, add objects, dj review
+7. Courses, add objects, basic templates
+8. Certificates, add objects, basic template
+
 Neo Portfolio
 GITHUB LINK FOR ALL PROJECTS + DEMONSTRATION LINK
 
