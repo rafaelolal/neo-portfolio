@@ -4,7 +4,7 @@
 
 <input type="checkbox" id="menu-toggle" hidden>
 <!-- Must use label tag here for some reason -->
-<button class="menu-open-button" style="font-size: 2em;"><label for="menu-toggle">MENU</label></button>
+<button class="menu-open-button" style="font-size: 1em;"><label for="menu-toggle">MENU</label></button>
 <label for="menu-toggle" class="overlay"></label>
 
 <nav class="navbar" style="height: 100vh; border-right: 1px solid #eee;">
@@ -40,7 +40,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 50vw;
+        width: auto;
         /* Necessary for readability over page content */
         background: white;
         z-index: 1000;
@@ -52,7 +52,7 @@
         padding: 0.25em;
         position: fixed;
         left: 0.25em;
-        bottom: 0.25em;
+        top: 50%;
         writing-mode: vertical-rl;
         /* Necessary to be visible on top of page content */
         z-index: 1001;
@@ -84,10 +84,6 @@
 
     /* Desktop Styles */
     @media (min-width: 769px) {
-        main {
-            margin-left: 50vw;
-        }
-
         .navbar {
             display: flex;
             flex-direction: column;
@@ -111,5 +107,26 @@
                 menuToggle.checked = false;
             });
         });
+
+        // Function to adjust main content margin based on navbar width
+        function adjustMainMargin() {
+            const navbar = document.querySelector('.navbar');
+            const main = document.querySelector('main');
+            
+            if (main && navbar) {
+                if (window.innerWidth >= 769) {
+                    // Desktop: set left margin to navbar width
+                    const navbarWidth = navbar.offsetWidth;
+                    main.style.marginLeft = navbarWidth + 'px';
+                } else {
+                    // Mobile: reset margin
+                    main.style.marginLeft = '0';
+                }
+            }
+        }
+
+        // Adjust on load and resize
+        adjustMainMargin();
+        window.addEventListener('resize', adjustMainMargin);
     });
 </script>

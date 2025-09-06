@@ -1,18 +1,18 @@
-// 1. First include Bootstrap functions (required)
-@import "../vendor/bootstrap/scss/functions";
-@import "../vendor/bootstrap/scss/variables";
-@import "../vendor/bootstrap/scss/mixins";
-// Importing all of Bootstrap
-// Ideally in the future we pick and choose what we used from Bootstrap
-@import "../vendor/bootstrap/scss/bootstrap";
+// // 1. First include Bootstrap functions (required)
+// @import "../vendor/bootstrap/scss/functions";
+// @import "../vendor/bootstrap/scss/variables";
+// @import "../vendor/bootstrap/scss/mixins";
+// // Importing all of Bootstrap
+// // Ideally in the future we pick and choose what we used from Bootstrap
+// @import "../vendor/bootstrap/scss/bootstrap";
 
-// 2. Include any default variable overrides here
-$primary: #007bff;
-$secondary: #6c757d;
-// Add other variable overrides here
+// // 2. Include any default variable overrides here
+// $primary: #007bff;
+// $secondary: #6c757d;
+// // Add other variable overrides here
 
 
-// 6. Add custom code below
-.my-custom-class {
-    color: $primary;
-}
+// // 6. Add custom code below
+// .my-custom-class {
+//     color: $primary;
+// }

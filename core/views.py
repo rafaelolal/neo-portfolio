@@ -14,7 +14,6 @@ from .models import (
 class BaseListView(ListView):
     template_name = "list.html"
     context_object_name = "objects"
-    paginate_by = 12
 
     def get_queryset(self):
         objects = (

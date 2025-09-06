@@ -17,7 +17,9 @@ def get_project_count(skill):
             if project.tags.filter(name__iexact=count[0]).exists():
                 count[1] += 1
 
-    return counts
+    s = f"Projects: {counts[0][1]} small, {counts[1][1]} medium, {counts[2][1]} large"
+
+    return s
 
 
 @register.filter(name="get_section_count")
@@ -33,7 +35,8 @@ def get_section_count(skill) -> list[tuple[str, int]]:
         if section[1] != 0:
             found_any = True
 
-    return sections if found_any else []
+    s = f"Other: {sections[0][1]} certificates, {sections[1][1]} awards"
+    return s if found_any else []
 
 
 @register.simple_tag(name="get_navbar_urls")

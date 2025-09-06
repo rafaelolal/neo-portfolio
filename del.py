@@ -13,7 +13,6 @@ if True:
     from core.models import (
         Award,
         Certificate,
-        Course,
         Image,
         Page,
         Profile,
@@ -66,7 +65,10 @@ def create_projects_from_json(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
+    print("Total projects:", len(data))
+
     with transaction.atomic():  # Use a transaction for atomicity
+        projects_created = 0
         for project_data in data:
             # 1. Create/Get the Project
             project, created = Project.objects.get_or_create(
@@ -90,7 +92,11 @@ def create_projects_from_json(file_path):
 
             # 3. Create/Get and Associate Images
             for image_path in project_data.get("images", []):
-                image, _ = Image.objects.get_or_create(image=image_path)
+                image, _ = Image.objects.get_or_create(
+                    name=image_path,
+                    image=image_path,
+                    description=f"Image titled {image_path} for project {project.name}",
+                )
                 project.images.add(image)
 
             # 4.  Create/Get and Associate Tags
@@ -104,6 +110,9 @@ def create_projects_from_json(file_path):
                 project.tags.add(tag)
 
             project.save()  # save the project after adding all related objects.
+            projects_created += 1
+
+        print(f"Total projects created: {projects_created}")
 
 
 def create_pages():
@@ -111,24 +120,6 @@ def create_pages():
         name="Projects",
         description="A collection of projects I have worked on.",
         keywords="projects, portfolio, work",
-    )
-
-    p2 = Page.objects.create(
-        name="About",
-        description="A brief description of who I am.",
-        keywords="about, me, bio",
-    )
-
-    p3 = Page.objects.create(
-        name="Contact",
-        description="A way to get in touch with me.",
-        keywords="contact, email, phone",
-    )
-
-    p4 = Page.objects.create(
-        name="Courses",
-        description="A collection of courses I have taken.",
-        keywords="courses, education, classes",
     )
 
     p5 = Page.objects.create(
@@ -149,27 +140,10 @@ def create_pages():
         keywords="skills, abilities, proficiencies",
     )
 
-    p8 = Page.objects.create(
-        name="Experience",
-        description="A collection of experiences I have had.",
-        keywords="experience, work, roles",
-    )
-
-    p9 = Page.objects.create(
-        name="Education",
-        description="A collection of educational experiences I have had.",
-        keywords="education, school, university",
-    )
-
     p1.save()
-    p2.save()
-    p3.save()
-    p4.save()
     p5.save()
     p6.save()
     p7.save()
-    p8.save()
-    p9.save()
 
 
 def create_achievements_from_json(file_path):
@@ -190,18 +164,7 @@ def create_achievements_from_json(file_path):
         for item_data in data:
             item_type = item_data["type"]
 
-            if item_type == "course":
-                Course.objects.get_or_create(
-                    name=item_data["name"],
-                    defaults={
-                        "link": item_data["link"],
-                        "description": item_data["description"],
-                        "association": item_data["association"],
-                        "start_month": item_data["start_month"],
-                        "start_year": item_data["start_year"],
-                    },
-                )
-            elif item_type == "certificate":
+            if item_type == "certificate":
                 Certificate.objects.get_or_create(
                     name=item_data["name"],
                     defaults={
@@ -212,6 +175,7 @@ def create_achievements_from_json(file_path):
                         "start_year": item_data["start_year"],
                     },
                 )
+
             elif item_type == "award":
                 Award.objects.get_or_create(
                     name=item_data["name"],
@@ -225,6 +189,7 @@ def create_achievements_from_json(file_path):
                         "start_year": item_data["start_year"],
                     },
                 )
+
             else:
                 print(f"Warning: Unknown item type '{item_type}'. Skipping.")
 
@@ -240,13 +205,8 @@ def main():
         interests="I like coding",
         doing_now="I am coding",
     )
-    i1 = Image.objects.create(
-        name="Me",
-        description="A picture of me",
-        image="images/me.jpg",
-    )
-    p1.images.add(i1)
     p1.save()
+
     create_pages()
     create_achievements_from_json("portfolio.achievements.json")
     create_projects_from_json("portfolio.posts.json")
