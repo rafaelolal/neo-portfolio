@@ -11,22 +11,26 @@
 {% endblock title %}
 {% block content %}
 <div style="padding: 1em;">
+    {% if not objects %}
+    Hmmm, it seems this list is empty 🤔
+    {% else %}
     {% for object in objects %}
-        <div>
-            {% if object|class_name == "Project" %}
-            {% include "project.html" with project=object %}
-            {% elif object|class_name == "Certificate" %}
-            {% include "certificate.html" with certificate=object %}
-            {% elif object|class_name == "Skill" %}
-            {% include "skill.html" with skill=object %}
-            {% elif object|class_name == "Award" %}
-            {% include "award.html" with award=object %}
-            {% elif object|class_name == "Course" %}
-            {% include "course.html" with course=object %}
-            {% elif object|class_name == "Image" %}
-            {% include "image.html" with image=course %}
-            {% endif %}
-        </div>
+    <div>
+        {% if object|class_name == "Project" %}
+        {% include "project.html" with project=object %}
+        {% elif object|class_name == "Certificate" %}
+        {% include "certificate.html" with certificate=object %}
+        {% elif object|class_name == "Skill" %}
+        {% include "skill.html" with skill=object %}
+        {% elif object|class_name == "Award" %}
+        {% include "award.html" with award=object %}
+        {% elif object|class_name == "Course" %}
+        {% include "course.html" with course=object %}
+        {% elif object|class_name == "Image" %}
+        {% include "image.html" with image=course %}
+        {% endif %}
+    </div>
     {% endfor %}
-<div>
-{% endblock content %}
+    {% endif %}
+    <div>
+        {% endblock content %}

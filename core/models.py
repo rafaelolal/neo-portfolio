@@ -93,6 +93,8 @@ class Page(BaseModel):
 
 
 class Project(BaseModel, WithImageSkillTag):
+    github_repo = models.URLField(blank=True, null=True)
+
     def __str__(self):
         return self.name
 

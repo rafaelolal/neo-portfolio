@@ -48,7 +48,8 @@
     </div>
     {% endif %}
 
-    {% if project.link %}
-    <p><a href="{{ project.link }}">Project Link</a></p>
-    {% endif %}
+
+    <p>{% if project.link %} <a href="{{ project.link }}">Project Link</a>{% endif %} {% if project.github_repo %}<a
+            href="{{ project.github_repo }}">GitHub Repository</a>{% endif %}</p>
+
 </div>

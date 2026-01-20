@@ -1,3 +1,6 @@
+# TODO: update this to instead just read all of the models in the module dynamically
+# probably using dir() and getattr() or something or apps.get_models()
+
 from django.contrib import admin
 
 from .models import (

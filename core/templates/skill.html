@@ -1,28 +1,42 @@
 {% load filters %}
 
-<!-- need to find a better way to organize this, cant just be a regular shmegular scroll down, too much white space and too much scrolling for very little extra info -->
+{% with proj_dict=skill|get_project_count %}
 
-<div id="{{ skill.name|slugify }}">
-    <h2 style="font-size: 2em">{{ skill.name }}</h2>
+{% with count=proj_dict.Total %}
+{% if count >= 10 %}
+{% ifchanged %}<h2 style="font-size: 2em;">Most Used</h2>{% endifchanged %}
+{% elif count >= 5 %}
+{% ifchanged %}<h2 style="font-size: 2em; margin-top: 1em;">Proficient</h2>{% endifchanged %}
+{% else %}
+{% ifchanged %}<h2 style="font-size: 2em; margin-top: 1em;">Know About</h2>{% endifchanged %}
+{% endif %}
+{% endwith %}
 
-    {% with project_counts=skill|get_project_count %}
-    {% if project_counts %}
+<!-- Copilot helped me create this grid solution -->
+<div style="
+        display: grid; 
+        grid-template-columns: 175px 100px 80px 100px 80px 1fr; 
+        padding-bottom: 0.5em;">
+
+    <div style=" font-weight: bold;">{{ skill.name }}</div>
+    <div>{{ proj_dict.Total }} Projects</div>
+    <div>{{ proj_dict.Large }} Large</div>
+    <div>{{ proj_dict.Medium }} Medium</div>
+    <div>{{ proj_dict.Small }} Small</div>
+
+    <!-- Extras -->
     <div>
-        <p style="display: inline-block;">{{ project_counts }}</p>
+        {% with other_count=skill|get_other_count %}
+        {% if other_count %}
+        {% if other_count.Certificate > 0 %}
+        <span style="display:block;">{{ other_count.Certificate }} Certs</span>
+        {% endif %}
+        {% if other_count.Award > 0 %}
+        <span style="display:block;">{{ other_count.Award }} Awards</span>
+        {% endif %}
+        {% endif %}
+        {% endwith %}
     </div>
-    {% endif %}
-    {% endwith %}
-
-    {% with section_counts=skill|get_section_count %}
-    {% if section_counts %}
-    <div>
-        <p style="display: inline-block;">Others: </p>
-        <ul style="display: inline-block; padding-left: 0px">
-            {% for section, count in section_counts %}
-            {% if count != 0 %}<li style="display: inline-block;">{{ count }} {{ section }}</li>{% endif %}
-            {% endfor %}
-        </ul>
-    </div>
-    {% endif %}
-    {% endwith %}
 </div>
+
+{% endwith %}

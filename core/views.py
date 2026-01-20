@@ -8,6 +8,7 @@ from .models import (
     Profile,
     Project,
     Skill,
+    Page,
 )
 
 
@@ -32,6 +33,7 @@ class BaseListView(ListView):
         context = super().get_context_data(**kwargs)
         context["about"] = Profile.objects.first()
         context["model_name"] = self.model.__name__
+        context["page"] = Page.objects.filter(name__iexact=self.model.__name__ + "s").first()
 
         return context
 

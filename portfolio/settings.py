@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET")
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 print("MY DEBUG:", DEBUG)
 
-ALLOWED_HOSTS = ["ralmeida.dev", "127.0.0.1"]
+ALLOWED_HOSTS = ["ralmeida.dev", "127.0.0.1", "150.136.250.155"]
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / MEDIA_URL

@@ -11,33 +11,30 @@ def class_name(object):
 
 @register.filter(name="get_project_count")
 def get_project_count(skill):
-    counts = [["Small", 0], ["Medium", 0], ["Large", 0]]
+    counts = {"Total": 0,"Small": 0, "Medium": 0, "Large": 0}
     for project in skill.projects.all():
-        for count in counts:
-            if project.tags.filter(name__iexact=count[0]).exists():
-                count[1] += 1
+        for size in counts.keys():
+            # Always fails on "Total", but that's okay
+            if project.tags.filter(name__iexact=size).exists():
+                counts[size] += 1
+                counts["Total"] += 1
 
-    s = f"Projects: {counts[0][1]} small, {counts[1][1]} medium, {counts[2][1]} large"
+    return counts
 
-    return s
-
-
-@register.filter(name="get_section_count")
-def get_section_count(skill) -> list[tuple[str, int]]:
-    sections = [
-        ["Certificate", 0],
-        ["Award", 0],
-    ]
+@register.filter(name="get_other_count")
+def get_other_count(skill):
+    other_count = {
+        "Certificate": 0,
+        "Award": 0,
+    }
 
     found_any = False
-    for section in sections:
-        section[1] = getattr(skill, f"{section[0].lower()}s").count()
-        if section[1] != 0:
+    for section in other_count.keys():
+        other_count[section] = getattr(skill, f"{section.lower()}s").count()
+        if other_count[section] != 0:
             found_any = True
 
-    s = f"Other: {sections[0][1]} certificates, {sections[1][1]} awards"
-    return s if found_any else []
-
+    return other_count if found_any else None
 
 @register.simple_tag(name="get_navbar_urls")
 def get_navbar_urls():

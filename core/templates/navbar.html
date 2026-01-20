@@ -1,7 +1,6 @@
 {% load filters %}
 
-<!-- Beware, this code is chat generated! -->
-
+<!-- Beware, some of this code is AI generated! -->
 <input type="checkbox" id="menu-toggle" hidden>
 <!-- Must use label tag here for some reason -->
 <button class="menu-open-button" style="font-size: 1em;"><label for="menu-toggle">MENU</label></button>
@@ -13,11 +12,11 @@
         {% for name, url in urls %}
         <li>
             <a href="{{ url }}" style="font-size: 2em;">{{ name }}</a>
-            <!-- if name is the current page -->
-            {% if request.path == url%}
+            <!-- if the current request path is the same as the url, show submenu (except for skills) -->
+            {% if request.path == url and name != "Skills" %}
             <ul class="submenu" style="list-style: none; padding-left: 1em;">
                 {% for object in objects %}
-                <!-- link using hash -->
+                <!-- this will be used for quickly navigating between objects -->
                 <li><a href="#{{ object.name|slugify }}">{{ object.name }}</a></li>
                 {% endfor %}
             </ul>
@@ -112,7 +111,7 @@
         function adjustMainMargin() {
             const navbar = document.querySelector('.navbar');
             const main = document.querySelector('main');
-            
+
             if (main && navbar) {
                 if (window.innerWidth >= 769) {
                     // Desktop: set left margin to navbar width
