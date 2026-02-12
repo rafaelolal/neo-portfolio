@@ -3,7 +3,7 @@
 <!-- Beware, some of this code is AI generated! -->
 <input type="checkbox" id="menu-toggle" hidden>
 <!-- Must use label tag here for some reason -->
-<button class="menu-open-button" style="font-size: 1em;"><label for="menu-toggle">MENU</label></button>
+<button class="menu-open-button" style="font-size: 2em;"><label for="menu-toggle">MENU</label></button>
 <label for="menu-toggle" class="overlay"></label>
 
 <nav class="navbar" style="height: 100vh; border-right: 1px solid #eee;">
@@ -11,10 +11,10 @@
         {% get_navbar_urls as urls %}
         {% for name, url in urls %}
         <li>
-            <a href="{{ url }}" style="font-size: 2em;">{{ name }}</a>
+            <a href="{{ url }}">{{ name }}</a>
             <!-- if the current request path is the same as the url, show submenu (except for skills) -->
-            {% if request.path == url and name != "Skills" %}
-            <ul class="submenu" style="list-style: none; padding-left: 1em;">
+            {% if request.path == url and name != "Skills" %} <ul class="submenu"
+                style="list-style: none; padding-left: 1em;">
                 {% for object in objects %}
                 <!-- this will be used for quickly navigating between objects -->
                 <li><a href="#{{ object.name|slugify }}">{{ object.name }}</a></li>
@@ -51,7 +51,7 @@
         padding: 0.25em;
         position: fixed;
         left: 0.25em;
-        top: 50%;
+        bottom: 0.25em;
         writing-mode: vertical-rl;
         /* Necessary to be visible on top of page content */
         z-index: 1001;

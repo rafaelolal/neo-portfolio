@@ -2,7 +2,7 @@
 
 <div id="{{ award.name|slugify }}">
     {% if award.name %}
-    <h2 style="font-size: 2em;">{{ award.name }}</h2>
+    <h2>{{ award.name }}</h2>
     {% endif %}
 
     {% if award.association %}
@@ -21,7 +21,7 @@
     {% endif %}
 
     {% if award.skills.all %}
-    <div style="">
+    <div>
         <ul style="list-style: none; padding-left: 0px;">
             {% for skill in award.skills.all %}
             <li style="display: inline-block; margin-right: 0.5rem;">{{ skill.name }}</li>
@@ -44,7 +44,15 @@
     </div>
     {% endif %}
 
-    {% if award.link %}
-    <p><a href="{{ award.link }}" target="_blank">View Award</a></p>
+    {% if award.links %}
+    <div>
+        <ul style="list-style: none; padding-left: 0px;">
+            {% for link in award.links %}
+            <li style="display: inline-block; margin-right: 0.5rem;">
+                <a href="{{ link }}" target="_blank">{{ link|format_link }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
     {% endif %}
 </div>

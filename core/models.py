@@ -22,7 +22,8 @@ class BaseModel(models.Model):
 
     name = models.CharField(max_length=255, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    link = models.URLField(blank=True, null=True)
+    links = models.JSONField(default=list, blank=True, null=True)
+
     association = models.CharField(max_length=255, blank=True, null=True)
 
     start_month = models.IntegerField(choices=MONTHS, blank=True, null=True)
@@ -93,8 +94,6 @@ class Page(BaseModel):
 
 
 class Project(BaseModel, WithImageSkillTag):
-    github_repo = models.URLField(blank=True, null=True)
-
     def __str__(self):
         return self.name
 

@@ -4,6 +4,25 @@ from django.urls import reverse
 register = template.Library()
 
 
+@register.filter(name="format_link")
+def format_link(link: str) -> str:
+    # Remove http:// or https://
+    link = link.replace("http://", "").replace("https://", "")
+    # Remove "www." prefix
+    link = link.replace("www.", "")
+    # Remove any text after a "#"
+    link = link.split("#")[0]
+    # Remove any query parameters after "?"
+    link = link.split("?")[0]
+    # Remove any trailing slashes
+    link = link.rstrip("/")
+    # Return first 30 characters only
+    if len(link) > 30:
+        return link[:27] + "..."
+
+    return link
+
+
 @register.filter(name="class_name")
 def class_name(object):
     return object.__class__.__name__
@@ -11,7 +30,7 @@ def class_name(object):
 
 @register.filter(name="get_project_count")
 def get_project_count(skill):
-    counts = {"Total": 0,"Small": 0, "Medium": 0, "Large": 0}
+    counts = {"Total": 0, "Small": 0, "Medium": 0, "Large": 0, "School": 0}
     for project in skill.projects.all():
         for size in counts.keys():
             # Always fails on "Total", but that's okay
@@ -20,6 +39,7 @@ def get_project_count(skill):
                 counts["Total"] += 1
 
     return counts
+
 
 @register.filter(name="get_other_count")
 def get_other_count(skill):
@@ -35,6 +55,7 @@ def get_other_count(skill):
             found_any = True
 
     return other_count if found_any else None
+
 
 @register.simple_tag(name="get_navbar_urls")
 def get_navbar_urls():

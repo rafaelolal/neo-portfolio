@@ -2,7 +2,7 @@
 
 <div id="{{ certificate.name|slugify }}">
     {% if certificate.name %}
-    <h2 style="font-size: 2em;">{{ certificate.name }}</h2>
+    <h2>{{ certificate.name }}</h2>
     {% endif %}
 
     {% if certificate.association %}
@@ -21,7 +21,7 @@
     {% endif %}
 
     {% if certificate.skills.all %}
-    <div style="">
+    <div>
         <ul style="list-style: none; padding-left: 0px;">
             {% for skill in certificate.skills.all %}
             <li style="display: inline-block; margin-right: 0.5rem;">{{ skill.name }}</li>
@@ -38,13 +38,22 @@
     <div>
         {% for image in certificate.images.all %}
         {% if image.image %}
-        <img height="250px" width="auto" src="{{ image.image.url }}" alt="{{ image.description|default:certificate.name }}">
+        <img height="250px" width="auto" src="{{ image.image.url }}"
+            alt="{{ image.description|default:certificate.name }}">
         {% endif %}
         {% endfor %}
     </div>
     {% endif %}
 
-    {% if certificate.link %}
-    <p><a href="{{ certificate.link }}" target="_blank">View Certificate</a></p>
+    {% if certificate.links %}
+    <div>
+        <ul style="list-style: none; padding-left: 0px;">
+            {% for link in certificate.links %}
+            <li style="display: inline-block; margin-right: 0.5rem;">
+                <a href="{{ link }}" target="_blank">{{ link|format_link }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
     {% endif %}
 </div>

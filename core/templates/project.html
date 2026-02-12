@@ -1,8 +1,9 @@
-<!-- Beware, this code is chat generated! -->
+<!-- Beware, some of this code is AI generated! -->
+{% load filters %}
 
-<div id="{{ project.name|slugify }}" style="">
+<div id="{{ project.name|slugify }}">
     {% if project.name %}
-    <h2 style="font-size: 2em">{{ project.name }}</h2>
+    <h2>{{ project.name }}</h2>
     {% endif %}
 
     {% if project.association %}
@@ -23,7 +24,7 @@
     {% endif %}
 
     {% if project.skills.all %}
-    <div style="">
+    <div>
         <ul style="list-style: none; padding-left: 0px;">
             {% for skill in project.skills.all %}
             <li style="display: inline-block; margin-right: 0.5rem">{{ skill.name }}</li>
@@ -48,8 +49,15 @@
     </div>
     {% endif %}
 
-
-    <p>{% if project.link %} <a href="{{ project.link }}">Project Link</a>{% endif %} {% if project.github_repo %}<a
-            href="{{ project.github_repo }}">GitHub Repository</a>{% endif %}</p>
-
+    {% if project.links %}
+    <div>
+        <ul style="list-style: none; padding-left: 0px;">
+            {% for link in project.links %}
+            <li style="display: inline-block; margin-right: 0.5rem;">
+                <a href="{{ link }}" target="_blank">{{ link|format_link }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
 </div>

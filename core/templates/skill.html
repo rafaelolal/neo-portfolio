@@ -4,18 +4,18 @@
 
 {% with count=proj_dict.Total %}
 {% if count >= 10 %}
-{% ifchanged %}<h2 style="font-size: 2em;">Most Used</h2>{% endifchanged %}
+{% ifchanged %}<h2>Most Used</h2>{% endifchanged %}
 {% elif count >= 5 %}
-{% ifchanged %}<h2 style="font-size: 2em; margin-top: 1em;">Proficient</h2>{% endifchanged %}
+{% ifchanged %}<h2 style="margin-top: 1em;">Proficient</h2>{% endifchanged %}
 {% else %}
-{% ifchanged %}<h2 style="font-size: 2em; margin-top: 1em;">Know About</h2>{% endifchanged %}
+{% ifchanged %}<h2 style="margin-top: 1em;">Know About</h2>{% endifchanged %}
 {% endif %}
 {% endwith %}
 
 <!-- Copilot helped me create this grid solution -->
 <div style="
         display: grid; 
-        grid-template-columns: 175px 100px 80px 100px 80px 1fr; 
+        grid-template-columns: 175px 100px 80px 100px 80px 80px 1fr; 
         padding-bottom: 0.5em;">
 
     <div style=" font-weight: bold;">{{ skill.name }}</div>
@@ -23,13 +23,14 @@
     <div>{{ proj_dict.Large }} Large</div>
     <div>{{ proj_dict.Medium }} Medium</div>
     <div>{{ proj_dict.Small }} Small</div>
+    <div>{{ proj_dict.School }} School</div>
 
     <!-- Extras -->
     <div>
         {% with other_count=skill|get_other_count %}
         {% if other_count %}
         {% if other_count.Certificate > 0 %}
-        <span style="display:block;">{{ other_count.Certificate }} Certs</span>
+        <span style="display:block;">{{ other_count.Certificate }} Certificates</span>
         {% endif %}
         {% if other_count.Award > 0 %}
         <span style="display:block;">{{ other_count.Award }} Awards</span>
