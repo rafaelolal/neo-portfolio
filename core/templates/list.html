@@ -11,6 +11,9 @@
 {% endblock title %}
 {% block content %}
 <div style="padding: 1em;">
+    {% if page.name == "Projects" %}
+        <p>I am constantly working on new projects, but I honestly don't update this page as much as I should. If you're not satisfied by these, please visit my <a href="{{ about.github }}" target="_blank">GitHub</a> .</p>
+    {% endif %}
     {% if not objects %}
     Hmmm, it seems this list is empty 🤔
     {% else %}
