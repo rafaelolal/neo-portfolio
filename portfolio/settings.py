@@ -30,7 +30,10 @@ SECRET_KEY = os.environ.get("SECRET")
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 print("MY DEBUG:", DEBUG)
 
-ALLOWED_HOSTS = ["ralmeida.dev", "127.0.0.1", "150.136.250.155"]
+# Settings added after using cloudflare tunnel
+ALLOWED_HOSTS =['portfolio.ralmeida.dev', 'localhost', '127.0.0.1']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+CSRF_TRUSTED_ORIGINS = ['https://portfolio.ralmeida.dev']
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / MEDIA_URL
@@ -43,37 +46,12 @@ STATICFILES_DIRS = [
     BASE_DIR / STATIC_URL,
 ]
 
-# Add compressor to finders
-STATICFILES_FINDERS = [
-    "django.contrib.staticfiles.finders.FileSystemFinder",
-    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
-    "compressor.finders.CompressorFinder",
-]
-
-# Compressor settings
-COMPRESS_PRECOMPILERS = (("text/x-scss", "django_libsass.SassCompiler"),)
-
-SASS_PROCESSOR_ROOT = STATIC_ROOT
-SASS_PROCESSOR_AUTO_INCLUDE = False
-
 if DEBUG:
     # Development settings
-    COMPRESS_ENABLED = False  # For easier development
-    SASS_PROCESSOR_ENABLED = False
+    pass
 
 else:
     # Production settings
-    COMPRESS_ENABLED = True
-    COMPRESS_OFFLINE = True
-    SASS_PROCESSOR_ENABLED = True
-    COMPRESS_CSS_FILTERS = [
-        "compressor.filters.css_default.CssAbsoluteFilter",
-        "compressor.filters.cssmin.rCSSMinFilter",
-    ]
-
-    # Add these too
-    COMPRESS_JS_FILTERS = ["compressor.filters.jsmin.JSMinFilter"]
-    COMPRESS_OUTPUT_DIR = "compressed"
 
     # HTTPS settings
     SESSION_COOKIE_SECURE = True
@@ -161,8 +139,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "core",
-    "compressor",
-    "django_extensions",
 ]
 
 MIDDLEWARE = [
