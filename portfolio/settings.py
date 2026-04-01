@@ -31,9 +31,9 @@ DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 print("MY DEBUG:", DEBUG)
 
 # Settings added after using cloudflare tunnel
-ALLOWED_HOSTS =['portfolio.ralmeida.dev', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS =['ralmeida.dev', 'localhost', '127.0.0.1']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-CSRF_TRUSTED_ORIGINS = ['https://portfolio.ralmeida.dev']
+CSRF_TRUSTED_ORIGINS = ['https://ralmeida.dev']
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / MEDIA_URL
