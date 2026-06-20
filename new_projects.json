@@ -1,4 +1,70 @@
 [
+    {
+    "name": "Disk Scheduler",
+    "description": "A multi-threaded disk I/O scheduler implemented in C++ that uses Shortest Seek Time First (SSTF) scheduling with mutexes and per-requester condition variables to coordinate concurrent disk requests. Rafael and his partner designed the full synchronization logic, including a per-requester CV scheme that ensures each requester blocks until its specific track request is serviced before re-entering the queue. This was a project for Bowdoin College's Operating Systems course (CSCI 3310), built to give students hands-on experience implementing concurrent I/O scheduling. The project deepened Rafael's understanding of deadlock prevention, condition variable semantics, and the subtle distinction between a transiently empty queue and one that is permanently drained.",
+    "links": [
+      "https://github.com/rafaelolal/disk-scheduler"
+    ],
+    "association": null,
+    "start_month": 2,
+    "start_year": 2026,
+    "end_month": null,
+    "end_year": null,
+    "skills": [
+      "C++",
+      "Concurrency",
+      "Multithreading",
+      "Operating Systems"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "User-Level Thread Library",
+    "description": "A user-level thread library implemented in C++ that provides threads, locks, and condition variables on top of ucontext-based context switching, supporting both cooperative and preemptive scheduling via interrupt signals. Rafael and his partner designed the full library including thread lifecycle management with a ready queue and zombie state, lock ownership tracking, orphan lock detection, and Mesa-semantics condition variables. This was a project for Bowdoin College's Operating Systems course (CSCI 3310), intended to show students how threading primitives are built from the ground up at the user level. Building it gave Rafael practical experience with context switching, the edge cases in threading API design such as orphaned locks, and why Mesa semantics require callers to re-check predicates after waking.",
+    "links": [
+      "https://github.com/rafaelolal/thread-library-implementation"
+    ],
+    "association": null,
+    "start_month": 3,
+    "start_year": 2026,
+    "end_month": null,
+    "end_year": null,
+    "skills": [
+      "C++",
+      "Concurrency",
+      "Multithreading",
+      "Operating Systems"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
+  {
+    "name": "Virtual Memory Pager",
+    "description": "A demand-paged virtual memory system implemented in C++ that manages page tables, physical frames, and disk swap space to simulate virtual memory for multiple concurrent processes. Rafael and his partner Jack Luehrman designed the eviction and fault-handling logic, including optimizations such as zero-fill deferral, skipping writeback for clean pages, and implementing syslog via read faults. This was Project 4 for Bowdoin College's Operating Systems course (CSCI 3310), designed to give students a concrete understanding of how an OS manages virtual memory at the frame and page-table level. The project gave Rafael hands-on experience with page fault handling, reference and dirty bit tracking, and the careful bookkeeping needed to coordinate physical memory and disk swap space.",
+    "links": [
+      "https://github.com/rafaelolal/virtual-memory-pager"
+    ],
+    "association": null,
+    "start_month": 5,
+    "start_year": 2026,
+    "end_month": null,
+    "end_year": null,
+    "skills": [
+      "C++",
+      "Concurrency",
+      "Operating Systems",
+      "Virtual Memory"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
   {
     "name": "3DOF Robot Motion Planning",
     "description": "This is an interactive C++ and OpenGL application that computes and animates a collision-free path for a polygonal robot moving among polygon obstacles, supporting three degrees of freedom: translation in x and y and rotation. I implemented the full program, including an A* search over a discrete 3D configuration space (x, y, orientation), robot transformation via rotation and translation, segment intersection tests for collision detection, and bounding-box pruning for efficiency. It was created as Project 7 in my Computational Geometry (CSCI 3250) course. This project deepened my understanding of robot motion planning, configuration spaces, and applying computational geometry algorithms such as segment intersection and point-in-polygon tests in a real interactive system.",

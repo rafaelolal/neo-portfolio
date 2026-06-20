@@ -36,7 +36,9 @@ def get_project_count(skill):
             # Always fails on "Total", but that's okay
             if project.tags.filter(name__iexact=size).exists():
                 counts[size] += 1
-                counts["Total"] += 1
+                # Don't double count for "Total"
+                if size != "School":
+                    counts["Total"] += 1
 
     return counts
 
