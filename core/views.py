@@ -20,8 +20,7 @@ class BaseListView(ListView):
         objects = (
             super()
             .get_queryset()
-            .order_by("-start_month")
-            .order_by("-start_year")
+            .order_by("-start_year", "-start_month")
         )
         tag = self.request.GET.get("tag")
         if tag:

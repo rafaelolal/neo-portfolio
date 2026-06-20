@@ -1,0 +1,847 @@
+[
+  {
+    "name": "3DOF Robot Motion Planning",
+    "description": "This is an interactive C++ and OpenGL application that computes and animates a collision-free path for a polygonal robot moving among polygon obstacles, supporting three degrees of freedom: translation in x and y and rotation. I implemented the full program, including an A* search over a discrete 3D configuration space (x, y, orientation), robot transformation via rotation and translation, segment intersection tests for collision detection, and bounding-box pruning for efficiency. It was created as Project 7 in my Computational Geometry (CSCI 3250) course. This project deepened my understanding of robot motion planning, configuration spaces, and applying computational geometry algorithms such as segment intersection and point-in-polygon tests in a real interactive system.",
+    "links": [
+      "https://github.com/rafaelolal/3dof-animation"
+    ],
+    "association": null,
+    "start_month": 12,
+    "start_year": 2024,
+    "end_month": 12,
+    "end_year": 2024,
+    "skills": [
+      "C++",
+      "OpenGL"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
+  {
+    "name": "BB Quotes",
+    "description": "BB Quotes is an iOS app that displays random quotes from Breaking Bad and Better Call Saul, fetching quote and character data from a public API and presenting it with character images and biographical details. I built the app as the sole developer using Swift and SwiftUI, implementing an MVVM architecture with an async/await networking layer and tab-based navigation between the two shows. The app was created in January 2024 as a SwiftUI learning project to practice iOS development patterns including data fetching, state management, and view composition. This project strengthened my skills in Swift concurrency, SwiftUI layout, and structuring iOS apps with clean architecture patterns.",
+    "links": [
+      "https://github.com/rafaelolal/BB-Quotes"
+    ],
+    "association": null,
+    "start_month": 1,
+    "start_year": 2024,
+    "end_month": 1,
+    "end_year": 2024,
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "Xcode"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "Dex3",
+    "description": "Dex3 is an iOS Pokédex app that fetches and displays the first 386 Pokémon from the PokéAPI, allowing users to browse stats, toggle shiny sprites, and mark favorites, with a home screen widget that surfaces a random Pokémon. I was the sole developer, building the app in SwiftUI with Core Data for local persistence, Swift Charts for stat visualizations, WidgetKit for the home screen widget, and URLSession for async API fetching. It was created as a personal learning project to practice iOS development patterns including MVVM, Core Data persistence, and iOS widget extensions. This project deepened my understanding of Swift concurrency, Core Data stack setup, and building multi-target Xcode projects with shared data containers.",
+    "links": [
+      "https://github.com/rafaelolal/Dex3"
+    ],
+    "association": null,
+    "start_month": 1,
+    "start_year": 2024,
+    "end_month": 1,
+    "end_year": 2024,
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "Core Data",
+      "WidgetKit",
+      "Swift Charts",
+      "Xcode"
+    ],
+    "tags": [
+      "medium"
+    ]
+  },
+  {
+    "name": "JP Apex Predators",
+    "description": "JP Apex Predators is an iOS and macOS app that displays a catalog of dinosaurs from the Jurassic Park film franchise, allowing users to browse, search, filter by type and movie, and sort the list alphabetically or by order of movie appearance. I was the sole developer, building the app with Swift and SwiftUI, decoding a local JSON dataset and structuring the app with a list view, a detail view showing movie scenes, and a controller class for filtering and sorting logic. The project was created as a hands-on SwiftUI learning exercise to practice building real-world iOS app patterns. It strengthened my skills in SwiftUI navigation, state management, JSON decoding, and building reusable view components.",
+    "links": [
+      "https://github.com/rafaelolal/JP-Apex-Predators"
+    ],
+    "association": null,
+    "start_month": 1,
+    "start_year": 2024,
+    "end_month": 1,
+    "end_year": 2024,
+    "skills": [
+      "Swift",
+      "SwiftUI"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "LOTR Converter",
+    "description": "LOTR Converter is an iOS app that converts between fictional currencies from the Lord of the Rings universe, supporting six denominations from Copper Penny to Diamond Penny with real-time conversion in both directions. I built it as the sole developer using Swift and SwiftUI, implementing a currency enum with exchange rate logic, persistent user preferences via UserDefaults, and an in-app tip using TipKit. The app was created in late December 2023 through early January 2024 as a SwiftUI learning project to practice building interactive iOS apps with state management and modular view composition. This project deepened my skills in SwiftUI data binding, focus state management, and structuring a small iOS app into reusable components.",
+    "links": [
+      "https://github.com/rafaelolal/LOTR-Converter"
+    ],
+    "association": null,
+    "start_month": 12,
+    "start_year": 2023,
+    "end_month": 12,
+    "end_year": 2023,
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "Xcode"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "Monster Type",
+    "description": "Monster Type is a Breaking Bad-themed 2D desktop shooter game where two players (or a player versus an AI) control characters on opposite halves of the screen, firing projectiles at each other until one side reaches a target score. I built this as part of a small team using Java and the libGDX game framework, implementing the player character, enemy AI with randomized movement, projectile and collision systems, parallax scrolling backgrounds, and a HUD with live score tracking. The game was created as a fun group side project to explore game development concepts using a cross-platform Java game library. Through this project I gained hands-on experience with game loops, sprite batching, viewport management, asset management, and designing simple AI behavior.",
+    "links": [
+      "https://github.com/rafaelolal/MonsterType"
+    ],
+    "association": null,
+    "start_month": 5,
+    "start_year": 2019,
+    "end_month": 5,
+    "end_year": 2019,
+    "skills": [
+      "Java",
+      "libGDX"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "Assembly Bomb Defusal",
+    "description": "This project is a classic binary bomb defusal lab in which a compiled x86-64 binary program (\"bitbomb\") must be defused by reverse-engineering six phases of assembly code — covering string comparison, loops, switch statements, recursion, arrays, and linked lists — without triggering an explosion. I used GDB to step through and analyze the disassembled machine code for each phase, documenting my reasoning about registers, jump conditions, and data structures to derive the correct input strings that would defuse each phase. It was created as Lab 3 in a computer systems course at Bowdoin College, serving as a hands-on introduction to reading and understanding x86-64 assembly language and low-level program execution. Through this lab I deepened my understanding of calling conventions, memory layout, data structures at the machine level, and how to systematically reason about program behavior from assembly alone.",
+    "links": [
+      "https://github.com/rafaelolal/assembly-bomb-defusion"
+    ],
+    "association": null,
+    "start_month": 3,
+    "start_year": 2024,
+    "end_month": 3,
+    "end_year": 2024,
+    "skills": [
+      "Assembly",
+      "C",
+      "GDB",
+      "x86-64"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Basic HTTP Server",
+    "description": "This project is a multithreaded HTTP/1.0 and HTTP/1.1 web server written in C that serves static files and handles persistent connections with dynamic connection timeouts. I implemented the server from scratch in C using POSIX sockets, pthreads for one-thread-per-connection concurrency, and select() for load-aware timeout management, splitting the logic across three files: server.c, helpers.c, and status_pages.c. It was created as a school project (Project 1) to learn the fundamentals of network programming, HTTP protocol handling, and concurrent server design. Through this project I gained hands-on experience with low-level socket programming, multithreading with mutexes, HTTP request parsing, and strategies for managing server resources under load.",
+    "links": [
+      "https://github.com/rafaelolal/basic-http-server"
+    ],
+    "association": null,
+    "start_month": 7,
+    "start_year": 2025,
+    "end_month": 7,
+    "end_year": 2025,
+    "skills": [
+      "C",
+      "POSIX Sockets",
+      "Pthreads",
+      "HTTP"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
+  {
+    "name": "Bowdoin Shell (bsh)",
+    "description": "The Bowdoin Shell (bsh) is a Unix shell written in C that supports foreground and background job execution, job control commands (jobs, fg, bg), and signal handling for SIGINT, SIGTSTP, and SIGCHLD. I implemented the shell from scratch in C, including command-line parsing, process forking with execve, a job list data structure, and async-signal-safe signal handlers that properly reap zombie children and forward signals to process groups. It was created as a school assignment at Bowdoin College to apply systems programming concepts including Unix process management, signal handling, and inter-process communication. This project deepened my understanding of how shells work under the hood, including the subtleties of signal masking to avoid race conditions between parent and child processes.",
+    "links": [
+      "https://github.com/rafaelolal/basic-shell"
+    ],
+    "association": null,
+    "start_month": 5,
+    "start_year": 2024,
+    "end_month": 5,
+    "end_year": 2024,
+    "skills": [
+      "C",
+      "Unix Systems Programming",
+      "POSIX Signals"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
+  {
+    "name": "Budget Challenge Helper",
+    "description": "Budget Challenge Helper is a Python CLI application that simulates personal finance management, allowing users to track checking and savings balances, credit card usage, 401k contributions, vendor charges (rent, auto loan, insurance, cable, phone, utilities), biweekly paychecks, and written checks. I built the entire project using object-oriented Python, modeling each financial entity as a class (Person, Job, Bank, Card, Vendor, Charge, Check, Payment) with flat-file persistence and date-driven logic for predicting future charges and budgeting upcoming payment periods. It was created as a personal tool to help me track and plan my own finances when I began my first job. This project deepened my understanding of object-oriented design, date arithmetic, and building practical CLI tools for real-world personal use.",
+    "links": [
+      "https://github.com/rafaelolal/bc_helper"
+    ],
+    "association": null,
+    "start_month": 6,
+    "start_year": 2021,
+    "end_month": 6,
+    "end_year": 2021,
+    "skills": [
+      "Python"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "Beeline Editor",
+    "description": "The Beeline Editor is a browser-based tool that takes a Beeline Reader HTML export from Canvas and reformats it into a more annotation-friendly layout by adjusting margins, line height, and page zoom before re-exporting to PDF. I built the tool using vanilla HTML, CSS, and JavaScript, using the browser's FileReader API to parse the uploaded HTML, the DOMParser to inject custom styles, and window.open to render the result in a new tab for PDF export via the browser's print function. It was created to help students at my school who received PDFs with tight margins and cramped line spacing, making it difficult to annotate readings from Canvas. Building this project deepened my understanding of browser APIs, in-memory DOM manipulation, and how to deliver a small but practical accessibility improvement with minimal tooling.",
+    "links": [
+      "https://github.com/rafaelolal/beeline-editor"
+    ],
+    "association": null,
+    "start_month": 1,
+    "start_year": 2026,
+    "end_month": 1,
+    "end_year": 2026,
+    "skills": [
+      "Javascript",
+      "HTML",
+      "CSS"
+    ],
+    "tags": [
+      "small",
+      "school"
+    ]
+  },
+  {
+    "name": "Bit Manipulation Puzzles",
+    "description": "Bit Manipulation Puzzles is a C lab assignment consisting of 15 programming puzzles that require solving common integer and floating-point operations using only a restricted set of bitwise operators. I solved each puzzle in C, applying techniques such as sign extension, De Morgan's laws, two's complement arithmetic, and IEEE 754 floating-point bit patterns to implement functions like logical shift, sign-magnitude conversion, and floating-point absolute value. It was created as Lab 1 in a computer systems or architecture course, where the goal was to deepen understanding of low-level data representation and bit-level manipulation. Completing the lab reinforced my understanding of how integers and floats are represented in memory and how to reason about binary arithmetic without relying on high-level language constructs.",
+    "links": [
+      "https://github.com/rafaelolal/bit-manipulation-puzzles"
+    ],
+    "association": null,
+    "start_month": 2,
+    "start_year": 2024,
+    "end_month": 2,
+    "end_year": 2024,
+    "skills": [
+      "C"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Buffer Overflow Attacks",
+    "description": "This project is a classic attack lab in which five progressively harder buffer overflow exploits are crafted against a vulnerable x86-64 binary, covering return-address hijacking, code injection via shellcode, and return-oriented programming (ROP) with gadget chains. I analyzed the target binary with GDB to map stack layouts and identify useful ROP gadgets, then hand-crafted exploit byte strings — including injected x86-64 assembly and multi-gadget ROP chains using a provided gadget farm — to redirect control flow and pass specific argument values to target functions. It was created as a lab in a computer systems course at Bowdoin College, serving as a hands-on introduction to memory safety vulnerabilities, exploit development, and defenses such as stack randomization that motivate ROP techniques. Through this lab I gained a concrete understanding of x86-64 calling conventions, stack frame layout, code injection, and return-oriented programming as both an attack technique and a motivation for modern exploit mitigations.",
+    "links": [
+      "https://github.com/rafaelolal/buffer-overflow-attacks"
+    ],
+    "association": null,
+    "start_month": 4,
+    "start_year": 2024,
+    "end_month": 4,
+    "end_year": 2024,
+    "skills": [
+      "Assembly",
+      "C",
+      "GDB",
+      "x86-64",
+      "Cybersecurity"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Closest Pair Search by Grid",
+    "description": "This project is a C++ program that finds the closest pair of points among a large set of 2D random points, implementing both a naive O(n²) brute-force algorithm and an optimized grid-based algorithm that partitions points into a k×k grid and only checks neighboring cells to dramatically reduce comparisons. I implemented both algorithms, including the grid construction, bounding-box computation, cell assignment, and directional neighbor traversal, along with benchmarking infrastructure to compare their running times across different values of n and k. It was created as a computational geometry assignment exploring efficient spatial search algorithms and the trade-offs involved in choosing grid resolution. This project deepened my understanding of spatial data structures, algorithm complexity analysis, and practical performance tuning — including the insight that empirically optimal k values can differ significantly from theoretically derived ones.",
+    "links": [
+      "https://github.com/rafaelolal/closest-pair-search-by-grid"
+    ],
+    "association": null,
+    "start_month": 7,
+    "start_year": 2024,
+    "end_month": 7,
+    "end_year": 2024,
+    "skills": [
+      "C++"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Coding Club Bot",
+    "description": "The Coding Club Bot is a Discord bot built for a school Coding Club's unofficial Discord server, featuring member management, a project showcase, Google Classroom integration, bi-weekly challenge leaderboards, and a playable tic-tac-toe game. I developed the entire bot in Python using discord.py, organizing functionality into modular cogs backed by a SQLite database, with the Google Classroom API used to automatically mirror course announcements and assignments into Discord channels. It was created to bring the club's members together in one place, enabling them to display projects, participate in challenges, track leaderboard standings, and stay informed about class updates without leaving Discord. This project deepened my experience with asynchronous Python, REST API integration (Google Classroom and Sheets APIs), SQLite database management, and designing interactive Discord UI components.",
+    "links": [
+      "https://github.com/rafaelolal/coding_club_bot"
+    ],
+    "association": null,
+    "start_month": 11,
+    "start_year": 2021,
+    "end_month": 2,
+    "end_year": 2023,
+    "skills": [
+      "Python",
+      "Discord API",
+      "Google Sheets API",
+      "SQLite"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
+  {
+    "name": "2D Convex Hull Visualizer",
+    "description": "This project is a C++ program using OpenGL that computes and visualizes the 2D convex hull of a set of points, supporting multiple point initializers such as circles, spirals, hearts, and random distributions. I implemented the Graham scan algorithm from scratch, including finding the rightmost-lowest anchor point, sorting points by polar angle using a signed-area comparator, and iteratively building the hull by eliminating non-left turns. It was created as the 2nd project in CSCI 3250 (Computational Geometry) taught by Professor Laura Toma. This project deepened my understanding of computational geometry primitives, sorting-based hull algorithms, and interactive OpenGL visualization.",
+    "links": [
+      "https://github.com/rafaelolal/convex-hull-2d"
+    ],
+    "association": null,
+    "start_month": 8,
+    "start_year": 2024,
+    "end_month": 8,
+    "end_year": 2024,
+    "skills": [
+      "C++",
+      "OpenGL"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "3D Convex Hull Visualizer",
+    "description": "This project is a C++ program using OpenGL/GLUT that computes and visualizes the 3D convex hull of a set of points using the incremental algorithm. I implemented the incremental hull algorithm from scratch, including signed volume calculations, edge boundary detection via frequency counting, and face orientation using determinant-based geometry primitives, as well as an interactive 3D OpenGL viewer with camera rotation, zoom, translation, fill toggling, and step-by-step hull animation. It was created as Project 5 in my CSCI 3250 Computational Geometry class. This project deepened my understanding of 3D computational geometry algorithms, exact arithmetic with integer coordinates to avoid floating-point errors, and OpenGL rendering techniques.",
+    "links": [
+      "https://github.com/rafaelolal/convex-hull-3d"
+    ],
+    "association": null,
+    "start_month": 11,
+    "start_year": 2024,
+    "end_month": 11,
+    "end_year": 2024,
+    "skills": [
+      "C++",
+      "OpenGL"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Easy Embed",
+    "description": "Easy Embed is a self-hosted semantic search Python package and REST API that allows developers to store text documents as vector embeddings and query them using cosine similarity. I designed and implemented the full package, including a singleton App class wrapping SentenceTransformer models, a FastAPI server with CRUD endpoints for embedding collections, a SQLite-backed storage layer using SQLModel, and a simple HTML/JavaScript frontend demo. It was created as the final project for CSCI 3485 (Machine Learning) at my university. Through this project I deepened my understanding of sentence embeddings, vector similarity search, and how to package and publish a Python library to PyPI.",
+    "links": [
+      "https://github.com/rafaelolal/csci-3485-final",
+      "https://pypi.org/project/easy-embed-rafaelolal/1.0.0/"
+    ],
+    "association": null,
+    "start_month": 11,
+    "start_year": 2024,
+    "end_month": 12,
+    "end_year": 2024,
+    "skills": [
+      "Python",
+      "FastAPI",
+      "PyTorch",
+      "NumPy",
+      "scikit-learn",
+      "sentence-transformers",
+      "SQLite",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tags": [
+      "medium",
+      "school"
+    ]
+  },
+  {
+    "name": "MLP Classifier Architecture & Learning Rate Analysis",
+    "description": "This project is a Python-based experimentation suite that trains scikit-learn MLPClassifier neural networks across varying architectures and learning rate configurations, producing heatmap visualizations of classification accuracy on blob and anisotropic datasets. I implemented the layer/unit sweep experiments in rafael.py, including a parallelized version using joblib, which systematically trained networks across all combinations of 1–40 layers and 1–40 units per layer and generated heatmaps of scores. It was created as Lab 2 in CSCI-3485, a machine learning course, in collaboration with a partner (Ryan) who focused on the solver and learning rate strategy analysis. This project deepened my understanding of MLP hyperparameter sensitivity, the effect of network depth and width on classification performance, and parallel experiment execution in Python.",
+    "links": [
+      "https://github.com/rafaelolal/csci-3485-lab2"
+    ],
+    "association": null,
+    "start_month": 7,
+    "start_year": 2024,
+    "end_month": 7,
+    "end_year": 2024,
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "NumPy",
+      "matplotlib",
+      "seaborn",
+      "joblib"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Transfer Learning with ResNet and VGG on CIFAR-10",
+    "description": "This project benchmarks four pre-trained convolutional neural networks — ResNet18, ResNet34, VGG11, and VGG13 — on the CIFAR-10 image classification dataset using transfer learning. I applied transfer learning by freezing all pre-trained weights and replacing only each model's final linear layer to output 10 classes, then trained and evaluated each model using the Adam optimizer with cross-entropy loss over 5 epochs. The project was created as Lab 4 for CSCI 3485, a machine learning course, to explore the practical trade-offs between different CNN architectures under a constrained fine-tuning regime. Through this assignment, I gained hands-on experience with PyTorch transfer learning workflows, and observed how differences in the number of trainable parameters (rather than overall model depth) can drive accuracy outcomes — with VGG's larger final classifier outperforming ResNet's despite ResNet's generally superior architecture.",
+    "links": [
+      "https://github.com/rafaelolal/csci-3485-lab4"
+    ],
+    "association": null,
+    "start_month": 10,
+    "start_year": 2024,
+    "end_month": 10,
+    "end_year": 2024,
+    "skills": [
+      "Python",
+      "PyTorch",
+      "NumPy",
+      "Transfer Learning",
+      "Deep Learning",
+      "Computer Vision"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Object Detection Comparison: Faster R-CNN vs. YOLOv5",
+    "description": "This project benchmarks two pre-trained object detection models — Faster R-CNN with a ResNet50 backbone and YOLOv5s — on a bus and truck dataset from Open Images, evaluating each model's accuracy, mean IoU, and average inference time. I implemented the full evaluation pipeline in Python, including image preprocessing with normalization, running inference with Non-Maximum Suppression on Faster R-CNN outputs, computing per-image IoU against ground truth bounding boxes, and visualizing annotated detection results for both models. The project was created as Lab 5 for CSCI 3485, a machine learning course, to gain hands-on experience comparing a two-stage detector (Faster R-CNN) against a single-stage detector (YOLOv5) on a real-world dataset. Through this assignment, I deepened my understanding of object detection architectures, IoU-based evaluation metrics, bounding box post-processing with NMS, and the accuracy vs. speed trade-offs inherent in different detection paradigms.",
+    "links": [
+      "https://github.com/rafaelolal/csci-3485-lab5"
+    ],
+    "association": null,
+    "start_month": 11,
+    "start_year": 2024,
+    "end_month": 11,
+    "end_year": 2024,
+    "skills": [
+      "Python",
+      "PyTorch",
+      "NumPy",
+      "Computer Vision",
+      "Deep Learning",
+      "Object Detection",
+      "matplotlib"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Image Denoising with Autoencoder and U-Net",
+    "description": "This project implements and compares two deep learning architectures for image denoising: a fully-connected autoencoder and a convolutional U-Net, both trained on the MNIST dataset with Gaussian noise applied at varying intensities (0.3, 0.5, and 0.9). I built both models from scratch in PyTorch, designed the noisy MNIST dataset pipeline, wrote the training and evaluation loops, and ran experiments on a SLURM-based GPU cluster to benchmark the models quantitatively and produce qualitative image comparisons. It was created as Lab 6 for CSCI 3485 (Machine Learning) at CU Boulder, exploring classical neural network denoising techniques. Through this project, I deepened my understanding of encoder-decoder architectures, skip connections in U-Net for spatial feature preservation, convolutional vs. fully-connected trade-offs, and how noise level affects reconstruction quality.",
+    "links": [
+      "https://github.com/rafaelolal/csci-3485-lab6"
+    ],
+    "association": null,
+    "start_month": 11,
+    "start_year": 2024,
+    "end_month": 11,
+    "end_year": 2024,
+    "skills": [
+      "Python",
+      "PyTorch",
+      "NumPy",
+      "Machine Learning",
+      "Deep Learning",
+      "Convolutional Neural Networks"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
+  {
+    "name": "Chord-Based Decentralized File Sharing",
+    "description": "This project implements a peer-to-peer file sharing system built on top of the Chord Distributed Hash Table (DHT), allowing nodes to join a ring network and upload, retrieve, and replicate files in a fully decentralized manner. I co-developed the system with classmate Victoria Figueroa, contributing the FastAPI application layer, Python-to-Java bridge integration via JPype1, the ChordAdapter abstraction, and the experiment orchestration scripts used to measure lookup latency and fault tolerance across multi-machine deployments. It was the fourth and final project for the CSCI3325 course, requiring a working distributed system with empirical performance evaluation. Through this project, I gained deep practical experience with distributed hashing, peer-to-peer networking, Python-Java interoperability, and designing rigorous distributed systems experiments.",
+    "links": [
+      "https://github.com/rafaelolal/decentralized-file-sharing"
+    ],
+    "association": null,
+    "start_month": 12,
+    "start_year": 2025,
+    "end_month": 12,
+    "end_year": 2025,
+    "skills": [
+      "Python",
+      "Java",
+      "FastAPI",
+      "P2P Networking",
+      "Distributed Systems",
+      "Chord DHT",
+      "JPype1"
+    ],
+    "tags": [
+      "school",
+      "large"
+    ]
+  },
+  {
+    "name": "Distributed MapReduce on Hadoop",
+    "description": "A distributed data processing project implementing two MapReduce jobs on an Apache Hadoop cluster: a two-stage click-rate pipeline that joins ad impression and click logs then aggregates click-through rates by referrer and ad ID, and an inverted-index builder that maps every word in a document corpus to the set of files it appears in. I designed and implemented the mapper and reducer classes for both jobs, configured the multi-stage job chaining, and handled JSON log parsing for the click-rate pipeline. The project was a graded assignment (Project 3, scored 100/100) in a distributed systems or big-data course, developed in a pair with classmate Victoria Figueroa and executed on a four-node AWS EC2 Hadoop cluster. Through the project, I gained hands-on experience with the MapReduce programming model, distributed job orchestration with Hadoop, reduce-side joins, and deploying Java applications to cloud-hosted clusters.",
+    "links": [
+      "https://github.com/rafaelolal/distributed-map-reduce"
+    ],
+    "association": null,
+    "start_month": 10,
+    "start_year": 2025,
+    "end_month": 10,
+    "end_year": 2025,
+    "skills": [
+      "Java",
+      "Hadoop",
+      "MapReduce",
+      "Distributed Systems",
+      "AWS EC2"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
+  {
+    "name": "Gym Optimizer",
+    "description": "Gym Optimizer is a Python command-line tool that uses integer linear programming to determine the optimal combination of weight plates to load for a gym workout, maximizing points per rep given constraints on the number of plates and current strength. I implemented it as a single-script solution using the PuLP library, modeling plate colors (SILVER, GREEN, BLUE, YELLOW, RED, BLACK) as integer decision variables with coefficients representing their weight and point values. It was created as a personal utility to solve a real gym-game optimization problem quickly and efficiently. This project gave me hands-on experience with linear and integer programming concepts and applying constraint optimization libraries to practical problems.",
+    "links": [
+      "https://github.com/rafaelolal/gym-optimizer"
+    ],
+    "association": null,
+    "start_month": 5,
+    "start_year": 2025,
+    "end_month": 5,
+    "end_year": 2025,
+    "skills": [
+      "Python"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "PastPort",
+    "description": "PastPort is a full-stack travel journaling app that continuously ingests GPS location data in the background and lets users retroactively define named trips, visualizing them as colored routes on a rotating 3D globe alongside geotagged photos. I built the entire project — a FastAPI backend with SQLite storage, a coordinate processing pipeline using the Mapbox Map Matching API and a custom Douglas-Peucker simplification algorithm, EXIF GPS and timestamp extraction from JPEG and HEIC photos, and a mobile-styled single-page frontend rendered inside a phone-frame UI with a draggable photo gallery panel. It was created over the course of HackDartmouth XI, Dartmouth College's annual spring hackathon. Building this project deepened my understanding of geospatial data pipelines, REST API design with FastAPI, image metadata extraction, and crafting polished browser-based UIs without any frontend framework.",
+    "links": [
+      "https://github.com/rafaelolal/hackdartmouthXI"
+    ],
+    "association": null,
+    "start_month": 4,
+    "start_year": 2025,
+    "end_month": 4,
+    "end_year": 2025,
+    "skills": [
+      "Python",
+      "FastAPI",
+      "SQLite",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Mapbox API"
+    ],
+    "tags": [
+      "medium"
+    ]
+  },
+  {
+    "name": "Haskell Exercises",
+    "description": "A structured set of four Haskell exercise modules covering progressively advanced topics, including basic functions and recursion, algebraic data types and list operations, typeclasses (Semigroup, Monoid, Foldable, Functor), and a complete CSV-parsing command-line program. I worked through the exercises from the Haskell Beginners 2022 open course by forking the repository and implementing solutions across all four lecture modules. The project was undertaken as a self-study effort to learn functional programming in Haskell using a freely available online course. Through this work, I gained hands-on experience with Haskell syntax, type inference, pure functional design, algebraic data types, typeclass derivation and implementation, and basic IO.",
+    "links": [
+      "https://github.com/rafaelolal/haskell-exercises"
+    ],
+    "association": null,
+    "start_month": 1,
+    "start_year": 2025,
+    "end_month": 1,
+    "end_year": 2025,
+    "skills": [
+      "Haskell",
+      "GHC",
+      "Cabal",
+      "Stack"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "Infinite Tic-Tac-Toe",
+    "description": "A browser-based twist on classic Tic-Tac-Toe where each player is limited to three pieces on the board at a time — when a fourth move is placed, the oldest piece is automatically removed, creating a constantly shifting board state. I built the entire game as a single self-contained HTML file using vanilla JavaScript and CSS Grid, implementing a sliding-window move queue for each player along with win detection and a visual highlight system that marks whichever piece is about to disappear next. The project was created to explore a novel rule variant that keeps standard Tic-Tac-Toe from always ending in a draw by adding a memory constraint that demands forward-thinking strategy. Through building it, I practiced managing stateful game logic in plain JavaScript without any framework, and gained hands-on experience designing UI feedback cues that communicate non-obvious game rules to players.",
+    "links": [
+      "https://github.com/rafaelolal/infinite-tic"
+    ],
+    "association": null,
+    "start_month": 1,
+    "start_year": 2024,
+    "end_month": 1,
+    "end_year": 2024,
+    "skills": [
+      "Javascript",
+      "HTML",
+      "CSS"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "KD-Tree Mondrian Visualization",
+    "description": "This project is a C++ program using OpenGL that builds a 2D kd-tree from a set of points and renders the resulting space partitioning as a Mondrian-style painting, with each leaf region filled using the characteristic red, blue, yellow, black, and white color palette. I implemented the recursive kd-tree construction algorithm — alternating between vertical and horizontal splits at median points while maintaining points in both x-sorted and y-sorted order — along with the recursive OpenGL drawing pass that computes each leaf rectangle's bounding box on the fly. It was created as the 3rd project in CSCI 3250 (Computational Geometry) taught by Professor Laura Toma. This project deepened my understanding of kd-trees as a spatial partitioning data structure, the interplay between sorted order and recursive median splitting, and how to map tree structure to interactive OpenGL rendering.",
+    "links": [
+      "https://github.com/rafaelolal/kdtree-mondrian-visualization"
+    ],
+    "association": null,
+    "start_month": 8,
+    "start_year": 2024,
+    "end_month": 8,
+    "end_year": 2024,
+    "skills": [
+      "C++",
+      "OpenGL"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Linear Algebra Toolkit",
+    "description": "A command-line Python toolkit for performing core linear algebra operations, including Gaussian elimination to reduced row echelon form, matrix row operations (swap, scale, add scaled rows), and recursive determinant calculation via cofactor expansion. I implemented the row reduction algorithm, determinant solver, and an interactive row-operations interface from scratch in pure Python without any numerical libraries. The project was created as a personal exercise to reinforce concepts learned in a linear algebra course. Through building it, I deepened my understanding of pivot selection, back-substitution, and recursive matrix decomposition.",
+    "links": [
+      "https://github.com/rafaelolal/linear_algebra"
+    ],
+    "association": null,
+    "start_month": 4,
+    "start_year": 2025,
+    "end_month": 12,
+    "end_year": 2025,
+    "skills": [
+      "Python"
+    ],
+    "tags": [
+      "small",
+      "school"
+    ]
+  },
+  {
+    "name": "Logic Evaluator",
+    "description": "A command-line Python toolkit for evaluating formal logic expressions, supporting both propositional logic (with truth table generation via a recursive descent parser) and first-order predicate logic (with universal and existential quantifiers, multi-arity predicates, and a brute-force interpretation finder). I built the complete recursive descent parsers for both propositional and predicate logic from scratch, implementing quantifier scoping, variable binding, extension-based predicate evaluation, and a power-set search algorithm to find satisfying interpretations. The project was created to assist with homework assignments in a formal logic course, providing a tool to verify truth tables and find predicate logic interpretations automatically. I learned how to implement grammar-driven parsers in Python, manage variable binding across nested quantifier scopes, and apply combinatorial search techniques to satisfy logical constraints.",
+    "links": [
+      "https://github.com/rafaelolal/logic"
+    ],
+    "association": null,
+    "start_month": 10,
+    "start_year": 2025,
+    "end_month": 10,
+    "end_year": 2025,
+    "skills": [
+      "Python"
+    ],
+    "tags": [
+      "small",
+      "school"
+    ]
+  },
+  {
+    "name": "LRU Cache Simulator",
+    "description": "This is a hardware cache simulator written in C that models a set-associative cache with configurable number of sets, lines per set, and block size, tracking hits, misses, and evictions against arbitrary memory trace files. I implemented the full simulation from scratch in C, including dynamic cache allocation, address decomposition into set index and tag bits, and an LRU eviction policy maintained via a per-set usage ordering array. It was created as Lab 5 for a computer systems course at Bowdoin College, where the goal was to replicate the behavior of a reference simulator with perfect accuracy across all test traces, earning 27/27 test points. Through this project I gained hands-on experience with cache architecture concepts such as set-associativity, address bit manipulation, and the tradeoffs of different eviction policy implementations.",
+    "links": [
+      "https://github.com/rafaelolal/lru-cache-simulation"
+    ],
+    "association": null,
+    "start_month": 4,
+    "start_year": 2024,
+    "end_month": 4,
+    "end_year": 2024,
+    "skills": [
+      "C"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Mega Gem Helper",
+    "description": "Mega Gem Helper is a Python command-line tool that assists players of the board game Mega Gem by tracking card visibility and computing the expected point value of each gem color using binomial probability. I implemented it as a single-script solution with a stateful MegaGem class that models hidden, displayed, and collected cards, accepting live command input to update state and print per-gem probability distributions across the active value chart. It was created as a personal utility to gain a data-driven edge during gameplay by quantifying the likelihood that each gem's display count will increase before the round ends. This project gave me hands-on experience with combinatorial probability, the binomial PMF, and designing interactive CLI tools with mutable game state.",
+    "links": [
+      "https://github.com/rafaelolal/mega_gem"
+    ],
+    "association": null,
+    "start_month": 8,
+    "start_year": 2024,
+    "end_month": 8,
+    "end_year": 2024,
+    "skills": [
+      "Python"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "Console Command Parser",
+    "description": "Console Command Parser is a C library that tokenizes Unix-style command-line strings into NULL-terminated word arrays and determines whether a command should run in the foreground or background based on the placement of the '&' character. I implemented the full parsing library in C, including helper functions for word counting, word-length calculation, dynamic memory allocation for each token, and proper memory cleanup — achieving 100 of 100 correctness tests and zero Valgrind memory errors. It was created as Lab 2 (\"Program Pointers\") in a systems programming course at Bowdoin College, designed to build fluency with pointer arithmetic, dynamic memory allocation, and the C string model. Building this library deepened my understanding of low-level memory management in C, including how to traverse strings with raw pointers, allocate and free nested heap structures, and reason carefully about edge cases in input parsing.",
+    "links": [
+      "https://github.com/rafaelolal/parse-console-command"
+    ],
+    "association": null,
+    "start_month": 2,
+    "start_year": 2024,
+    "end_month": 2,
+    "end_year": 2024,
+    "skills": [
+      "C"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Polygon Visibility: Art Gallery Guard",
+    "description": "This project is a C++ and OpenGL interactive application that lets users draw a simple polygon representing an art gallery, place up to seven guards inside it, and visualize each guard's visibility polygon — the region of the gallery that guard can see — rendered in real time as the guards animate autonomously around the space. I implemented the full visibility polygon algorithm using ray casting toward each gallery vertex (plus slight angular offsets to handle corners), segment-segment intersection tests, point-in-polygon checks, and collision detection to keep guards bouncing inside the polygon boundaries. It was created as the 4th project in a Computational Geometry course. The project deepened my understanding of computational geometry algorithms including parametric line intersection, radial angle sorting for constructing visibility polygons, and integrating geometry algorithms with an interactive OpenGL rendering loop.",
+    "links": [
+      "https://github.com/rafaelolal/polygon-visibility-art-gallery-guard"
+    ],
+    "association": null,
+    "start_month": 11,
+    "start_year": 2024,
+    "end_month": 11,
+    "end_year": 2024,
+    "skills": [
+      "C++",
+      "OpenGL"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  },
+  {
+    "name": "Nile RPC Inventory Manager",
+    "description": "A distributed online bookstore system called Nile.com built with a three-tier architecture using XML-RPC for inter-service communication, consisting of a Catalog Server, Order Server, and Frontend Server all written in Java, with both Java and Python clients. I implemented the full server-side architecture including the CatalogServer with in-memory inventory and periodic restocking, the OrderServer with synchronized buy operations to prevent race conditions under concurrent load, the FrontendServer that routes client requests via XML-RPC calls, and the suite of bash scripts for deploying and testing across remote AWS EC2 machines. The project was a course assignment (Project 2) for a distributed systems class that required building a working RPC-based microservice system and conducting concurrency performance experiments. I gained hands-on experience with RPC protocols, distributed multi-server architectures, Java concurrency primitives (synchronized methods), and the challenges of designing and interpreting distributed systems performance experiments.",
+    "links": [
+      "https://github.com/rafaelolal/rpc-inventory-manager"
+    ],
+    "association": null,
+    "start_month": 8,
+    "start_year": 2025,
+    "end_month": 8,
+    "end_year": 2025,
+    "skills": [
+      "Java",
+      "Python",
+      "XML-RPC",
+      "Distributed Systems",
+      "Concurrency"
+    ],
+    "tags": [
+      "school",
+      "medium"
+    ]
+  },
+  {
+    "name": "AiGoLearning Scheduling Bot",
+    "description": "The Scheduling Bot is a Discord bot that automates the full teacher evaluation scheduling workflow at AiGoLearning, coordinating availability matching, real-time confirmation requests, and post-evaluation record keeping across evaluators, teachers, and managers. I built the bot in Python using discord.py, implementing interactive UI components (dropdowns and buttons), a SQLite database for member and evaluator tracking, Google Sheets API integration for evaluation records, and an email notification system to alert administrators at each stage of the process. It was created to replace a manual, error-prone scheduling process at AiGoLearning by giving teachers a self-service way to book evaluations and automatically matching them with available evaluators for their specific course and time slot. This project deepened my skills in asynchronous Python programming, Discord bot architecture, database management with SQLite, and integrating multiple external APIs in a production environment.",
+    "links": [
+      "https://github.com/rafaelolal/scheduling_bot"
+    ],
+    "association": "AiGoLearning",
+    "start_month": 11,
+    "start_year": 2021,
+    "end_month": 3,
+    "end_year": 2022,
+    "skills": [
+      "Python",
+      "Discord API",
+      "Google Sheets API",
+      "Linux"
+    ],
+    "tags": [
+      "medium"
+    ]
+  },
+  {
+    "name": "The Gatherer",
+    "description": "The Gatherer is a minimalistic web-based ability tracker for Magic: The Gathering, allowing players to create named sections, add cards to them, check off abilities currently in play, and reset them at the end of a turn. I built it solo as a Django application with a REST API backend (Django REST Framework) that serves card data from a locally populated SQLite database, and a single-page frontend using Bootstrap and vanilla JavaScript that dynamically renders cards and abilities via fetch calls. It was created as a personal utility to reduce cognitive load for newer Magic: The Gathering players who struggle to track all the abilities active on the board at once. Building it in roughly three hours sharpened my skills in rapid prototyping with Django, RESTful API design, and dynamic DOM manipulation with plain JavaScript.",
+    "links": [
+      "https://github.com/rafaelolal/the-gatherer"
+    ],
+    "association": null,
+    "start_month": 10,
+    "start_year": 2024,
+    "end_month": 10,
+    "end_year": 2024,
+    "skills": [
+      "Python",
+      "Django",
+      "Bootstrap",
+      "Javascript",
+      "HTML",
+      "CSS"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "TI-84 Physics Solver Suite",
+    "description": "TI-84 Physics Solver Suite is a collection of TI-Basic programs for the TI-84 calculator that solve problems in kinematics, circuits, electrostatics, rotational motion, and simple harmonic motion by prompting for known variables and computing the unknown. I implemented six programs — KinematicSolver, Circuit, Electro, Rotation, SHM, and SimpSqrt — each structured as a menu-driven TI-Basic application that accepts numeric inputs, applies the relevant physics formulas, and displays results directly on the calculator screen. The suite was created to speed up problem-solving during high school physics courses, eliminating manual formula lookup and reducing arithmetic errors on tests. Building it deepened my familiarity with TI-Basic's constrained programming model, reinforced my physics formula fluency, and demonstrated how useful tooling can be written even within severely limited environments.",
+    "links": [
+      "https://github.com/rafaelolal/ti84"
+    ],
+    "association": null,
+    "start_month": 5,
+    "start_year": 2022,
+    "end_month": 5,
+    "end_year": 2022,
+    "skills": [
+      "TI-Basic"
+    ],
+    "tags": [
+      "small",
+      "school"
+    ]
+  },
+  {
+    "name": "Visibility Graph Shortest Path",
+    "description": "This project is a C++ and OpenGL interactive application that lets users draw convex polygon obstacles, set a source and destination point, and visualize the visibility graph and the shortest path for a point robot navigating around those obstacles. I implemented the visibility graph construction algorithm — checking mutual visibility between all polygon vertices using segment intersection tests and an inCone check to exclude interior edges — and Dijkstra's algorithm to find the shortest Euclidean path through the graph. It was created as the 6th project in a Computational Geometry course (CSCI 3250). The project deepened my understanding of path planning algorithms, visibility graph theory, Dijkstra's algorithm, and computational geometry primitives such as segment intersection and point-in-polygon tests.",
+    "links": [
+      "https://github.com/rafaelolal/visibility-graph-shortest-path"
+    ],
+    "association": null,
+    "start_month": 11,
+    "start_year": 2024,
+    "end_month": 11,
+    "end_year": 2024,
+    "skills": [
+      "C++",
+      "OpenGL"
+    ],
+    "tags": [
+      "school",
+      "small"
+    ]
+  }
+]
