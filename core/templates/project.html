@@ -40,10 +40,16 @@
 
 
     {% if project.images.all %}
-    <div>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
         {% for image in project.images.all %}
         {% if image.image %}
-        <img height="250px" width="auto" src="{{ image.image.url }}" alt="{{ image.name }}">
+        <!-- - **`max-width: 100%`** — the real fix. The image can never render wider than its parent container, so a very wide panoramic image shrinks to fit the phone screen instead of overflowing and triggering the side-to-side scroll. -->
+        <!-- - **`height: auto`** — lets the height follow the scaled-down width so the aspect ratio stays correct. -->
+        <!-- - **`max-height: 250px` + `width: auto`** — preserves your original behavior on desktop/normal images: they still cap at 250px tall. On a phone, `max-width: 100%` wins for the wide image and it scales down. -->
+        <!-- - **`object-fit: contain`** — harmless safety so nothing gets stretched if both caps interact. -->
+        <!-- - **Wrapper `display: flex; flex-wrap: wrap; gap`** — if a project ever has multiple images, they now wrap to the next line on narrow screens instead of forming their own horizontal scroll. You can drop this part if you only ever have one image. -->
+        <img style="max-width: 100%; max-height: 250px; width: auto; height: auto; object-fit: contain;"
+             src="{{ image.image.url }}" alt="{{ image.name }}">
         {% endif %}
         {% endfor %}
     </div>

@@ -15,7 +15,7 @@ import sys
 
 DJANGO_SETTINGS_MODULE = "portfolio.settings"
 APP_NAME = "core"
-JSON_PATH = os.path.join(os.path.dirname(__file__), "new_projects.json")
+JSON_PATH = os.path.join(os.path.dirname(__file__), "data_new_projects.json")
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", DJANGO_SETTINGS_MODULE)
 

@@ -215,9 +215,9 @@
       "https://github.com/rafaelolal/basic-http-server"
     ],
     "association": null,
-    "start_month": 7,
+    "start_month": 9,
     "start_year": 2025,
-    "end_month": 7,
+    "end_month": 9,
     "end_year": 2025,
     "skills": [
       "C",
@@ -286,8 +286,7 @@
       "CSS"
     ],
     "tags": [
-      "small",
-      "school"
+      "small"
     ]
   },
   {
@@ -339,9 +338,9 @@
       "https://github.com/rafaelolal/closest-pair-search-by-grid"
     ],
     "association": null,
-    "start_month": 7,
+    "start_month": 9,
     "start_year": 2024,
-    "end_month": 7,
+    "end_month": 9,
     "end_year": 2024,
     "skills": [
       "C++"
@@ -369,7 +368,6 @@
       "SQLite"
     ],
     "tags": [
-      "school",
       "medium"
     ]
   },
@@ -380,9 +378,9 @@
       "https://github.com/rafaelolal/convex-hull-2d"
     ],
     "association": null,
-    "start_month": 8,
+    "start_month": 10,
     "start_year": 2024,
-    "end_month": 8,
+    "end_month": 10,
     "end_year": 2024,
     "skills": [
       "C++",
@@ -449,9 +447,9 @@
       "https://github.com/rafaelolal/csci-3485-lab2"
     ],
     "association": null,
-    "start_month": 7,
+    "start_month": 9,
     "start_year": 2024,
-    "end_month": 7,
+    "end_month": 9,
     "end_year": 2024,
     "skills": [
       "Python",
@@ -677,9 +675,9 @@
       "https://github.com/rafaelolal/kdtree-mondrian-visualization"
     ],
     "association": null,
-    "start_month": 8,
+    "start_month": 10,
     "start_year": 2024,
-    "end_month": 8,
+    "end_month": 10,
     "end_year": 2024,
     "skills": [
       "C++",
@@ -699,14 +697,13 @@
     "association": null,
     "start_month": 4,
     "start_year": 2025,
-    "end_month": 12,
+    "end_month": 4,
     "end_year": 2025,
     "skills": [
       "Python"
     ],
     "tags": [
-      "small",
-      "school"
+      "small"
     ]
   },
   {
@@ -724,8 +721,7 @@
       "Python"
     ],
     "tags": [
-      "small",
-      "school"
+      "small"
     ]
   },
   {
@@ -754,9 +750,9 @@
       "https://github.com/rafaelolal/mega_gem"
     ],
     "association": null,
-    "start_month": 8,
+    "start_month": 9,
     "start_year": 2024,
-    "end_month": 8,
+    "end_month": 9,
     "end_year": 2024,
     "skills": [
       "Python"
@@ -811,9 +807,9 @@
       "https://github.com/rafaelolal/rpc-inventory-manager"
     ],
     "association": null,
-    "start_month": 8,
+    "start_month": 10,
     "start_year": 2025,
-    "end_month": 8,
+    "end_month": 10,
     "end_year": 2025,
     "skills": [
       "Java",
@@ -886,8 +882,7 @@
       "TI-Basic"
     ],
     "tags": [
-      "small",
-      "school"
+      "small"
     ]
   },
   {
@@ -907,6 +902,136 @@
     ],
     "tags": [
       "school",
+      "small"
+    ]
+  },
+    {
+    "name": "Dice Visualizer",
+    "description": "Dice Visualizer is a browser-based web app that renders two interactive dice and animates random rolls, with each face's pip layout computed dynamically from the die and dot dimensions. I built the entire front end with vanilla JavaScript, defining coordinate configurations for all six dot patterns, wiring up click and spacebar event handlers to reroll, and styling the dice with CSS transitions and Bootstrap. I created it as a small personal project to practice DOM manipulation and pure-JavaScript animation without a framework. It gave me experience positioning elements through calculated geometry, handling keyboard and mouse events, and using CSS transitions for smooth visual feedback.",
+    "links": [
+      "https://github.com/rafaelolal/dice-visualizer"
+    ],
+    "association": null,
+    "start_month": 10,
+    "start_year": 2022,
+    "end_month": null,
+    "end_year": null,
+    "skills": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Bootstrap"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "FBLA 2023 Student Engagement Platform",
+    "description": "This is a large full-stack web application that gamifies school participation, pairing a Next.js and TypeScript front end with a Django REST and GraphQL backend, and spanning a huge feature set: event management, student and group leaderboards, attendance tracking, a news feed, a rally raffle wheel, prize redemption, reporting, an AI help chatbot, and a full admin dashboard for managing every entity. On the front end I built the React interface with Bootstrap and MDB components, integrated Firebase authentication, wired the app to the backend through Apollo Client, created the admin tools for adding events, students, news, and prizes, and added an OpenAI-powered chatbot; on the backend I designed and implemented the entire data model of 17 Django models with their serializers, views, URLs, and test suites, exposed both REST and GraphQL (Graphene) APIs, added camelCase field conversion, built a Faker-based data generator, and set up scheduled jobs that automatically back up the database to dated archives every midnight. I built it with one teammate (dlewis123) as our entry for the Future Business Leaders of America (FBLA) competition. It was a massive, multi-component product with many, many features, and it was something I am proud to highlight: we placed 3rd at the state level and then went on to compete in the top 10 nationally against the best Future Business Leaders of America teams in the country. The scale of the project gave me deep, hands-on experience architecting and shipping a cohesive full-stack system end to end \u2014 Next.js, TypeScript, GraphQL, and Firebase on the client, and Django, Django REST Framework, Graphene, automated testing, and scheduled background tasks on the server \u2014 all while coordinating the work as part of a small, high-performing team under real competition pressure.",
+    "links": [
+      "https://github.com/rafaelolal/fbla2023",
+      "https://github.com/rafaelolal/fbla2023_server"
+    ],
+    "association": null,
+    "start_month": 11,
+    "start_year": 2022,
+    "end_month": null,
+    "end_year": null,
+    "skills": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "GraphQL",
+      "Apollo Client",
+      "Firebase",
+      "Bootstrap",
+      "SCSS",
+      "OpenAI API",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "Graphene",
+      "SQLite",
+      "Docker",
+      "REST API",
+      "Faker"
+    ],
+    "tags": [
+      "large"
+    ]
+  },
+  {
+    "name": "March Madness Prediction Tool",
+    "description": "This is a command-line Python tool that analyzes historical NCAA men's college basketball data to compute head-to-head win probabilities and per-team scoring statistics. I implemented CSV parsing routines that aggregate decades of regular season and tournament results into nested dictionaries, along with interactive prompts that report win percentages between any two teams and a team's average, median, and mode scores. I built it to explore the Kaggle March Madness dataset and experiment with predicting tournament matchups. It gave me hands-on experience with raw data wrangling, building lookup structures from large CSV files, and computing basic statistics in plain Python without external libraries.",
+    "links": [
+      "https://github.com/rafaelolal/march-madness"
+    ],
+    "association": null,
+    "start_month": 7,
+    "start_year": 2025,
+    "end_month": null,
+    "end_year": null,
+    "skills": [
+      "Python",
+      "CSV",
+      "Data Analysis",
+      "Statistics"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "Resume Engine",
+    "description": "Resume Engine is a command-line tool that automatically tailors a resume to individual job descriptions using an LLM and compiles the result into an ATS-optimized PDF, processing a queue of job descriptions into one tailored resume each. I built the entire pipeline in pure-stdlib Python, including the job queue with non-destructive retry handling, calls to any OpenAI-compatible chat-completions endpoint, deterministic non-ASCII sanitization for reliable ATS text extraction, LaTeX extraction and validation, and pdflatex compilation orchestration. I created it because tailoring a resume to each software engineering application manually takes 15-30 minutes, and I wanted to cut that to under three minutes per job. Building it gave me experience with LLM prompt engineering, integrating LLM APIs over raw HTTP, LaTeX templating for ATS-safe documents, and designing a robust, idempotent batch-processing CLI.",
+    "links": [
+      "https://github.com/rafaelolal/resume-engine"
+    ],
+    "association": null,
+    "start_month": 6,
+    "start_year": 2026,
+    "end_month": null,
+    "end_year": null,
+    "skills": [
+      "Python",
+      "LaTeX",
+      "LLM",
+      "Prompt Engineering",
+      "OpenAI API",
+      "Shell",
+      "CLI",
+      "pdflatex"
+    ],
+    "tags": [
+      "small"
+    ]
+  },
+  {
+    "name": "UCVTS Class of 2023 Senior Directory",
+    "description": "This is a static website that showcases the graduating seniors of the Academy for Information Technology (AIT) and Union County Magnet High School, presenting each student's photo, college, and intended major in a card-based grid. I built the AIT directory page, which loads student records from a JSON file and dynamically renders them using jQuery and JsRender templates, including a Bootstrap-styled card layout and a filter system, and I appear in the data as a student. It was created as the final project for the Web Design class taught by Mr. Sweatte, built collaboratively by the entire class on Replit to celebrate the AIT and Magnet Classes of 2023. The project gave me hands-on experience with HTML, CSS, Bootstrap, jQuery, client-side templating, and consuming JSON data to dynamically generate a page.",
+    "links": [
+      "https://github.com/rafaelolal/web-design-2023"
+    ],
+    "association": null,
+    "start_month": 5,
+    "start_year": 2023,
+    "end_month": null,
+    "end_year": null,
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "JsRender",
+      "JSON",
+      "Replit"
+    ],
+    "tags": [
       "small"
     ]
   }
