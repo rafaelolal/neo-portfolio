@@ -9,3 +9,5 @@ django_cache
 !media/images/.gitkeep
 staticfiles/
 *.venv
+
+.DS_Store
