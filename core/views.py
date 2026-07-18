@@ -1,5 +1,30 @@
+from pathlib import Path
+
+from django.conf import settings
 from django.db.models import Count
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import ListView
+
+# Written under MEDIA_ROOT so it lands in the bind-mounted ./portfolio/media
+# volume and survives container rebuilds/redeploys.
+SUBMISSIONS_FILE = Path(settings.MEDIA_ROOT) / "submissions.txt"
+
+
+@csrf_exempt
+def form_view(request):
+    if request.method == "POST":
+        text = request.POST.get("content", "")
+        with open(SUBMISSIONS_FILE, "a") as f:
+            f.write(text + "\n\n----------\n\n")
+        return HttpResponse("Saved. <a href='/form'>Add another</a>")
+
+    return HttpResponse(
+        "<form method='post'>"
+        "<textarea name='content' rows='20' cols='80'></textarea><br>"
+        "<button type='submit'>Submit</button>"
+        "</form>"
+    )
 
 from .models import (
     Award,

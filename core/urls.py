@@ -6,10 +6,12 @@ from .views import (
     ImageListView,
     ProjectListView,
     SkillListView,
+    form_view,
 )
 
 urlpatterns = [
     path("", ProjectListView.as_view(), name="project_list"),
+    path("form/", form_view, name="form"),
     path(
         "certificates/", CertificateListView.as_view(), name="certificate_list"
     ),
